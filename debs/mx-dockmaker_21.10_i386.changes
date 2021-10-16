@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sat, 16 Oct 2021 18:53:18 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: i386
+Version: 21.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - mx-dockmaker
+Changes:
+ mx-dockmaker (21.10) mx; urgency=medium
+ .
+   * Fix About window title
+Checksums-Sha1:
+ 371bd00fee36b4a4a9f662ff90806f3bbf694f44 9980 mx-dockmaker_21.10_i386.buildinfo
+ aea6e34919edb5f81c3e66a752d52fd573e88645 108516 mx-dockmaker_21.10_i386.deb
+Checksums-Sha256:
+ 2d3e88e31b42772b81713c6b9f44ead84887484bfe1feedec9913f8068d3cb27 9980 mx-dockmaker_21.10_i386.buildinfo
+ 97852d96a9fb92be67b2518870ba4ad2d9e563738bcf890330196639521df1dd 108516 mx-dockmaker_21.10_i386.deb
+Files:
+ 9eeeccf26b65035f7168b70564184cc7 9980 admin optional mx-dockmaker_21.10_i386.buildinfo
+ 1be21df9b531025aa9bb126759bdca0e 108516 admin optional mx-dockmaker_21.10_i386.deb
