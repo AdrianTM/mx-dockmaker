@@ -1,3 +1,9 @@
+mx-dockmaker (21.10) mx; urgency=medium
+
+  * Fix About window title
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 16 Oct 2021 18:53:18 -0400
+
 mx-dockmaker (21.7.02) mx; urgency=medium
 
   * Open icons from /usr/share/icons or current folder
