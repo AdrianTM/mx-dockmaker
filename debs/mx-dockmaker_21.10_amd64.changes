@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 16 Oct 2021 18:53:18 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: source amd64
+Version: 21.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - mx-dockmaker
+Changes:
+ mx-dockmaker (21.10) mx; urgency=medium
+ .
+   * Fix About window title
+Checksums-Sha1:
+ 37447c43ea65b8806c8dfc547575e7a12ef406de 1124 mx-dockmaker_21.10.dsc
+ f6fe31974fdda4ffb03bc6d36a730fba85913936 75824 mx-dockmaker_21.10.tar.xz
+ 9f1686cd6539cfb0c606ac5855d260bb7789cb0e 10748 mx-dockmaker_21.10_amd64.buildinfo
+ c5f05e5ceffde02448aadb420f18f5991531d6c4 104888 mx-dockmaker_21.10_amd64.deb
+Checksums-Sha256:
+ b2b7943976e08d8f94d7417f5fae44b3399f16a01b432967cc78eb0991d63920 1124 mx-dockmaker_21.10.dsc
+ 8174e4762a59f2e7f16be0957098ed02f030c41d4b4cf614165225d99b0d5d89 75824 mx-dockmaker_21.10.tar.xz
+ a2d00795138afc71c35c65f1cb0cac0dd59f41931ab90a6e2341669402fbbed2 10748 mx-dockmaker_21.10_amd64.buildinfo
+ 464a3df0fef5c7c8287a29d346a484160b8d1f16462033243553116eb2eb400e 104888 mx-dockmaker_21.10_amd64.deb
+Files:
+ 787e1c9a57941fc79ba8aea2590bd519 1124 admin optional mx-dockmaker_21.10.dsc
+ 8198c0ea9d6d63ec18cbb619919fc122 75824 admin optional mx-dockmaker_21.10.tar.xz
+ abcac6a27da5d6548ad1b2e38acb1f8c 10748 admin optional mx-dockmaker_21.10_amd64.buildinfo
+ abac71eb3cfa79e9ee23f83fccb7983e 104888 admin optional mx-dockmaker_21.10_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmFrWEITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPJZB/9Y2PhuqawrGTRyxuBJ1mxaPxbXk5r7
+S/ljBhnmN4048iSpE6theknufZ00L05Mk0VOoshOx6NpWDgG7iDLWyBArnRMBp5V
+s4py21EhQhJ+BfzaIG76NO1Mwv8FXvugjxtzkkv3eYTq1q5Fj/lUsfNHE5fdj1U9
+LWmv+vcb4ULKsdI/zIbboyLanXWuDY/wsqmoMh3onckzoQRX1T/1ioc0gRVCm/Nl
+xV6iKjltyDoLFnlJLwU4wKF0VahXSkeH4DD1S2/y6mynp5dbmw4XofBzWJ1VCZuV
+2yY3YpzR5InkjQW5+VZex4UbdIT4CW5TYsW8pKSpmtWZU9bZt56pN4Zl
+=T8d3
+-----END PGP SIGNATURE-----
