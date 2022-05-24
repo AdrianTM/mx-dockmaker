@@ -58,6 +58,7 @@ public:
     void newDock();
     void parseFile(QFile &file);
     void resetAdd();
+    void setConnections();
     void setup(QString file = QString());
     void showApp(int i, int old_idx);
     void updateAppList(int idx);
@@ -70,25 +71,24 @@ public:
 public slots:
 
 private slots:
+    void buttonAbout_clicked();
+    void buttonAdd_clicked();
+    void buttonDelete_clicked();
+    void buttonHelp_clicked();
+    void buttonMoveLeft_clicked();
+    void buttonMoveRight_clicked();
+    void buttonNext_clicked();
+    void buttonPrev_clicked();
+    void buttonSave_clicked();
+    void buttonSelectApp_clicked();
+    void buttonSelectIcon_clicked();
+    void comboBgColor_currentTextChanged(const QString);
+    void comboBorderColor_currentTextChanged(const QString);
+    void comboSize_currentTextChanged(const QString);
     void itemChanged();
+    void lineEditCommand_textEdited(const QString);
     void mousePressEvent(QMouseEvent *event);
-
-    void on_buttonAbout_clicked();
-    void on_buttonAdd_clicked();
-    void on_buttonDelete_clicked();
-    void on_buttonHelp_clicked();
-    void on_buttonMoveLeft_clicked();
-    void on_buttonMoveRight_clicked();
-    void on_buttonNext_clicked();
-    void on_buttonPrev_clicked();
-    void on_buttonSave_clicked();
-    void on_buttonSelectApp_clicked();
-    void on_buttonSelectIcon_clicked();
-    void on_comboBgColor_currentIndexChanged(const QString);
-    void on_comboBorderColor_currentIndexChanged(const QString);
-    void on_comboSize_currentIndexChanged(const QString);
-    void on_lineEditCommand_textEdited(const QString);
-    void on_radioDesktop_toggled(bool checked);
+    void radioDesktop_toggled(bool checked);
 
 private:
     Ui::MainWindow *ui;
