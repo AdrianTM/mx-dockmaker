@@ -52,18 +52,15 @@ int main(int argc, char *argv[])
     }
 
     if (getuid() != 0) {
-
         QString file;
-        if (qApp->arguments().length() >= 2 && QFile::exists(qApp->arguments().at(1))) {
+        if (qApp->arguments().length() >= 2 && QFile::exists(qApp->arguments().at(1)))
             file = qApp->arguments().at(1);
-        }
         MainWindow w(nullptr, file);
         w.show();
         return a.exec();
     } else {
         QApplication::beep();
-        QMessageBox::critical(nullptr, QApplication::tr("Error"),
-                              QApplication::tr("You must run this program as normal user."));
+        QMessageBox::critical(nullptr, QObject::tr("Error"), QObject::tr("You must run this program as normal user."));
         return EXIT_FAILURE;
     }
 }
