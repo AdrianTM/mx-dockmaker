@@ -55,6 +55,7 @@ public:
     void displayIcon(const QString &app_name, int location);
     void editDock(const QString &file_arg = QString());
     void moveDock();
+    void moveIcon(int pos);
     void newDock();
     void parseFile(QFile &file);
     void resetAdd();
