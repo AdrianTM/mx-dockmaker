@@ -1,3 +1,9 @@
+mx-dockmaker (22.6) mx; urgency=medium
+
+  * Fix crash when adding a menu and not entering a menu name
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 15 Jun 2022 00:24:01 -0400
+
 mx-dockmaker (21.10) mx; urgency=medium
 
   * Fix About window title
