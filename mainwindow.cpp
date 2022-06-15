@@ -414,6 +414,25 @@ void MainWindow::moveDock()
     this->show();
 }
 
+// move icon: pos -1 one to left, +1 one to right
+void MainWindow::moveIcon(int pos)
+{
+    changed = true;
+    // swap instaed of swapItemAt and don't use Qt::ReturnByValue for pixmap to make it work in Buster
+    apps.swap(index, index + pos);
+    QPixmap map = *list_icons.at(index)->pixmap();
+    list_icons.at(index)->setPixmap(*list_icons.at(index + pos)->pixmap());
+    list_icons.at(index + pos)->setPixmap(map);
+    list_icons.at(index)->setStyleSheet(list_icons.at(index + pos)->styleSheet());
+
+    index += pos;
+    showApp(index, index - 1);
+    displayIcon(ui->buttonSelectApp->text(), index);
+    list_icons.at(index)->setStyleSheet(list_icons.at(index)->styleSheet() + "border-width: 10px;");
+
+    checkDoneEditing();
+}
+
 void MainWindow::parseFile(QFile& file)
 {
     blockComboSignals(true);
@@ -571,7 +590,7 @@ void MainWindow::buttonSave_clicked()
 
     QMessageBox::information(this, tr("Dock saved"), tr("The dock has been saved.\n\n"
                                                         "To edit the newly created dock please select 'Edit an existing dock'."));
-    QProcess::execute("pkill", {"wmalauncher"});
+    QProcess::execute(QStringLiteral("pkill"), {"wmalauncher"});
     QProcess::startDetached(file.fileName(), {});
     index = 0;
     apps.clear();
@@ -883,38 +902,12 @@ void MainWindow::buttonMoveLeft_clicked()
 {
     if (index == 0)
         return;
-    changed = true;
-
-    apps.swapItemsAt(index, index - 1);
-    QPixmap map = list_icons.at(index)->pixmap(Qt::ReturnByValue);
-    list_icons.at(index)->setPixmap(list_icons.at(index - 1)->pixmap(Qt::ReturnByValue));
-    list_icons.at(index - 1)->setPixmap(map);
-    list_icons.at(index)->setStyleSheet(list_icons.at(index - 1)->styleSheet());
-
-    --index;
-    showApp(index, index - 1);
-    displayIcon(ui->buttonSelectApp->text(), index);
-    list_icons.at(index)->setStyleSheet(list_icons.at(index)->styleSheet() + "border-width: 10px;");
-
-    checkDoneEditing();
+    moveIcon(-1);
 }
 
 void MainWindow::buttonMoveRight_clicked()
 {
     if (index == apps.size() - 1)
         return;
-    changed = true;
-
-    apps.swapItemsAt(index, index + 1);
-    QPixmap map = list_icons.at(index)->pixmap(Qt::ReturnByValue);
-    list_icons.at(index)->setPixmap(list_icons.at(index + 1)->pixmap(Qt::ReturnByValue));
-    list_icons.at(index + 1)->setPixmap(map);
-    list_icons.at(index)->setStyleSheet(list_icons.at(index + 1)->styleSheet());
-
-    ++index;
-    showApp(index, index - 1);
-    displayIcon(ui->buttonSelectApp->text(), index);
-    list_icons.at(index)->setStyleSheet(list_icons.at(index)->styleSheet() + "border-width: 10px;");
-
-    checkDoneEditing();
+    moveIcon(1);
 }
