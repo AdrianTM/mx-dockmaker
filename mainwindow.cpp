@@ -277,8 +277,6 @@ QString MainWindow::inputDockName()
                                          QLineEdit::Normal, QString(), &ok);
     if (ok && !text.isEmpty())
         return text;
-
-    setup();
     return QString();
 }
 
