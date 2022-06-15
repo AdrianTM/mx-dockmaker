@@ -1,7 +1,7 @@
 #include "picklocation.h"
 #include "ui_picklocation.h"
 
-PickLocation::PickLocation(QString location, QWidget *parent) :
+PickLocation::PickLocation(const QString &location, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::PickLocation)
 {

@@ -13,7 +13,7 @@ class PickLocation : public QDialog
     Q_OBJECT
 
 public:
-    explicit PickLocation(QString location, QWidget *parent = nullptr);
+    explicit PickLocation(const QString &location, QWidget *parent = nullptr);
     ~PickLocation();
     QString button;
 

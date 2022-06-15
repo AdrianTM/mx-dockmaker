@@ -33,7 +33,7 @@
 #include <cmd.h>
 #include <sys/stat.h>
 
-MainWindow::MainWindow(QWidget *parent, QString file)
+MainWindow::MainWindow(QWidget *parent, const QString &file)
     : QDialog(parent),
       ui(new Ui::MainWindow)
 {
@@ -46,6 +46,7 @@ MainWindow::MainWindow(QWidget *parent, QString file)
 
 MainWindow::~MainWindow()
 {
+    cmd.close();
     delete ui;
 }
 
@@ -59,12 +60,12 @@ bool MainWindow::isDockInMenu(const QString &file_name)
 void MainWindow::displayIcon(const QString &app_name, int location)
 {
     QString icon;
-    if (ui->buttonSelectApp->text().endsWith(".desktop")) {
+    if (ui->buttonSelectApp->text().endsWith(QLatin1String(".desktop"))) {
         QFile file("/usr/share/applications/" + app_name);
         if (file.open(QFile::Text | QFile::ReadOnly)) {
             QString text = file.readAll();
             file.close();
-            QRegularExpression re("^Icon=(.*)$", QRegularExpression::MultilineOption);
+            QRegularExpression re(QStringLiteral("^Icon=(.*)$"), QRegularExpression::MultilineOption);
             icon = re.match(text).captured(1);
         } else {
             qDebug() << "Could not open/find file " << file.fileName();
@@ -72,13 +73,13 @@ void MainWindow::displayIcon(const QString &app_name, int location)
     } else {
         icon = ui->buttonSelectIcon->text();
     }
-    const int width = ui->comboSize->currentText().section("x", 0, 0).toInt();
+    const int width = ui->comboSize->currentText().section(QStringLiteral("x"), 0, 0).toInt();
     const int height = width;
     QSize size(width, height);
     const QPixmap pix = findIcon(icon, size).scaled(size);
     if (location == list_icons.size()) {
         list_icons << new QLabel(this);
-        ui->icons->addWidget(list_icons.last());
+        ui->icons->addWidget(list_icons.constLast());
     }
     list_icons.at(location)->setPixmap(pix);
     list_icons.at(location)->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -110,11 +111,10 @@ bool MainWindow::checkDoneEditing()
 }
 
 // setup versious items first time program runs
-void MainWindow::setup(QString file)
+void MainWindow::setup(const QString &file)
 {
     changed = false;
-    connect(qApp, &QApplication::aboutToQuit, this, &MainWindow::cleanup);
-    this->setWindowTitle("MX Dockmaker");
+    this->setWindowTitle(QStringLiteral("MX Dockmaker"));
     ui->labelUsage->setText(tr("1. Add applications to the dock one at a time\n"
                                "2. Select a .desktop file or enter a command for the application you want\n"
                                "3. Select icon attributes for size, background (black is standard) and border\n"
@@ -126,7 +126,7 @@ void MainWindow::setup(QString file)
     while (ui->icons->layout()->count() > 0)
         delete ui->icons->layout()->itemAt(0)->widget();
 
-    ui->comboSize->setCurrentIndex(ui->comboSize->findText("48x48"));
+    ui->comboSize->setCurrentIndex(ui->comboSize->findText(QStringLiteral("48x48")));
 
     // "apricot", "mint" removed because not available in Qt, might add back if needed
     const QStringList color_list({ "beige", "black", "blue", "brown", "cyan", "gray", "green",
@@ -139,12 +139,12 @@ void MainWindow::setup(QString file)
     ui->comboBorderColor->addItems(color_list);
 
     // Write configs if not there
-    settings.setValue("BackgroundColor", settings.value("BackgroundColor", "black").toString());
-    settings.setValue("FrameColor", settings.value("FrameColor", "white").toString());
-    settings.setValue("Size", settings.value("Size", "48x48").toString());
+    settings.setValue(QStringLiteral("BackgroundColor"), settings.value(QStringLiteral("BackgroundColor"), "black").toString());
+    settings.setValue(QStringLiteral("FrameColor"), settings.value(QStringLiteral("FrameColor"), "white").toString());
+    settings.setValue(QStringLiteral("Size"), settings.value(QStringLiteral("Size"), "48x48").toString());
 
-    const QString bg_color = settings.value("BackgroundColor", "black").toString();
-    const QString border_color = settings.value("FrameColor", "white").toString();
+    const QString bg_color = settings.value(QStringLiteral("BackgroundColor"), "black").toString();
+    const QString border_color = settings.value(QStringLiteral("FrameColor"), "white").toString();
 
     ui->comboBgColor->setCurrentIndex(ui->comboBgColor->findText(bg_color));
     ui->comboBorderColor->setCurrentIndex(ui->comboBorderColor->findText(border_color));
@@ -156,7 +156,7 @@ void MainWindow::setup(QString file)
         return;
     }
 
-    const auto mbox = new QMessageBox(nullptr);
+    auto *mbox = new QMessageBox(nullptr);
     mbox->setText(tr("This tool allows you to create a new dock with one or more applications. "
                      "You can also edit or delete a dock created earlier."));
     mbox->setIcon(QMessageBox::Question);
@@ -193,7 +193,7 @@ void MainWindow::setup(QString file)
 }
 
 // Find icon file by name
-QPixmap MainWindow::findIcon(QString icon_name, const QSize &size)
+QPixmap MainWindow::findIcon(QString icon_name, QSize size)
 {
     if (icon_name.isEmpty())
         return QPixmap();
@@ -201,10 +201,10 @@ QPixmap MainWindow::findIcon(QString icon_name, const QSize &size)
         return QIcon(icon_name).pixmap(size);
 
     QString search_term = icon_name;
-    if (!icon_name.endsWith(".png") && !icon_name.endsWith(".svg") && !icon_name.endsWith(".xpm"))
+    if (!icon_name.endsWith(QLatin1String(".png")) && !icon_name.endsWith(QLatin1String(".svg")) && !icon_name.endsWith(QLatin1String(".xpm")))
         search_term = icon_name + ".*";
 
-    icon_name.remove(QRegularExpression("\\.png$|\\.svg$|\\.xpm$"));
+    icon_name.remove(QRegularExpression(QStringLiteral(R"(\.png$|\.svg$|\.xpm$")")));
 
     // return the icon from the theme if it exists
     if (!QIcon::fromTheme(icon_name).isNull())
@@ -228,10 +228,10 @@ QPixmap MainWindow::findIcon(QString icon_name, const QSize &size)
     }
 
     // Search recursive
-    search_paths.append("/usr/share/icons/hicolor/48x48/");
-    search_paths.append("/usr/share/icons/hicolor/");
-    search_paths.append("/usr/share/icons/");
-    const QString out = cmd.getCmdOut("find " + search_paths.join(" ") + " -iname \"" + search_term
+    search_paths.append(QStringLiteral("/usr/share/icons/hicolor/48x48/"));
+    search_paths.append(QStringLiteral("/usr/share/icons/hicolor/"));
+    search_paths.append(QStringLiteral("/usr/share/icons/"));
+    const QString out = cmd.getCmdOut("find " + search_paths.join(QStringLiteral(" ")) + " -iname \"" + search_term
             + "\" -print -quit 2>/dev/null", true);
     return (!out.isEmpty()) ? QIcon(out).pixmap(size) : QPixmap();
 }
@@ -239,10 +239,10 @@ QPixmap MainWindow::findIcon(QString icon_name, const QSize &size)
 QString MainWindow::getDockName(const QString& file_name)
 {
     const QRegularExpression re_file(".*" + QFileInfo(file_name).fileName());
-    const QRegularExpression re_name("\\(.*\\)");
+    const QRegularExpression re_name(QStringLiteral("\\(.*\\)"));
 
     // check if dock name is in /usr/share...
-    QFile file("/usr/share/mxflux/menu/appearance");
+    QFile file(QStringLiteral("/usr/share/mxflux/menu/appearance"));
 
     if (file.open(QFile::Text | QFile::ReadOnly)) {
         QString text = file.readAll();
@@ -272,8 +272,8 @@ QString MainWindow::getDockName(const QString& file_name)
 
 QString MainWindow::inputDockName()
 {
-    bool ok;
-    const QString text = QInputDialog::getText(nullptr, tr("Dock name"), tr("Enter the name to show in the Menu:"),
+    bool ok = false;
+    QString text = QInputDialog::getText(nullptr, tr("Dock name"), tr("Enter the name to show in the Menu:"),
                                          QLineEdit::Normal, QString(), &ok);
     if (ok && !text.isEmpty())
         return text;
@@ -284,7 +284,7 @@ QString MainWindow::inputDockName()
 
 QString MainWindow::pickSlitLocation()
 {
-    const auto pick = new PickLocation(slit_location, this);
+    auto *const pick = new PickLocation(slit_location, this);
     pick->exec();
     return pick->button;
 }
@@ -320,13 +320,8 @@ void MainWindow::updateAppList(int idx)
 
 void MainWindow::addDockToMenu(const QString& file_name)
 {
-    cmd.run("sed -i '/\\[submenu\\] (Docks)/a \\\\t\\t\\t[exec] (" + dock_name + ") {" + file_name + "}' " +
+    cmd.run(R"(sed -i '/\[submenu\] (Docks)/a \\t\t\t[exec] ()" + dock_name + ") {" + file_name + "}' " +
             QDir::homePath() + "/.fluxbox/submenus/appearance", true);
-}
-
-// cleanup environment when window is closed
-void MainWindow::cleanup()
-{
 }
 
 void MainWindow::deleteDock()
@@ -338,7 +333,7 @@ void MainWindow::deleteDock()
                                                      tr("&Delete"), tr("&Cancel")) == 0) {
         QFile::remove(selected);
         cmd.run("sed -ni '\\|" + selected + "|!p' " + QDir::homePath() + "/.fluxbox/submenus/appearance", true);
-        cmd.run("pkill wmalauncher", true);
+        cmd.run(QStringLiteral("pkill wmalauncher"), true);
     }
     this->show();
 }
@@ -379,7 +374,7 @@ void MainWindow::moveDock()
     file.close();
 
     // find location
-    QRegularExpression re(possible_locations.join("|"));
+    QRegularExpression re(possible_locations.join(QStringLiteral("|")));
     QRegularExpressionMatch match = re.match(text);
     if (match.hasMatch())
         slit_location = match.captured();
@@ -388,7 +383,7 @@ void MainWindow::moveDock()
     slit_location = pickSlitLocation();
 
     // replace string
-    re.setPattern("^sed -i.*");
+    re.setPattern(QStringLiteral("^sed -i.*"));
     re.setPatternOptions(QRegularExpression::MultilineOption);
     const QString new_line = "sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: "
         + slit_location + "/' $HOME/.fluxbox/init";
@@ -406,16 +401,15 @@ void MainWindow::moveDock()
     out << "pkill wmalauncher\n\n";
 
     // remove if already existent
-    text.remove("#!/bin/bash\n\n").remove("#!/bin/bash\n").remove("pkill wmalauncher\n\n").remove("pkill wmalauncher\n");
+    text.remove(QStringLiteral("#!/bin/bash\n\n")).remove(QStringLiteral("#!/bin/bash\n")).remove(QStringLiteral("pkill wmalauncher\n\n")).remove(QStringLiteral("pkill wmalauncher\n"));
 
     // if location line not found add it at the beginning
     if (!re.match(text).hasMatch()) {
         out << "#set up slit location\n" + new_line + "\n";
-        out << text.remove("#set up slit location\n");
+        out << text.remove(QStringLiteral("#set up slit location\n"));
     } else {
         out << text.replace(re, new_line);
     }
-
     file.close();
     cmd.run("pkill wmalauncher;" + file.fileName() + "&disown", true);
     setup();
@@ -439,7 +433,7 @@ void MainWindow::parseFile(QFile& file)
     while (!file.atEnd()) {
         line = file.readLine().trimmed();
 
-        if (line.startsWith("sed -i")) { // assume it's a slit relocation sed command
+        if (line.startsWith(QLatin1String("sed -i"))) { // assume it's a slit relocation sed command
             for (const QString& location : possible_locations) {
                 if (line.contains(location)) {
                     slit_location = location;
@@ -448,47 +442,47 @@ void MainWindow::parseFile(QFile& file)
             }
             continue;
         }
-        if (line.startsWith("wmalauncher")) {
+        if (line.startsWith(QLatin1String("wmalauncher"))) {
             ui->buttonSelectApp->setProperty("extra_options", QString());
-            line.remove(QRegularExpression("^wmalauncher"));
-            line.remove(QRegularExpression("\\s*&.*sleep.*$"));
+            line.remove(QRegularExpression(QStringLiteral("^wmalauncher")));
+            line.remove(QRegularExpression(QStringLiteral("\\s*&.*sleep.*$")));
 
-            options = line.split(QRegularExpression(" --| -"));
+            options = line.split(QRegularExpression(QStringLiteral(" --| -")));
             options.removeAll(QString());
 
             for (const QString& option : qAsConst(options)) {
-                QStringList tokens = option.split(" ");
-                if ((tokens.at(0) == "d") | (tokens.at(0) == "desktop-file")) {
+                QStringList tokens = option.split(QStringLiteral(" "));
+                if (tokens.at(0) == QLatin1String("d") || tokens.at(0) == QLatin1String("desktop-file")) {
                     ui->radioDesktop->setChecked(true);
                     if (tokens.size() > 1)
                         ui->buttonSelectApp->setText(tokens.at(1));
                     ui->buttonSelectIcon->setToolTip(QString());
-                    ui->buttonSelectIcon->setStyleSheet("text-align: center; padding: 3px;");
-                } else if ((tokens.at(0) == "c") | (tokens.at(0) == "command")) {
+                    ui->buttonSelectIcon->setStyleSheet(QStringLiteral("text-align: center; padding: 3px;"));
+                } else if (tokens.at(0) == QLatin1String("c") || tokens.at(0) == QLatin1String("command")) {
                     ui->radioCommand->setChecked(true);
                     if (tokens.size() > 1)
-                        ui->lineEditCommand->setText(tokens.mid(1).join(" ").trimmed());
-                    ui->buttonSelectIcon->setStyleSheet("text-align: right; padding: 3px;");
-                } else if ((tokens.at(0) == "i") | (tokens.at(0) == "icon")) {
+                        ui->lineEditCommand->setText(tokens.mid(1).join(QStringLiteral(" ")).trimmed());
+                    ui->buttonSelectIcon->setStyleSheet(QStringLiteral("text-align: right; padding: 3px;"));
+                } else if (tokens.at(0) == QLatin1String("i") || tokens.at(0) == QLatin1String("icon")) {
                     if (tokens.size() > 1) {
-                        ui->buttonSelectIcon->setText(tokens.mid(1).join(" "));
-                        ui->buttonSelectIcon->setToolTip(tokens.mid(1).join(" "));
+                        ui->buttonSelectIcon->setText(tokens.mid(1).join(QStringLiteral(" ")));
+                        ui->buttonSelectIcon->setToolTip(tokens.mid(1).join(QStringLiteral(" ")));
                     }
-                } else if ((tokens.at(0) == "k") | (tokens.at(0) == "background-color")) {
+                } else if (tokens.at(0) == QLatin1String("k") || tokens.at(0) == QLatin1String("background-color")) {
                     if (tokens.size() > 1)
                         ui->comboBgColor->setCurrentIndex(ui->comboBgColor->findText(tokens.at(1)));
-                } else if ((tokens.at(0) == "b") | (tokens.at(0) == "border-color")) {
+                } else if (tokens.at(0) == QLatin1String("b") || tokens.at(0) == QLatin1String("border-color")) {
                     if (tokens.size() > 1)
                         ui->comboBorderColor->setCurrentIndex(ui->comboBorderColor->findText(tokens.at(1)));
-                } else if ((tokens.at(0) == "w") | (tokens.at(0) == "window-size")) {
+                } else if (tokens.at(0) == QLatin1String("w") || tokens.at(0) == QLatin1String("window-size")) {
                     if (tokens.size() > 1)
                         ui->comboSize->setCurrentIndex(ui->comboSize->findText(tokens.at(1)
                             + "x" + tokens.at(1)));
-                } else if ((tokens.at(0) == "x") | (tokens.at(0) == "exit-on-right-click")) {
+                } else if (tokens.at(0) == QLatin1String("x") || tokens.at(0) == QLatin1String("exit-on-right-click")) {
                     // not used right now
                 } else { // other not handled options, add them as a propriety to the app button
                     ui->buttonSelectApp->setProperty("extra_options", ui->buttonSelectApp->property("extra_options").toString()
-                                                     + ((tokens.at(0).length() > 1) ? " --" : " -") + tokens.join(" "));
+                                                     + ((tokens.at(0).length() > 1) ? " --" : " -") + tokens.join(QStringLiteral(" ")));
                 }
             }
             updateAppList(index);
@@ -503,16 +497,13 @@ void MainWindow::parseFile(QFile& file)
     parsing = false;
 }
 
-// Next button clicked
 void MainWindow::buttonSave_clicked()
 {
     slit_location = pickSlitLocation();
 
     // create "~/.fluxbox/scripts" if it doesn't exist
-    if (!QFileInfo::exists(QDir::homePath() + "/.fluxbox/scripts")) {
-        QDir dir;
-        dir.mkpath(QDir::homePath() + "/.fluxbox/scripts");
-    }
+    if (!QFileInfo::exists(QDir::homePath() + "/.fluxbox/scripts"))
+        QDir().mkpath(QDir::homePath() + "/.fluxbox/scripts");
 
     bool new_file = false;
     if (!QFileInfo::exists(file_name) || QMessageBox::No == QMessageBox::question(this, tr("Overwrite?"),
@@ -521,8 +512,8 @@ void MainWindow::buttonSave_clicked()
                                                  + "/.fluxbox/scripts", tr("Dock Files (*.mxdk);;All Files (*.*)"));
         if (file_name.isEmpty())
             return;
-        if (!file_name.endsWith(".mxdk"))
-            file_name += ".mxdk";
+        if (!file_name.endsWith(QLatin1String(".mxdk")))
+            file_name += QLatin1String(".mxdk");
         new_file = true;
     }
     QFile file(file_name);
@@ -532,7 +523,6 @@ void MainWindow::buttonSave_clicked()
         return;
     }
     QTextStream out(&file);
-
     if (file_content.isEmpty()) {
         // build and write string
         out << "#!/bin/bash\n\n";
@@ -548,32 +538,33 @@ void MainWindow::buttonSave_clicked()
         out << "pkill wmalauncher\n\n";
 
         // remove if already existent
-        file_content.remove("#!/bin/bash\n\n").remove("#!/bin/bash\n").remove("pkill wmalauncher\n\n").remove("pkill wmalauncher\n");
-
-        QRegularExpression re("^sed -i.*", QRegularExpression::MultilineOption);
+        file_content.remove(QStringLiteral("#!/bin/bash\n\n")).remove(QStringLiteral("#!/bin/bash\n")).remove(QStringLiteral("pkill wmalauncher\n\n")).remove(QStringLiteral("pkill wmalauncher\n"));
+        QRegularExpression re(QStringLiteral("^sed -i.*"), QRegularExpression::MultilineOption);
         QString new_line = "sed -i 's/^session.screen0.slit.placement:.*/session.screen0.slit.placement: "
             + slit_location + "/' $HOME/.fluxbox/init";
 
         // if location line not found add it at the beginning
         if (!re.match(file_content).hasMatch()) {
             out << "#set up slit location\n" + new_line + "\n";
-            out << file_content.remove("#set up slit location\n");
+            out << file_content.remove(QStringLiteral("#set up slit location\n"));
         } else {
             out << file_content.replace(re, new_line);
         }
     }
-
-    for (int i = 0; i < apps.size(); ++i) {
-        QString command = (apps.at(i).at(0).endsWith(".desktop")) ? "--desktop-file " + apps.at(i).at(0)
-                                                                  : "--command " + apps.at(i).at(1) + " --icon " + apps.at(i).at(2);
-        out << "wmalauncher " + command + " --background-color " + apps.at(i).at(4) + " --border-color " + apps.at(i).at(5)
-               + " --window-size " + apps.at(i).at(3).section("x", 0, 0) + apps.at(i).at(6) + "& sleep 0.1\n";
+    for (const auto &app : qAsConst(apps)) {
+        QString command = (app.at(Info::App).endsWith(QLatin1String(".desktop")))
+                ? "--desktop-file " + app.at(Info::App)
+                : "--command " + app.at(Info::Command) + " --icon " + app.at(Info::Command);
+        out << "wmalauncher " + command + " --background-color " + app.at(Info::BgColor) + " --border-color " +
+               app.at(Info::BorderColor) + " --window-size " +
+               app.at(Info::Size).section(QStringLiteral("x"), 0, 0) + app.at(Info::Extra) + "& sleep 0.1\n";
     }
     file.close();
-    chmod(file_name.toUtf8(), 00744);
+    QFile::setPermissions(file_name, QFlag(0x744));
 
     if (dock_name.isEmpty() || new_file)
         dock_name = inputDockName();
+
     if (dock_name.isEmpty())
         dock_name = QFileInfo(file).baseName();
 
@@ -582,9 +573,8 @@ void MainWindow::buttonSave_clicked()
 
     QMessageBox::information(this, tr("Dock saved"), tr("The dock has been saved.\n\n"
                                                         "To edit the newly created dock please select 'Edit an existing dock'."));
-
-    cmd.run("pkill wmalauncher;" + file.fileName() + "&disown", true);
-
+    QProcess::execute("pkill", {"wmalauncher"});
+    QProcess::startDetached(file.fileName(), {});
     index = 0;
     apps.clear();
     list_icons.clear();
@@ -599,12 +589,12 @@ void MainWindow::buttonAbout_clicked()
 {
     this->hide();
     displayAboutMsgBox(tr("About %1").arg(tr("MX Dockmaker")),
-        "<p align=\"center\"><b><h2>MX Dockmaker</h2></b></p><p align=\"center\">" + tr("Version: ") + VERSION
+        R"(<p align="center"><b><h2>MX Dockmaker</h2></b></p><p align="center">)" + tr("Version: ") + VERSION
                        + "</p><p align=\"center\"><h3>" + tr("Description goes here")
                        + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p>"
                                                                                                                                                                                 "<p align=\"center\">"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        "/usr/share/doc/mx-dockmaker/license.html", tr("%1 License").arg(this->windowTitle()), false);
+        QStringLiteral("/usr/share/doc/mx-dockmaker/license.html"), tr("%1 License").arg(this->windowTitle()), false);
 
     this->show();
 }
@@ -612,21 +602,21 @@ void MainWindow::buttonAbout_clicked()
 // Help button clicked
 void MainWindow::buttonHelp_clicked()
 {
-    const QString url = "https://mxlinux.org/wiki/help-files/help-mx-dockmaker/";
+    const QString url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-mx-dockmaker/");
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()), false);
 }
 
-void MainWindow::comboSize_currentTextChanged(const QString)
+void MainWindow::comboSize_currentTextChanged()
 {
     itemChanged();
 }
 
-void MainWindow::comboBgColor_currentTextChanged(const QString)
+void MainWindow::comboBgColor_currentTextChanged()
 {
     itemChanged();
 }
 
-void MainWindow::comboBorderColor_currentTextChanged(const QString)
+void MainWindow::comboBorderColor_currentTextChanged()
 {
     itemChanged();
 }
@@ -672,9 +662,9 @@ void MainWindow::resetAdd()
     emit ui->radioDesktop->toggled(true);
     ui->buttonAdd->setDisabled(true);
 
-    const QString bg_color = settings.value("BackgroundColor", "black").toString();
-    const QString border_color = settings.value("FrameColor", "white").toString();
-    const QString size = settings.value("Size", "48x48").toString();
+    const QString bg_color = settings.value(QStringLiteral("BackgroundColor"), "black").toString();
+    const QString border_color = settings.value(QStringLiteral("FrameColor"), "white").toString();
+    const QString size = settings.value(QStringLiteral("Size"), "48x48").toString();
 
     blockComboSignals(true);
     ui->comboSize->setCurrentIndex(ui->comboSize->findText(size));
@@ -683,7 +673,7 @@ void MainWindow::resetAdd()
     blockComboSignals(false);
 
     ui->buttonSelectIcon->setToolTip(QString());
-    ui->buttonSelectIcon->setStyleSheet("text-align: center; padding: 3px;");
+    ui->buttonSelectIcon->setStyleSheet(QStringLiteral("text-align: center; padding: 3px;"));
 }
 
 void MainWindow::setConnections()
@@ -711,35 +701,35 @@ void MainWindow::showApp(int idx, int old_idx)
     ui->radioCommand->blockSignals(true);
     ui->radioDesktop->blockSignals(true);
 
-    ui->buttonSelectApp->setText(apps.at(idx).at(0));
-    if (apps.at(idx).at(0).endsWith(".desktop") || apps.at(idx).at(1).isEmpty()) {
+    ui->buttonSelectApp->setText(apps.at(idx).at(Info::App));
+    if (apps.at(idx).at(0).endsWith(QLatin1String(".desktop")) || apps.at(idx).at(1).isEmpty()) {
         ui->radioDesktop->setChecked(true);
         ui->lineEditCommand->clear();
         ui->buttonSelectApp->setEnabled(true);
         ui->lineEditCommand->setEnabled(false);
         ui->buttonSelectIcon->setEnabled(false);
         ui->buttonSelectIcon->setText(tr("Select icon..."));
-        ui->buttonSelectIcon->setStyleSheet("text-align: center; padding: 3px;");
+        ui->buttonSelectIcon->setStyleSheet(QStringLiteral("text-align: center; padding: 3px;"));
     } else {
         ui->radioCommand->setChecked(true);
         ui->buttonSelectApp->setText(tr("Select..."));
         ui->buttonSelectApp->setEnabled(false);
         ui->lineEditCommand->setEnabled(true);
         ui->buttonSelectIcon->setEnabled(true);
-        ui->lineEditCommand->setText(apps.at(idx).at(1));
-        ui->buttonSelectIcon->setText(apps.at(idx).at(2));
-        ui->buttonSelectIcon->setToolTip(apps.at(idx).at(2));
-        ui->buttonSelectIcon->setStyleSheet("text-align: right; padding: 3px;");
+        ui->lineEditCommand->setText(apps.at(idx).at(Info::Command));
+        ui->buttonSelectIcon->setText(apps.at(idx).at(Info::Icon));
+        ui->buttonSelectIcon->setToolTip(apps.at(idx).at(Info::Icon));
+        ui->buttonSelectIcon->setStyleSheet(QStringLiteral("text-align: right; padding: 3px;"));
     }
 
     ui->radioCommand->blockSignals(false);
     ui->radioDesktop->blockSignals(false);
 
     blockComboSignals(true);
-    ui->comboSize->setCurrentIndex(ui->comboSize->findText(apps.at(idx).at(3)));
-    ui->comboBgColor->setCurrentIndex(ui->comboBgColor->findText(apps.at(idx).at(4)));
-    ui->comboBorderColor->setCurrentIndex(ui->comboBorderColor->findText(apps.at(idx).at(5)));
-    ui->buttonSelectApp->setProperty("extra_options", apps.at(idx).at(6));
+    ui->comboSize->setCurrentIndex(ui->comboSize->findText(apps.at(idx).at(Info::Size)));
+    ui->comboBgColor->setCurrentIndex(ui->comboBgColor->findText(apps.at(idx).at(Info::BgColor)));
+    ui->comboBorderColor->setCurrentIndex(ui->comboBorderColor->findText(apps.at(idx).at(Info::BorderColor)));
+    ui->buttonSelectApp->setProperty("extra_options", apps.at(idx).at(Info::Extra));
     blockComboSignals(false);
 
     // set buttons
@@ -757,7 +747,7 @@ void MainWindow::showApp(int idx, int old_idx)
 
 void MainWindow::buttonSelectApp_clicked()
 {
-    const QString selected = QFileDialog::getOpenFileName(nullptr, tr("Select .desktop file"), "/usr/share/applications",
+    const QString selected = QFileDialog::getOpenFileName(nullptr, tr("Select .desktop file"), QStringLiteral("/usr/share/applications"),
         tr("Desktop Files (*.desktop)"));
     const QString file = QFileInfo(selected).fileName();
     if (!file.isEmpty()) {
@@ -769,7 +759,7 @@ void MainWindow::buttonSelectApp_clicked()
     }
 }
 
-void MainWindow::editDock(QString file_arg)
+void MainWindow::editDock(const QString &file_arg)
 {
     this->hide();
 
@@ -829,7 +819,7 @@ void MainWindow::radioDesktop_toggled(bool checked)
     ui->buttonSelectIcon->setEnabled(!checked);
     if (checked) {
         ui->buttonSelectIcon->setText(tr("Select icon..."));
-        ui->buttonSelectIcon->setStyleSheet("text-align: center; padding: 3px;");
+        ui->buttonSelectIcon->setStyleSheet(QStringLiteral("text-align: center; padding: 3px;"));
     } else {
         ui->buttonSelectApp->setText(tr("Select..."));
     }
@@ -845,7 +835,7 @@ void MainWindow::buttonSelectIcon_clicked()
         QFileInfo f_info(ui->buttonSelectIcon->text());
         default_folder = f_info.canonicalPath();
     } else {
-        default_folder = "/usr/share/icons/";
+        default_folder = QStringLiteral("/usr/share/icons/");
     }
     QString selected = QFileDialog::getOpenFileName(nullptr, tr("Select icon"), default_folder,
         tr("Icons (*.png *.jpg *.bmp *.xpm *.svg)"));
@@ -853,7 +843,7 @@ void MainWindow::buttonSelectIcon_clicked()
     if (!file.isEmpty()) {
         ui->buttonSelectIcon->setText(selected);
         ui->buttonSelectIcon->setToolTip(selected);
-        ui->buttonSelectIcon->setStyleSheet("text-align: right; padding: 3px;");
+        ui->buttonSelectIcon->setStyleSheet(QStringLiteral("text-align: right; padding: 3px;"));
         updateAppList(index);
         displayIcon(ui->buttonSelectIcon->text(), index);
         list_icons.at(index)->setStyleSheet(list_icons.at(index)->styleSheet() + "border-width: 10px;");
@@ -862,7 +852,7 @@ void MainWindow::buttonSelectIcon_clicked()
         checkDoneEditing();
 }
 
-void MainWindow::lineEditCommand_textEdited(const QString)
+void MainWindow::lineEditCommand_textEdited()
 {
     ui->buttonSave->setDisabled(ui->buttonNext->isEnabled());
     if (ui->buttonSelectIcon->text() != tr("Select icon...")) {
