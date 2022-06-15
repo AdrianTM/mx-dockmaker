@@ -21,9 +21,10 @@
  **********************************************************************/
 
 #include <QApplication>
-#include <QTranslator>
-#include <QLocale>
 #include <QIcon>
+#include <QLocale>
+#include <QProcess>
+#include <QTranslator>
 
 #include "mainwindow.h"
 #include <unistd.h>
@@ -33,19 +34,19 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon("/usr/share/icons/hicolor/192x192/apps/mx-dockmaker.png"));
-    a.setApplicationName("mx-dockmaker");
-    a.setOrganizationName("MX-Linux");
+    a.setApplicationName(QStringLiteral("mx-dockmaker"));
+    a.setOrganizationName(QStringLiteral("MX-Linux"));
 
     QTranslator qtTran;
-    qtTran.load(QString("qt_") + QLocale::system().name());
+    qtTran.load(QStringLiteral("qt_") + QLocale::system().name());
     a.installTranslator(&qtTran);
 
     QTranslator appTran;
-    appTran.load(QString("mx-dockmaker_") + QLocale::system().name(), "/usr/share/mx-dockmaker/locale");
+    appTran.load(QStringLiteral("mx-dockmaker_") + QLocale::system().name(), QStringLiteral("/usr/share/mx-dockmaker/locale"));
     a.installTranslator(&appTran);
 
     // root guard
-    if (system("logname |grep -q ^root$") == 0) {
+    if (QProcess::execute("/bin/bash", {"-c", "logname |grep -q ^root$"}) == 0) {
         QMessageBox::critical(nullptr, QObject::tr("Error"),
                               QObject::tr("You seem to be logged in as root, please log out and log in as normal user to use this program."));
         exit(EXIT_FAILURE);

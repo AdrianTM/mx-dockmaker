@@ -42,29 +42,29 @@ class MainWindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr, QString file = QString());
+    explicit MainWindow(QWidget *parent = nullptr, const QString &file = QString());
     ~MainWindow();
 
+    enum Info {App, Command, Icon, Size, BgColor, BorderColor, Extra};
     bool checkDoneEditing();
     bool isDockInMenu(const QString &file_name);
 
     void addDockToMenu(const QString &file_name);
-    void blockComboSignals(bool enable);
-    void cleanup();
+    void blockComboSignals(bool block);
     void deleteDock();
     void displayIcon(const QString &app_name, int location);
-    void editDock(QString file_arg = QString());
+    void editDock(const QString &file_arg = QString());
     void moveDock();
     void newDock();
     void parseFile(QFile &file);
     void resetAdd();
     void setConnections();
-    void setup(QString file = QString());
+    void setup(const QString &file = QString());
     void showApp(int i, int old_idx);
     void updateAppList(int idx);
 
-    QPixmap findIcon(QString icon_name, const QSize &size);
-    QString getDockName(const QString &file_name);
+    QPixmap findIcon(QString icon_name, QSize size);
+    static QString getDockName(const QString &file_name);
     QString inputDockName();
     QString pickSlitLocation();
 
@@ -82,11 +82,11 @@ private slots:
     void buttonSave_clicked();
     void buttonSelectApp_clicked();
     void buttonSelectIcon_clicked();
-    void comboBgColor_currentTextChanged(const QString);
-    void comboBorderColor_currentTextChanged(const QString);
-    void comboSize_currentTextChanged(const QString);
+    void comboBgColor_currentTextChanged();
+    void comboBorderColor_currentTextChanged();
+    void comboSize_currentTextChanged();
     void itemChanged();
-    void lineEditCommand_textEdited(const QString);
+    void lineEditCommand_textEdited();
     void mousePressEvent(QMouseEvent *event);
     void radioDesktop_toggled(bool checked);
 
