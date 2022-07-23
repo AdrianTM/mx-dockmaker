@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 23 Jul 2022 11:25:30 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: source amd64
+Version: 22.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-dockmaker - mx-dockmaker
+Changes:
+ mx-dockmaker (22.7) mx; urgency=medium
+ .
+   * translation refresh
+Checksums-Sha1:
+ 7a7f7e7ab32db5874790145a222649cf6014593c 561 mx-dockmaker_22.7.dsc
+ 1c3fcc81a5cf5b722ee8e821737dae8fe3f7e563 380216 mx-dockmaker_22.7.tar.xz
+ 9270b5fd5c1c30be4a05482a06de081006f6b8ba 10475 mx-dockmaker_22.7_amd64.buildinfo
+ f8fbec4dceea9c8b0f5d7a6c6cb8c8277d93db6f 105960 mx-dockmaker_22.7_amd64.deb
+Checksums-Sha256:
+ 4259363d5bc306589be689227490b1027fec6589a75387302aa1a14f6e688046 561 mx-dockmaker_22.7.dsc
+ a7883f4d0e455b34b5f0f376c2bf7bdfc8fb17d120ed6a9238470873214ccfa2 380216 mx-dockmaker_22.7.tar.xz
+ 7e49b7e777de904cc121603b9b079c10fc8d5bc016e8384996f6bb0cd8028a1b 10475 mx-dockmaker_22.7_amd64.buildinfo
+ 796fef64d92d65797361008ef1ed3f06c66fe34ab506881c94872d53ae4efcc9 105960 mx-dockmaker_22.7_amd64.deb
+Files:
+ cf3a5c06bf13e8b109bf660f3820b15f 561 admin optional mx-dockmaker_22.7.dsc
+ 5d2da871cb6f8e3e573e84534b017b3a 380216 admin optional mx-dockmaker_22.7.tar.xz
+ d45ac2d530300ded2540da2652dc624b 10475 admin optional mx-dockmaker_22.7_amd64.buildinfo
+ 81e404165f7ba159a2ab125345844aff 105960 admin optional mx-dockmaker_22.7_amd64.deb
