@@ -44,7 +44,7 @@
     <message>
         <location filename="mainwindow.ui" line="154"/>
         <source>Size</source>
-        <translation type="unfinished"/>
+        <translation>Grootte</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="161"/>
@@ -54,7 +54,7 @@
     <message>
         <location filename="mainwindow.ui" line="379"/>
         <source>Back</source>
-        <translation type="unfinished"/>
+        <translation>Terug</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="184"/>
@@ -89,7 +89,7 @@
     <message>
         <location filename="mainwindow.ui" line="439"/>
         <source>Display help </source>
-        <translation type="unfinished"/>
+        <translation>Toon help</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="442"/>
@@ -99,37 +99,37 @@
     <message>
         <location filename="mainwindow.ui" line="449"/>
         <source>Alt+H</source>
-        <translation type="unfinished"/>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="478"/>
         <source>About this application</source>
-        <translation type="unfinished"/>
+        <translation>Over deze applicatie</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="481"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>Over...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="488"/>
         <source>Alt+B</source>
-        <translation type="unfinished"/>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="520"/>
         <source>Quit application</source>
-        <translation type="unfinished"/>
+        <translation>Verlaat de applicatie</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="523"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Sluiten</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="530"/>
         <source>Alt+N</source>
-        <translation type="unfinished"/>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="571"/>
@@ -169,7 +169,7 @@
     <message>
         <location filename="mainwindow.cpp" line="140"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sluiten</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="141"/>
@@ -225,7 +225,7 @@
     <message>
         <location filename="mainwindow.ui" line="353"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>Volgende</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="320"/>
@@ -277,12 +277,12 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
     <message>
         <location filename="mainwindow.cpp" line="511"/>
         <source>About %1</source>
-        <translation type="unfinished"/>
+        <translation>Over %1</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="513"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>Versie:</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="514"/>
@@ -292,17 +292,17 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
     <message>
         <location filename="mainwindow.cpp" line="516"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="517"/>
         <source>%1 License</source>
-        <translation type="unfinished"/>
+        <translation>%1 Licentie</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="526"/>
         <source>%1 Help</source>
-        <translation type="unfinished"/>
+        <translation>%1 Help</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="638"/>
@@ -359,7 +359,7 @@ Creating a new dock instead.</source>
     <message>
         <location filename="picklocation.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished"/>
+        <translation>Dialoog</translation>
     </message>
     <message>
         <location filename="picklocation.ui" line="23"/>
@@ -437,13 +437,13 @@ Creating a new dock instead.</source>
     <message>
         <location filename="about.cpp" line="32"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Licentie</translation>
     </message>
     <message>
         <location filename="about.cpp" line="33"/>
         <location filename="about.cpp" line="43"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="about.cpp" line="34"/>
@@ -453,17 +453,17 @@ Creating a new dock instead.</source>
     <message>
         <location filename="about.cpp" line="51"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sluiten</translation>
     </message>
     <message>
         <location filename="main.cpp" line="57"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>Foutmelding</translation>
     </message>
     <message>
         <location filename="main.cpp" line="58"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished"/>
+        <translation>U moet dit programma als normale gebruiker uitvoeren.</translation>
     </message>
 </context>
 </TS>
