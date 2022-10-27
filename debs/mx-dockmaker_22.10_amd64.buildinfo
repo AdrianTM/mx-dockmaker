@@ -1,20 +1,20 @@
 Format: 1.0
 Source: mx-dockmaker
 Binary: mx-dockmaker
-Architecture: i386 source
-Version: 22.7
+Architecture: amd64 source
+Version: 22.10
 Checksums-Md5:
- f1dfb8a8d3f8a7c4235d09637a5c8f04 561 mx-dockmaker_22.7.dsc
- 79f0c720c0b401fe31edc7499041f38e 109768 mx-dockmaker_22.7_i386.deb
+ 27b5eb528c0ffbfdc59cf71595f69a4d 565 mx-dockmaker_22.10.dsc
+ 04123b04df463a455ad0acaf845cc02d 110052 mx-dockmaker_22.10_amd64.deb
 Checksums-Sha1:
- 858878159e08593e4c5c5daf05c37ea7fe15b895 561 mx-dockmaker_22.7.dsc
- a0cdea178f0d42de4ebf78348613753f4d277343 109768 mx-dockmaker_22.7_i386.deb
+ 116c05747599e16a1eef97f5dcb375ceaf1a2c50 565 mx-dockmaker_22.10.dsc
+ e414749308cc64bdb17497cc829dc5a86f799f3b 110052 mx-dockmaker_22.10_amd64.deb
 Checksums-Sha256:
- c6c5601accce5cdf3e5d20820407869a7ee311b9d49fae82e2cf31e8de21d15c 561 mx-dockmaker_22.7.dsc
- 174fe46addc3504ccb3b5e05a931af26bd8fb58c44bf9b6f6c3972f383f64694 109768 mx-dockmaker_22.7_i386.deb
+ fd8eb8b636fd92efc38e00cf3a418edc14a2ada01bd6a6f85903bfbd95924e95 565 mx-dockmaker_22.10.dsc
+ 8a43557945b157d5c78e128b62dcbbe73ff601b94fbb6b58835bbbef80f70f37 110052 mx-dockmaker_22.10_amd64.deb
 Build-Origin: Debian
-Build-Architecture: i386
-Build-Date: Sat, 23 Jul 2022 13:44:46 -0400
+Build-Architecture: amd64
+Build-Date: Wed, 26 Oct 2022 20:27:15 -0400
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -29,7 +29,7 @@ Installed-Build-Depends:
  bash (= 5.0-4),
  binutils (= 2.31.1-16),
  binutils-common (= 2.31.1-16),
- binutils-i686-linux-gnu (= 2.31.1-16),
+ binutils-x86-64-linux-gnu (= 2.31.1-16),
  bsdmainutils (= 11.1.2+b1),
  bsdutils (= 1:2.33.1-0.1),
  build-essential (= 12.6),
@@ -165,6 +165,7 @@ Installed-Build-Depends:
  libkrb5-3 (= 1.17-3+deb10u1),
  libkrb5support0 (= 1.17-3+deb10u1),
  libllvm7 (= 1:7.0.1-8+deb10u2),
+ liblsan0 (= 8.3.0-6),
  liblz4-1 (= 1.8.3-1),
  liblzma5 (= 5.2.4-1),
  libmagic-mgc (= 1:5.35-4+deb10u2),
@@ -225,13 +226,14 @@ Installed-Build-Depends:
  libssl1.1 (= 1.1.1d-0+deb10u6),
  libstdc++-8-dev (= 8.3.0-6),
  libstdc++6 (= 8.3.0-6),
- libsystemd0 (= 1:241-7~deb10u5+mx19),
+ libsystemd0 (= 1:241-7~deb10u8+mx19+1),
  libtasn1-6 (= 4.13-3),
  libtinfo6 (= 6.1+20181013-2+deb10u2),
  libtool (= 2.4.6-9),
+ libtsan0 (= 8.3.0-6),
  libubsan1 (= 8.3.0-6),
  libuchardet0 (= 0.0.6-3),
- libudev1 (= 1:241-7~deb10u5+mx19),
+ libudev1 (= 1:241-7~deb10u8+mx19+1),
  libunistring2 (= 0.9.10-1),
  libuuid1 (= 2.33.1-0.1),
  libvulkan-dev (= 1.1.97-2),
@@ -342,4 +344,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1658589930"
+ SOURCE_DATE_EPOCH="1666828801"

@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 26 Oct 2022 20:00:01 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: i386
+Version: 22.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-dockmaker - mx-dockmaker
+Changes:
+ mx-dockmaker (22.10) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ e9c33537643f0d3d8f5b6f3d3f752afa43fad4b0 10195 mx-dockmaker_22.10_i386.buildinfo
+ aa125be60840bb8799e5575bbc0a93e7ad025397 113852 mx-dockmaker_22.10_i386.deb
+Checksums-Sha256:
+ 27f3606bc1d2d7c1dcdb8486adf9740f09280b938ca8111b8b96b1f4157b1f5a 10195 mx-dockmaker_22.10_i386.buildinfo
+ f75a8b789746fadbb90b3bb1fe5cefe092bfcbdd6e6faf0a57e5382c3391af3f 113852 mx-dockmaker_22.10_i386.deb
+Files:
+ eb1505e5fc3916bf3053fbf3a1349ef1 10195 admin optional mx-dockmaker_22.10_i386.buildinfo
+ b4946c92568c0c9f8b73a17f8f6b6d74 113852 admin optional mx-dockmaker_22.10_i386.deb
