@@ -4,7 +4,8 @@
 #include <QButtonGroup>
 #include <QDialog>
 
-namespace Ui {
+namespace Ui
+{
 class PickLocation;
 }
 
@@ -23,7 +24,6 @@ private slots:
 private:
     Ui::PickLocation *ui;
     QButtonGroup *buttonGroup;
-
 };
 
 #endif // PICKLOCATION_H

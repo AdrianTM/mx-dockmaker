@@ -1,9 +1,9 @@
 #include "picklocation.h"
 #include "ui_picklocation.h"
 
-PickLocation::PickLocation(const QString &location, QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::PickLocation)
+PickLocation::PickLocation(const QString &location, QWidget *parent)
+    : QDialog(parent)
+    , ui(new Ui::PickLocation)
 {
     ui->setupUi(this);
     this->setWindowTitle(tr("Select dock location"));
@@ -35,9 +35,12 @@ PickLocation::PickLocation(const QString &location, QWidget *parent) :
     ui->buttonRT->setProperty("location", "RightTop");
     ui->buttonRB->setProperty("location", "RightBottom");
 
+#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
     // Have to use deprecated buttonClicked instead of idClicked for Buster
     connect(buttonGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &PickLocation::onGroupButton);
-
+#else
+    connect(buttonGroup, &QButtonGroup::idClicked, this, &PickLocation::onGroupButton);
+#endif
     for (const auto &button : buttonGroup->buttons()) {
         if (location == button->property("location").toString()) {
             button->click();
@@ -47,14 +50,9 @@ PickLocation::PickLocation(const QString &location, QWidget *parent) :
     ui->buttonBC->click();
 }
 
-PickLocation::~PickLocation()
-{
-    delete ui;
-
-}
+PickLocation::~PickLocation() { delete ui; }
 
 void PickLocation::onGroupButton(int button_id)
 {
     button = buttonGroup->button(button_id)->property("location").toString();
 }
-
