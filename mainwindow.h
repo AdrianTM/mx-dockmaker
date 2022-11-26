@@ -20,8 +20,6 @@
  * along with this package. If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-
-
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -32,8 +30,8 @@
 
 #include "cmd.h"
 
-
-namespace Ui {
+namespace Ui
+{
 class MainWindow;
 }
 
@@ -45,7 +43,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr, const QString &file = QString());
     ~MainWindow();
 
-    enum Info {App, Command, Icon, Size, BgColor, BorderColor, Extra};
+    enum Info { App, Command, Icon, Size, BgColor, BorderColor, Extra };
     bool checkDoneEditing();
     bool isDockInMenu(const QString &file_name);
 
@@ -97,7 +95,7 @@ private:
     Cmd cmd;
 
     bool changed = false;
-    bool parsing  = false;
+    bool parsing = false;
     int index = 0;
     QList<QLabel *> list_icons;
     QString dock_name;
@@ -106,10 +104,6 @@ private:
     QString slit_location;
     QSettings settings;
     QList<QStringList> apps;
-
-
 };
 
-
 #endif
-

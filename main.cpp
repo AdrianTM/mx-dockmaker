@@ -29,7 +29,6 @@
 #include "mainwindow.h"
 #include <unistd.h>
 
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -42,13 +41,16 @@ int main(int argc, char *argv[])
     a.installTranslator(&qtTran);
 
     QTranslator appTran;
-    appTran.load(QStringLiteral("mx-dockmaker_") + QLocale::system().name(), QStringLiteral("/usr/share/mx-dockmaker/locale"));
+    appTran.load(QStringLiteral("mx-dockmaker_") + QLocale::system().name(),
+                 QStringLiteral("/usr/share/mx-dockmaker/locale"));
     a.installTranslator(&appTran);
 
     // root guard
     if (QProcess::execute("/bin/bash", {"-c", "logname |grep -q ^root$"}) == 0) {
-        QMessageBox::critical(nullptr, QObject::tr("Error"),
-                              QObject::tr("You seem to be logged in as root, please log out and log in as normal user to use this program."));
+        QMessageBox::critical(
+            nullptr, QObject::tr("Error"),
+            QObject::tr(
+                "You seem to be logged in as root, please log out and log in as normal user to use this program."));
         exit(EXIT_FAILURE);
     }
 
