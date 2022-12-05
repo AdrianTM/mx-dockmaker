@@ -1,0 +1,10 @@
+mx-dockmaker-desktop_ca.po
+mx-dockmaker-desktop_el.po
+mx-dockmaker-desktop_es.po
+mx-dockmaker-desktop_fi.po
+mx-dockmaker-desktop_it.po
+mx-dockmaker-desktop_ja.po
+mx-dockmaker-desktop_nl.po
+mx-dockmaker-desktop_pt.po
+mx-dockmaker-desktop_sl.po
+mx-dockmaker-desktop_sv.po

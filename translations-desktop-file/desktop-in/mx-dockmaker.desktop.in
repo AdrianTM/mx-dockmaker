@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+# The desktop entry name will be displayed within the menu.
+Name=MX Dockmaker
+# # The desktop entry comment will be shown within the menu.
+Comment=Create docks in MX-Fluxbox
+Exec=mx-dockmaker
+Terminal=false
+Type=Application
+Icon=mx-dockmaker
+OnlyShowIn=FLUXBOX;
+Categories=System;MX-Utilities;
+NoDisplay=false
