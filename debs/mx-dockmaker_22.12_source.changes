@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 27 Dec 2022 16:58:38 -0500
+Source: mx-dockmaker
+Architecture: source
+Version: 22.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-dockmaker (22.12) mx; urgency=medium
+ .
+   * Add two more sizes for icons
+   * Update translations
+Checksums-Sha1:
+ 8d184ebf7f1b06baa6f7625eab49846d0de53769 1124 mx-dockmaker_22.12.dsc
+ bab3b9eaef7c9dbd237b4994e8e7d59cdaf431a2 93808 mx-dockmaker_22.12.tar.xz
+ b7b4bdb2e8e12d3d9014f6fd04810ab41da01d70 10748 mx-dockmaker_22.12_amd64.buildinfo
+Checksums-Sha256:
+ b318dee50102550343221c8ff8df0194bac4c940e589dd953442d13066ab4bfe 1124 mx-dockmaker_22.12.dsc
+ 88a11d21cf375eae974dbc214d9e1083a659b85f1c0b0a9280c98d56be25e4b4 93808 mx-dockmaker_22.12.tar.xz
+ ee14449cb6ce52ab1f31ec77425f112c7e0be56a68aba9535a14a4ea3a663dc0 10748 mx-dockmaker_22.12_amd64.buildinfo
+Files:
+ 3ff378569a9e4af06a1a7899854455a4 1124 admin optional mx-dockmaker_22.12.dsc
+ a1a556ef9947e7f2b79b1217be912359 93808 admin optional mx-dockmaker_22.12.tar.xz
+ 67e5e66a228c4639e1eaa138f37151f8 10748 admin optional mx-dockmaker_22.12_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOrbOATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHyeCAC8XWU+ALVXko4mMpJkjAun1OXzXpw9
+QYgCmgytrG6OAO612fNeD82TStYD+8VgvjWBHsgIj+qnqb+IShRqPGEHXjjlKIFp
+dbifwJMvI3AKhKxy2qkVvdO6nllyQaWpuJPh80MkJAoKaccsFXkFDNUPAfmSB9Vw
+DjjzY1p9dUamiPH3u+d9zHqZMZh2Pa16FNWXPrZl18uRRpzdE68fZHom3w81v15p
+ZCD8jRZHQrcnQWPw0qdu2cE55BOCoNqwUZv0Srr52p+Odu8AYhOUgPARRXF3OxPH
+Kmb7ZAGqqebzZyEVoRaDULd4tVqxqKEwffuFVce4l9SxaTr39fHiNEqh
+=ADk2
+-----END PGP SIGNATURE-----

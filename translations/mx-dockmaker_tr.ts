@@ -1,143 +1,163 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="tr">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="tr">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.ui" line="14"/>
         <source>Program_Name</source>
         <translation>Program_Adı</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="29"/>
+        <location filename="../mainwindow.ui" line="29"/>
         <source>Usage</source>
         <translation>Kullanım</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="106"/>
+        <location filename="../mainwindow.ui" line="106"/>
         <source>Dock Preview</source>
         <translation>Panel Önizleme</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="118"/>
+        <location filename="../mainwindow.ui" line="118"/>
         <source>Add New Application</source>
         <translation>Yeni Uygulama Ekle</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="131"/>
+        <location filename="../mainwindow.ui" line="131"/>
         <source>Command</source>
         <translation>Komut</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="301"/>
+        <location filename="../mainwindow.ui" line="311"/>
         <source>Add application</source>
         <translation>Uygulama ekle</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="393"/>
+        <location filename="../mainwindow.ui" line="405"/>
         <source>Delete this application</source>
         <translation>Bu uygulamayı sil</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="124"/>
+        <location filename="../mainwindow.ui" line="124"/>
         <source>Border</source>
         <translation>Sınır</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="154"/>
+        <location filename="../mainwindow.ui" line="154"/>
         <source>Size</source>
         <translation>Boyut</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="161"/>
+        <location filename="../mainwindow.ui" line="161"/>
         <source>Background</source>
         <translation>Arkaplan</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="379"/>
+        <location filename="../mainwindow.ui" line="391"/>
         <source>Back</source>
         <translation>Geri</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="184"/>
+        <location filename="../mainwindow.ui" line="184"/>
         <source>File</source>
         <translation>Dosya</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="216"/>
-        <location filename="mainwindow.cpp" line="708"/>
-        <location filename="mainwindow.cpp" line="735"/>
+        <location filename="../mainwindow.ui" line="216"/>
+        <location filename="../mainwindow.cpp" line="739"/>
+        <location filename="../mainwindow.cpp" line="853"/>
+        <location filename="../mainwindow.cpp" line="866"/>
+        <location filename="../mainwindow.cpp" line="890"/>
         <source>Select icon...</source>
         <translation>Simge seçin...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="229"/>
-        <location filename="mainwindow.cpp" line="82"/>
-        <location filename="mainwindow.cpp" line="582"/>
-        <location filename="mainwindow.cpp" line="711"/>
+        <location filename="../mainwindow.ui" line="229"/>
+        <location filename="../mainwindow.cpp" line="95"/>
+        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="856"/>
         <source>Select...</source>
         <translation>Seç...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="315"/>
+        <location filename="../mainwindow.ui" line="273"/>
+        <source>36x36</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="278"/>
+        <source>40x40</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="325"/>
         <source>Move right</source>
         <translation>Sağa taşı</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="328"/>
+        <location filename="../mainwindow.ui" line="339"/>
         <source>Move left</source>
         <translation>Sola taşı</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="439"/>
+        <location filename="../mainwindow.ui" line="451"/>
         <source>Display help </source>
         <translation>Yardımı görüntüle</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="442"/>
+        <location filename="../mainwindow.ui" line="454"/>
         <source>Help</source>
         <translation>Yardım</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="449"/>
+        <location filename="../mainwindow.ui" line="461"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="478"/>
+        <location filename="../mainwindow.ui" line="490"/>
         <source>About this application</source>
         <translation>Uygulama hakkında</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="481"/>
+        <location filename="../mainwindow.ui" line="493"/>
         <source>About...</source>
         <translation>Hakkında...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="488"/>
+        <location filename="../mainwindow.ui" line="500"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="520"/>
+        <location filename="../mainwindow.ui" line="532"/>
         <source>Quit application</source>
         <translation>Uygulamadan çık</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="523"/>
+        <location filename="../mainwindow.ui" line="535"/>
         <source>Close</source>
         <translation>Kapat</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="530"/>
+        <location filename="../mainwindow.ui" line="542"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="571"/>
+        <location filename="../mainwindow.ui" line="583"/>
         <source>Save</source>
         <translation>Kaydet</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="103"/>
+        <location filename="../mainwindow.ui" line="590"/>
+        <source>Alt+S</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>1. Add applications to the dock one at a time
 2. Select a .desktop file or enter a command for the application you want
 3. Select icon attributes for size, background (black is standard) and border
@@ -148,130 +168,126 @@
 4. Devam etmek için &quot;Uygulama ekle&quot;ye bitirmek için &quot;Kaydet&quot;e basın</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="126"/>
-        <location filename="mainwindow.cpp" line="590"/>
         <source>black</source>
-        <translation>siyah</translation>
+        <translation type="vanished">siyah</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="127"/>
-        <location filename="mainwindow.cpp" line="591"/>
         <source>white</source>
-        <translation>beyaz</translation>
+        <translation type="vanished">beyaz</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="137"/>
+        <location filename="../mainwindow.cpp" line="161"/>
         <source>This tool allows you to create a new dock with one or more applications. You can also edit or delete a dock created earlier.</source>
         <translation>Bu araç, bir veya daha fazla uygulama ile yeni bir panel oluşturmanıza olanak sağlar. Ayrıca daha önce oluşturulmuş bir paneli düzenleyebilir veya silebilirsiniz.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="139"/>
+        <location filename="../mainwindow.cpp" line="164"/>
         <source>Operation mode</source>
         <translation>İşlem kipi</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="165"/>
         <source>&amp;Close</source>
         <translation>&amp;Kapat</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="166"/>
         <source>&amp;Move</source>
         <translation>Taşı</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="142"/>
-        <location filename="mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="167"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>&amp;Delete</source>
         <translation>&amp;Sil</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="143"/>
+        <location filename="../mainwindow.cpp" line="168"/>
         <source>&amp;Edit</source>
         <translation>&amp;Düzenle</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="169"/>
         <source>C&amp;reate</source>
         <translation>Oluştur</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="220"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Dock name</source>
         <translation>Panel adı</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="221"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Enter the name to show in the Menu:</source>
         <translation>Menüde gösterilecek adı girin:</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>Select dock to delete</source>
         <translation>Silinecek paneli seç</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="335"/>
         <source>Confirmation</source>
         <translation>Onay</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="335"/>
         <source>Are you sure you want to delete %1?</source>
         <translation>%1&apos;i silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>&amp;Cancel</source>
         <translation>&amp;İptal</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="353"/>
+        <location filename="../mainwindow.ui" line="365"/>
         <source>Next</source>
         <translation>Sonraki</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>Select dock to move</source>
         <translation>Taşınacak paneli seç</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="293"/>
-        <location filename="mainwindow.cpp" line="320"/>
-        <location filename="mainwindow.cpp" line="454"/>
-        <location filename="mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="801"/>
         <source>Dock Files (*.mxdk);;All Files (*.*)</source>
         <translation>Panel Dosyaları (*.mxdk);;Tüm dosyalar (*.*)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="330"/>
-        <location filename="mainwindow.cpp" line="351"/>
-        <location filename="mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="811"/>
         <source>Could not open file</source>
         <translation>Dosya açılamadı</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>Overwrite?</source>
         <translation>Üstüne yazılsın mı?</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>Do you want to overwrite the dock file?</source>
         <translation>Panel dosyasının üzerine yazmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="542"/>
         <source>Save file</source>
         <translation>Dosyayı kaydet</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="492"/>
+        <location filename="../mainwindow.cpp" line="608"/>
         <source>Dock saved</source>
         <translation>Panel kaydedildi</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="492"/>
+        <location filename="../mainwindow.cpp" line="609"/>
         <source>The dock has been saved.
 
 To edit the newly created dock please select &apos;Edit an existing dock&apos;.</source>
@@ -280,71 +296,76 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
 Yeni oluşturulan paneli düzenlemek için lütfen &apos;Mevcut bir paneli düzenle&apos;yi seçin.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="511"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>About %1</source>
         <translation>Hakkında %1</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="513"/>
+        <location filename="../mainwindow.cpp" line="627"/>
+        <source>MX Dockmaker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="628"/>
         <source>Version: </source>
         <translation>Sürüm:</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="514"/>
+        <location filename="../mainwindow.cpp" line="629"/>
         <source>Description goes here</source>
         <translation>Açıklama buraya</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="516"/>
+        <location filename="../mainwindow.cpp" line="632"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Telif Hakkı (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="517"/>
+        <location filename="../mainwindow.cpp" line="633"/>
         <source>%1 License</source>
         <translation>%1 Telif Hakkı</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="526"/>
+        <location filename="../mainwindow.cpp" line="642"/>
         <source>%1 Help</source>
         <translation>%1 Yardım</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="638"/>
+        <location filename="../mainwindow.cpp" line="779"/>
         <source>Select .desktop file</source>
         <translation>.desktop dosyasını seçin</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="638"/>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Desktop Files (*.desktop)</source>
         <translation>Masaüstü Dosyaları (*.desktop)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="800"/>
         <source>Select a dock file</source>
         <translation>Bir panel dosyası seçin</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="804"/>
         <source>No file selected</source>
         <translation>Seçilmiş dosya yok</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="660"/>
-        <source>You haven't selected any dock file to edit.
+        <location filename="../mainwindow.cpp" line="805"/>
+        <source>You haven&apos;t selected any dock file to edit.
 Creating a new dock instead.</source>
         <translation>Düzenlemek için herhangi bir panel dosyası seçmediniz.
 Bunun yerine yeni bir panel oluşturun.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>Could not open selected file.
 Creating a new dock instead.</source>
         <translation>Seçilen dosya açılamıyor.
 Bunun yerine yeni bir panel oluşturun.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="675"/>
+        <location filename="../mainwindow.cpp" line="820"/>
         <source>1. Edit applications one at a time using the Back and Next buttons
 2. Add or delete applications as you like
 3. When finished click Save</source>
@@ -353,12 +374,12 @@ Bunun yerine yeni bir panel oluşturun.</translation>
 3. Bittiğinde Kaydeti tıklayın</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="872"/>
         <source>Select icon</source>
         <translation>Simge seçin</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="873"/>
         <source>Icons (*.png *.jpg *.bmp *.xpm *.svg)</source>
         <translation>Simgeler (*.png *.jpg *.bmp *.xpm *.svg)</translation>
     </message>
@@ -366,77 +387,77 @@ Bunun yerine yeni bir panel oluşturun.</translation>
 <context>
     <name>PickLocation</name>
     <message>
-        <location filename="picklocation.ui" line="14"/>
+        <location filename="../picklocation.ui" line="14"/>
         <source>Dialog</source>
         <translation>Dialog</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="23"/>
+        <location filename="../picklocation.ui" line="23"/>
         <source>Dock Location</source>
         <translation>Panel Konumu</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="29"/>
+        <location filename="../picklocation.ui" line="29"/>
         <source>TopCenter</source>
         <translation>Üst Orta</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="45"/>
+        <location filename="../picklocation.ui" line="45"/>
         <source>BottomLeft</source>
         <translation>Alt Sol</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="61"/>
+        <location filename="../picklocation.ui" line="61"/>
         <source>BottomCenter</source>
         <translation>Alt Orta</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="80"/>
+        <location filename="../picklocation.ui" line="80"/>
         <source>TopLeft</source>
         <translation>Üst Sol</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="96"/>
+        <location filename="../picklocation.ui" line="96"/>
         <source>TopRight</source>
         <translation>Üst Sağ</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="112"/>
+        <location filename="../picklocation.ui" line="112"/>
         <source>LeftCenter</source>
         <translation>Sol Orta</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="128"/>
+        <location filename="../picklocation.ui" line="128"/>
         <source>RightCenter</source>
         <translation>Sağ Orta</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="144"/>
+        <location filename="../picklocation.ui" line="144"/>
         <source>BottomRight</source>
         <translation>Alt Sağ</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="160"/>
+        <location filename="../picklocation.ui" line="160"/>
         <source>RightTop</source>
         <translation>Sağ Üst</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="173"/>
+        <location filename="../picklocation.ui" line="173"/>
         <source>LeftTop</source>
         <translation>Sol Üst</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="189"/>
+        <location filename="../picklocation.ui" line="189"/>
         <source>LeftBottom</source>
         <translation>Sol Alt</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="205"/>
+        <location filename="../picklocation.ui" line="205"/>
         <source>RightBottom</source>
         <translation>Sağ Alt</translation>
     </message>
     <message>
-        <location filename="picklocation.cpp" line="9"/>
+        <location filename="../picklocation.cpp" line="9"/>
         <source>Select dock location</source>
         <translation>Panel konumunu seçin</translation>
     </message>
@@ -444,35 +465,68 @@ Bunun yerine yeni bir panel oluşturun.</translation>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="about.cpp" line="32"/>
         <source>License</source>
-        <translation>Ruhsat</translation>
+        <translation type="vanished">Ruhsat</translation>
     </message>
     <message>
-        <location filename="about.cpp" line="33"/>
-        <location filename="about.cpp" line="43"/>
         <source>Changelog</source>
-        <translation>Değişim günlüğü</translation>
+        <translation type="vanished">Değişim günlüğü</translation>
     </message>
     <message>
-        <location filename="about.cpp" line="34"/>
         <source>Cancel</source>
-        <translation>İptal</translation>
+        <translation type="vanished">İptal</translation>
     </message>
     <message>
-        <location filename="about.cpp" line="51"/>
         <source>&amp;Close</source>
-        <translation>&amp;Kapat</translation>
+        <translation type="vanished">&amp;Kapat</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="57"/>
         <source>Error</source>
-        <translation>Hata</translation>
+        <translation type="vanished">Hata</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="58"/>
         <source>You must run this program as normal user.</source>
-        <translation>Bu programı normal kullanıcı olarak çalıştırmalısınız.</translation>
+        <translation type="vanished">Bu programı normal kullanıcı olarak çalıştırmalısınız.</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../about.cpp" line="39"/>
+        <source>License</source>
+        <translation type="unfinished">Ruhsat</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="40"/>
+        <location filename="../about.cpp" line="49"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Değişim günlüğü</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="41"/>
+        <source>Cancel</source>
+        <translation type="unfinished">İptal</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="62"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Kapat</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="51"/>
+        <location filename="../main.cpp" line="66"/>
+        <source>Error</source>
+        <translation type="unfinished">Hata</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="52"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="66"/>
+        <source>You must run this program as normal user.</source>
+        <translation type="unfinished">Bu programı normal kullanıcı olarak çalıştırmalısınız.</translation>
     </message>
 </context>
 </TS>

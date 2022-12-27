@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 27 Dec 2022 16:58:38 -0500
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: source amd64
+Version: 22.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - mx-dockmaker
+Changes:
+ mx-dockmaker (22.12) mx; urgency=medium
+ .
+   * Add two more sizes for icons
+   * Update translations
+Checksums-Sha1:
+ 8d184ebf7f1b06baa6f7625eab49846d0de53769 1124 mx-dockmaker_22.12.dsc
+ bab3b9eaef7c9dbd237b4994e8e7d59cdaf431a2 93808 mx-dockmaker_22.12.tar.xz
+ b7b4bdb2e8e12d3d9014f6fd04810ab41da01d70 10748 mx-dockmaker_22.12_amd64.buildinfo
+ 39f399460c835bf0253914097bc980b9530b9c76 110224 mx-dockmaker_22.12_amd64.deb
+Checksums-Sha256:
+ b318dee50102550343221c8ff8df0194bac4c940e589dd953442d13066ab4bfe 1124 mx-dockmaker_22.12.dsc
+ 88a11d21cf375eae974dbc214d9e1083a659b85f1c0b0a9280c98d56be25e4b4 93808 mx-dockmaker_22.12.tar.xz
+ ee14449cb6ce52ab1f31ec77425f112c7e0be56a68aba9535a14a4ea3a663dc0 10748 mx-dockmaker_22.12_amd64.buildinfo
+ be82075e3aca8c71bc2485bf912dd4d65aa60336d5f0590b01ebd222a0ced2f8 110224 mx-dockmaker_22.12_amd64.deb
+Files:
+ 3ff378569a9e4af06a1a7899854455a4 1124 admin optional mx-dockmaker_22.12.dsc
+ a1a556ef9947e7f2b79b1217be912359 93808 admin optional mx-dockmaker_22.12.tar.xz
+ 67e5e66a228c4639e1eaa138f37151f8 10748 admin optional mx-dockmaker_22.12_amd64.buildinfo
+ 7701dd6ac664b3ad6510b977fe2ca0dd 110224 admin optional mx-dockmaker_22.12_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOrbOATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAdIB/wLiwDvIqEjdm2zw1iPxTze0+2ztPIq
+b+KutAMxJSneJBVPgSLycCsArXRYC0d8jdSfGgb7dw0ZyMXNjpQ4fwTgcZ5K6pVD
+wBUBZWX+508Hk8SQVLjhwh1YNlWMVbJF/Y9onnq+KrokIkmFJshbx7jPVCxjdTci
+O15hYRG91A4RHuWpfRZJALkpqSBBLuMJ6kCc+PCbcXQ99eGBjy0cu4X7C6CSxy7l
+k/1IG6JSFDGHUtdSM8GCpIMMYgK1+o3SbmAGjxERAsbd41UN54AJLWDlGSg3lXTr
+8bCKAodlHF3BDN/Mm12RZjYF+jMeTbWy+j9t6cEhIkUemCt9E2cMt2Lv
+=LiVP
+-----END PGP SIGNATURE-----
