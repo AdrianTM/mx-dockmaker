@@ -16,26 +16,26 @@ Changes:
    * Add two more sizes for icons
    * Update translations
 Checksums-Sha1:
- 8d184ebf7f1b06baa6f7625eab49846d0de53769 1124 mx-dockmaker_22.12.dsc
- bab3b9eaef7c9dbd237b4994e8e7d59cdaf431a2 93808 mx-dockmaker_22.12.tar.xz
- b7b4bdb2e8e12d3d9014f6fd04810ab41da01d70 10748 mx-dockmaker_22.12_amd64.buildinfo
+ 8396926543dbe8379001a1722ab2999493b95ba1 1124 mx-dockmaker_22.12.dsc
+ ab957f47882cc0aa05b79b62020d7015bc9ed5f0 92280 mx-dockmaker_22.12.tar.xz
+ 455c32c4c80bc17ac3bf4b0c65a27ea380d002ec 10748 mx-dockmaker_22.12_amd64.buildinfo
 Checksums-Sha256:
- b318dee50102550343221c8ff8df0194bac4c940e589dd953442d13066ab4bfe 1124 mx-dockmaker_22.12.dsc
- 88a11d21cf375eae974dbc214d9e1083a659b85f1c0b0a9280c98d56be25e4b4 93808 mx-dockmaker_22.12.tar.xz
- ee14449cb6ce52ab1f31ec77425f112c7e0be56a68aba9535a14a4ea3a663dc0 10748 mx-dockmaker_22.12_amd64.buildinfo
+ b3877335aae85d6d5f66c776ad6c04d30b1c249c3d4a4f42aa39e4bb379f59fe 1124 mx-dockmaker_22.12.dsc
+ 2c2e75faf4c85d3dd283d4129dd2c17b09371e671bfbc7cc3a387f391f49823c 92280 mx-dockmaker_22.12.tar.xz
+ d63275d09d93efb40a32d856809cd174ec074725a023e29637769a56fc396d79 10748 mx-dockmaker_22.12_amd64.buildinfo
 Files:
- 3ff378569a9e4af06a1a7899854455a4 1124 admin optional mx-dockmaker_22.12.dsc
- a1a556ef9947e7f2b79b1217be912359 93808 admin optional mx-dockmaker_22.12.tar.xz
- 67e5e66a228c4639e1eaa138f37151f8 10748 admin optional mx-dockmaker_22.12_amd64.buildinfo
+ dcaedd52f02a1b41515af715ccf5307a 1124 admin optional mx-dockmaker_22.12.dsc
+ bc61bb43827fdbfdeea371ee94142247 92280 admin optional mx-dockmaker_22.12.tar.xz
+ 7fdbe7146043943f4192fcf80e53c3c5 10748 admin optional mx-dockmaker_22.12_amd64.buildinfo
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOrbOATHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHyeCAC8XWU+ALVXko4mMpJkjAun1OXzXpw9
-QYgCmgytrG6OAO612fNeD82TStYD+8VgvjWBHsgIj+qnqb+IShRqPGEHXjjlKIFp
-dbifwJMvI3AKhKxy2qkVvdO6nllyQaWpuJPh80MkJAoKaccsFXkFDNUPAfmSB9Vw
-DjjzY1p9dUamiPH3u+d9zHqZMZh2Pa16FNWXPrZl18uRRpzdE68fZHom3w81v15p
-ZCD8jRZHQrcnQWPw0qdu2cE55BOCoNqwUZv0Srr52p+Odu8AYhOUgPARRXF3OxPH
-Kmb7ZAGqqebzZyEVoRaDULd4tVqxqKEwffuFVce4l9SxaTr39fHiNEqh
-=ADk2
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOrco8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOSKB/9AtD18hPGD4lTyhv1V47HchXAqVdAC
+gnZleDB22o3CjIYbxPuXLI7XcKMUDPrbiw7qz2iKSMX+lXz/E+LaK3Y0UZ6G+oau
+2uBgT1uzffOFACz1WMB/7qo67mogsdCdCDyF8gLlDppGE73ibSYsEkvrwt2RD6g5
+7XpKj/9XxhQzURUe7dAR7U8Cl7K8mymJCHuGPEdF0c4Zgeq51Y1CWzGx2PoSmQIf
+3+9X3v0rNZ9Bjyz93+lXucMrhgaCS5TlxiOTTcy3zS607bT2f/bzf1AKC9xCjz9p
+jyB0jIkkSNhOo1SOJWzbXVW0Yp+Yz8wC5qPQPZ3IRPbQlG/QRL+edn/N
+=jGLV
 -----END PGP SIGNATURE-----

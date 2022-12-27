@@ -16,11 +16,11 @@ Changes:
    * Add two more sizes for icons
    * Update translations
 Checksums-Sha1:
- 7727697ec6f616c3a7f91a978641a369a60ee118 10044 mx-dockmaker_22.12_i386.buildinfo
- 13c55e73881fb721d38a3412cf85795a5bc75555 114068 mx-dockmaker_22.12_i386.deb
+ bd2c22ebfa6d7fbcf463421a6d056b7f3739b824 10076 mx-dockmaker_22.12_i386.buildinfo
+ ac02c1c797407b7d5051d72fb40cddb3a2d3b70b 116844 mx-dockmaker_22.12_i386.deb
 Checksums-Sha256:
- cbb1a688f83475accb82d2511ce20cece42d770c729475784689853e576ad71f 10044 mx-dockmaker_22.12_i386.buildinfo
- 6ed16c585b4b3316dc9d30363b0555f9313949acf956e972c186d73431eb21ed 114068 mx-dockmaker_22.12_i386.deb
+ 964e3975642336da1be1fb295d2c05d4185f464055544f93ebb9c527d6e556e1 10076 mx-dockmaker_22.12_i386.buildinfo
+ fbb8261bc73d3c6f70de38a44a3718ba535140d54ca7bb9118d8ecede5e7e914 116844 mx-dockmaker_22.12_i386.deb
 Files:
- aa7e083773b31a66b25c60863decb4b6 10044 admin optional mx-dockmaker_22.12_i386.buildinfo
- 4e54c31d85638e6410cdd8d75390ad0c 114068 admin optional mx-dockmaker_22.12_i386.deb
+ b3b409cc121f8a5e587f588023be7765 10076 admin optional mx-dockmaker_22.12_i386.buildinfo
+ d681bd8a92a9494cbb194a50fea26cd2 116844 admin optional mx-dockmaker_22.12_i386.deb

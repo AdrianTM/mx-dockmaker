@@ -19,29 +19,29 @@ Changes:
    * Add two more sizes for icons
    * Update translations
 Checksums-Sha1:
- 8d184ebf7f1b06baa6f7625eab49846d0de53769 1124 mx-dockmaker_22.12.dsc
- bab3b9eaef7c9dbd237b4994e8e7d59cdaf431a2 93808 mx-dockmaker_22.12.tar.xz
- b7b4bdb2e8e12d3d9014f6fd04810ab41da01d70 10748 mx-dockmaker_22.12_amd64.buildinfo
- 39f399460c835bf0253914097bc980b9530b9c76 110224 mx-dockmaker_22.12_amd64.deb
+ 8396926543dbe8379001a1722ab2999493b95ba1 1124 mx-dockmaker_22.12.dsc
+ ab957f47882cc0aa05b79b62020d7015bc9ed5f0 92280 mx-dockmaker_22.12.tar.xz
+ 455c32c4c80bc17ac3bf4b0c65a27ea380d002ec 10748 mx-dockmaker_22.12_amd64.buildinfo
+ d924563af8383c87f55d4c93b1fc82bb6d9d0192 113020 mx-dockmaker_22.12_amd64.deb
 Checksums-Sha256:
- b318dee50102550343221c8ff8df0194bac4c940e589dd953442d13066ab4bfe 1124 mx-dockmaker_22.12.dsc
- 88a11d21cf375eae974dbc214d9e1083a659b85f1c0b0a9280c98d56be25e4b4 93808 mx-dockmaker_22.12.tar.xz
- ee14449cb6ce52ab1f31ec77425f112c7e0be56a68aba9535a14a4ea3a663dc0 10748 mx-dockmaker_22.12_amd64.buildinfo
- be82075e3aca8c71bc2485bf912dd4d65aa60336d5f0590b01ebd222a0ced2f8 110224 mx-dockmaker_22.12_amd64.deb
+ b3877335aae85d6d5f66c776ad6c04d30b1c249c3d4a4f42aa39e4bb379f59fe 1124 mx-dockmaker_22.12.dsc
+ 2c2e75faf4c85d3dd283d4129dd2c17b09371e671bfbc7cc3a387f391f49823c 92280 mx-dockmaker_22.12.tar.xz
+ d63275d09d93efb40a32d856809cd174ec074725a023e29637769a56fc396d79 10748 mx-dockmaker_22.12_amd64.buildinfo
+ 48d6fb4c18aeb43a93e197c6554d5d49a0cd491b1cfa7e773058f3720ef4eaab 113020 mx-dockmaker_22.12_amd64.deb
 Files:
- 3ff378569a9e4af06a1a7899854455a4 1124 admin optional mx-dockmaker_22.12.dsc
- a1a556ef9947e7f2b79b1217be912359 93808 admin optional mx-dockmaker_22.12.tar.xz
- 67e5e66a228c4639e1eaa138f37151f8 10748 admin optional mx-dockmaker_22.12_amd64.buildinfo
- 7701dd6ac664b3ad6510b977fe2ca0dd 110224 admin optional mx-dockmaker_22.12_amd64.deb
+ dcaedd52f02a1b41515af715ccf5307a 1124 admin optional mx-dockmaker_22.12.dsc
+ bc61bb43827fdbfdeea371ee94142247 92280 admin optional mx-dockmaker_22.12.tar.xz
+ 7fdbe7146043943f4192fcf80e53c3c5 10748 admin optional mx-dockmaker_22.12_amd64.buildinfo
+ e982f927f30e7faabef50cf128d30e05 113020 admin optional mx-dockmaker_22.12_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOrbOATHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAdIB/wLiwDvIqEjdm2zw1iPxTze0+2ztPIq
-b+KutAMxJSneJBVPgSLycCsArXRYC0d8jdSfGgb7dw0ZyMXNjpQ4fwTgcZ5K6pVD
-wBUBZWX+508Hk8SQVLjhwh1YNlWMVbJF/Y9onnq+KrokIkmFJshbx7jPVCxjdTci
-O15hYRG91A4RHuWpfRZJALkpqSBBLuMJ6kCc+PCbcXQ99eGBjy0cu4X7C6CSxy7l
-k/1IG6JSFDGHUtdSM8GCpIMMYgK1+o3SbmAGjxERAsbd41UN54AJLWDlGSg3lXTr
-8bCKAodlHF3BDN/Mm12RZjYF+jMeTbWy+j9t6cEhIkUemCt9E2cMt2Lv
-=LiVP
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOrco8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumGMoB/wJPrNxPyQKR8+HckrRg24W2wNGY3+v
+htVNzsKXeOwrUKI3jPZXR2bafEZLGqDsbT0vXWQDnP4M2Ky/AjI0BzRUY3rAZwV/
+EiOJn002RSDs94wUxk0oksVKwvZPumkxkaortGyGERDFyrwP8hRVQJHuJC4NYQdA
+S8aZZ3jOLy42xXCqVJpbuR8Cf21oPq5cNLArGX/39qRREknMitt57aIXKm+r/Lom
+ougozPDccn1eJfFtxWmdWyi9EKIM2fA0Lc3tx7yq9JfWridJc1a8uiotT3t0546a
+g1ARjRpQUmHzYDrBU1/BRgF47Lgp/uxcK4SeicReh1E1cRT+pAmd+mNU
+=UFzP
 -----END PGP SIGNATURE-----
