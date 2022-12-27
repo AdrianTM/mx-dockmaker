@@ -1,143 +1,163 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.0" language="sv">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="sv">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.ui" line="14"/>
         <source>Program_Name</source>
         <translation>Program_Namn</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="29"/>
+        <location filename="../mainwindow.ui" line="29"/>
         <source>Usage</source>
         <translation>Användning</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="106"/>
+        <location filename="../mainwindow.ui" line="106"/>
         <source>Dock Preview</source>
         <translation>Förhandsvisning av Docka</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="118"/>
+        <location filename="../mainwindow.ui" line="118"/>
         <source>Add New Application</source>
         <translation>Lägg Till Nytt Program</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="131"/>
+        <location filename="../mainwindow.ui" line="131"/>
         <source>Command</source>
         <translation>Kommando</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="301"/>
+        <location filename="../mainwindow.ui" line="311"/>
         <source>Add application</source>
         <translation>Lägg till program</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="393"/>
+        <location filename="../mainwindow.ui" line="405"/>
         <source>Delete this application</source>
         <translation>Ta bort detta program</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="124"/>
+        <location filename="../mainwindow.ui" line="124"/>
         <source>Border</source>
         <translation>Gräns</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="154"/>
+        <location filename="../mainwindow.ui" line="154"/>
         <source>Size</source>
         <translation>Storlek</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="161"/>
+        <location filename="../mainwindow.ui" line="161"/>
         <source>Background</source>
         <translation>Bakgrund</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="379"/>
+        <location filename="../mainwindow.ui" line="391"/>
         <source>Back</source>
         <translation>Bakåt</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="184"/>
+        <location filename="../mainwindow.ui" line="184"/>
         <source>File</source>
         <translation>Fil</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="216"/>
-        <location filename="mainwindow.cpp" line="708"/>
-        <location filename="mainwindow.cpp" line="735"/>
+        <location filename="../mainwindow.ui" line="216"/>
+        <location filename="../mainwindow.cpp" line="739"/>
+        <location filename="../mainwindow.cpp" line="853"/>
+        <location filename="../mainwindow.cpp" line="866"/>
+        <location filename="../mainwindow.cpp" line="890"/>
         <source>Select icon...</source>
         <translation>Välj ikon...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="229"/>
-        <location filename="mainwindow.cpp" line="82"/>
-        <location filename="mainwindow.cpp" line="582"/>
-        <location filename="mainwindow.cpp" line="711"/>
+        <location filename="../mainwindow.ui" line="229"/>
+        <location filename="../mainwindow.cpp" line="95"/>
+        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="856"/>
         <source>Select...</source>
         <translation>Välj...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="315"/>
+        <location filename="../mainwindow.ui" line="273"/>
+        <source>36x36</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="278"/>
+        <source>40x40</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="325"/>
         <source>Move right</source>
         <translation>Flytta till höger</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="328"/>
+        <location filename="../mainwindow.ui" line="339"/>
         <source>Move left</source>
         <translation>Flytta till vänster</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="439"/>
+        <location filename="../mainwindow.ui" line="451"/>
         <source>Display help </source>
         <translation>Visa hjälp</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="442"/>
+        <location filename="../mainwindow.ui" line="454"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="449"/>
+        <location filename="../mainwindow.ui" line="461"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="478"/>
+        <location filename="../mainwindow.ui" line="490"/>
         <source>About this application</source>
         <translation>Om detta program</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="481"/>
+        <location filename="../mainwindow.ui" line="493"/>
         <source>About...</source>
         <translation>Om...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="488"/>
+        <location filename="../mainwindow.ui" line="500"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="520"/>
+        <location filename="../mainwindow.ui" line="532"/>
         <source>Quit application</source>
         <translation>Avsluta programmet</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="523"/>
+        <location filename="../mainwindow.ui" line="535"/>
         <source>Close</source>
         <translation>Stäng</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="530"/>
+        <location filename="../mainwindow.ui" line="542"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="571"/>
+        <location filename="../mainwindow.ui" line="583"/>
         <source>Save</source>
         <translation>Spara</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="103"/>
+        <location filename="../mainwindow.ui" line="590"/>
+        <source>Alt+S</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="118"/>
         <source>1. Add applications to the dock one at a time
 2. Select a .desktop file or enter a command for the application you want
 3. Select icon attributes for size, background (black is standard) and border
@@ -148,130 +168,126 @@
 4. Tryck på &quot;Lägg till program&quot; för att fortsätta eller &quot;Spara&quot; för att slutföra</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="126"/>
-        <location filename="mainwindow.cpp" line="590"/>
         <source>black</source>
-        <translation>svart</translation>
+        <translation type="vanished">svart</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="127"/>
-        <location filename="mainwindow.cpp" line="591"/>
         <source>white</source>
-        <translation>vit</translation>
+        <translation type="vanished">vit</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="137"/>
+        <location filename="../mainwindow.cpp" line="161"/>
         <source>This tool allows you to create a new dock with one or more applications. You can also edit or delete a dock created earlier.</source>
         <translation>Detta verktyg låter dig skapa en ny docka mett ett eller flera program. Du kan också redigera eller ta bort en tidigare skapad docka.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="139"/>
+        <location filename="../mainwindow.cpp" line="164"/>
         <source>Operation mode</source>
         <translation>Funktionssätt</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="165"/>
         <source>&amp;Close</source>
         <translation>&amp;Stäng</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="166"/>
         <source>&amp;Move</source>
         <translation>&amp;Flytta</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="142"/>
-        <location filename="mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="167"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>&amp;Delete</source>
         <translation>&amp;Ta bort</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="143"/>
+        <location filename="../mainwindow.cpp" line="168"/>
         <source>&amp;Edit</source>
         <translation>&amp;Redigera</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="144"/>
+        <location filename="../mainwindow.cpp" line="169"/>
         <source>C&amp;reate</source>
         <translation>Skapa</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="220"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Dock name</source>
         <translation>Docknamn</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="221"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Enter the name to show in the Menu:</source>
         <translation>Skriv in namnet som ska visas i Menyn:</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>Select dock to delete</source>
         <translation>Välj docka att ta bort</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="335"/>
         <source>Confirmation</source>
         <translation>Bekräftelse</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="335"/>
         <source>Are you sure you want to delete %1?</source>
         <translation>Är du säker på att du vill ta bort %1?</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Avbryt</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="353"/>
+        <location filename="../mainwindow.ui" line="365"/>
         <source>Next</source>
         <translation>Nästa</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>Select dock to move</source>
         <translation>Välj docka att flytta</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="293"/>
-        <location filename="mainwindow.cpp" line="320"/>
-        <location filename="mainwindow.cpp" line="454"/>
-        <location filename="mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="801"/>
         <source>Dock Files (*.mxdk);;All Files (*.*)</source>
         <translation>Dock-Filer (*.mxdk);;All Files (*.*)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="330"/>
-        <location filename="mainwindow.cpp" line="351"/>
-        <location filename="mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="811"/>
         <source>Could not open file</source>
         <translation>Kunde inte öppna fil</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>Overwrite?</source>
         <translation>Skriva över?</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>Do you want to overwrite the dock file?</source>
         <translation>Vill du skriva över dockfilen?</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="542"/>
         <source>Save file</source>
         <translation>Spara fil</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="492"/>
+        <location filename="../mainwindow.cpp" line="608"/>
         <source>Dock saved</source>
         <translation>Dockan sparad</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="492"/>
+        <location filename="../mainwindow.cpp" line="609"/>
         <source>The dock has been saved.
 
 To edit the newly created dock please select &apos;Edit an existing dock&apos;.</source>
@@ -280,71 +296,76 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
 För att redigera den nya dockan var vänlig välj &apos;Redigera en befintlig docka&apos;.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="511"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>About %1</source>
         <translation>Om %1</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="513"/>
+        <location filename="../mainwindow.cpp" line="627"/>
+        <source>MX Dockmaker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="628"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="514"/>
+        <location filename="../mainwindow.cpp" line="629"/>
         <source>Description goes here</source>
         <translation>Plats för beskrivning</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="516"/>
+        <location filename="../mainwindow.cpp" line="632"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="517"/>
+        <location filename="../mainwindow.cpp" line="633"/>
         <source>%1 License</source>
         <translation>%1 Licens</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="526"/>
+        <location filename="../mainwindow.cpp" line="642"/>
         <source>%1 Help</source>
         <translation>%1 Hjälp</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="638"/>
+        <location filename="../mainwindow.cpp" line="779"/>
         <source>Select .desktop file</source>
         <translation>Välj .desktop fil</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="638"/>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Desktop Files (*.desktop)</source>
         <translation>Skrivbordsfiler (*.desktop)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="800"/>
         <source>Select a dock file</source>
         <translation>Välj en dockfil</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="804"/>
         <source>No file selected</source>
         <translation>Ingen fil vald</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="660"/>
-        <source>You haven't selected any dock file to edit.
+        <location filename="../mainwindow.cpp" line="805"/>
+        <source>You haven&apos;t selected any dock file to edit.
 Creating a new dock instead.</source>
         <translation>Du har inte valt en dockfil att redigera.
 Skapar istället en ny docka.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>Could not open selected file.
 Creating a new dock instead.</source>
         <translation>Kunde inte öppna vald fil.
 Skapar istället en ny docka.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="675"/>
+        <location filename="../mainwindow.cpp" line="820"/>
         <source>1. Edit applications one at a time using the Back and Next buttons
 2. Add or delete applications as you like
 3. When finished click Save</source>
@@ -353,12 +374,12 @@ Skapar istället en ny docka.</translation>
 3. När det är klart tryck på Spara</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="872"/>
         <source>Select icon</source>
         <translation>Välj ikon</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="719"/>
+        <location filename="../mainwindow.cpp" line="873"/>
         <source>Icons (*.png *.jpg *.bmp *.xpm *.svg)</source>
         <translation>Ikoner (*.png *.jpg *.bmp *.xpm *.svg)</translation>
     </message>
@@ -366,77 +387,77 @@ Skapar istället en ny docka.</translation>
 <context>
     <name>PickLocation</name>
     <message>
-        <location filename="picklocation.ui" line="14"/>
+        <location filename="../picklocation.ui" line="14"/>
         <source>Dialog</source>
         <translation>Dialog</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="23"/>
+        <location filename="../picklocation.ui" line="23"/>
         <source>Dock Location</source>
         <translation>Plats för Docka</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="29"/>
+        <location filename="../picklocation.ui" line="29"/>
         <source>TopCenter</source>
         <translation>Överst Mitten</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="45"/>
+        <location filename="../picklocation.ui" line="45"/>
         <source>BottomLeft</source>
         <translation>Nedtill Vänster</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="61"/>
+        <location filename="../picklocation.ui" line="61"/>
         <source>BottomCenter</source>
         <translation>Nedtill Mitten</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="80"/>
+        <location filename="../picklocation.ui" line="80"/>
         <source>TopLeft</source>
         <translation>Överst Vänster</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="96"/>
+        <location filename="../picklocation.ui" line="96"/>
         <source>TopRight</source>
         <translation>Överst Höger</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="112"/>
+        <location filename="../picklocation.ui" line="112"/>
         <source>LeftCenter</source>
         <translation>Vänster Mitten</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="128"/>
+        <location filename="../picklocation.ui" line="128"/>
         <source>RightCenter</source>
         <translation>Höger Mitten</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="144"/>
+        <location filename="../picklocation.ui" line="144"/>
         <source>BottomRight</source>
         <translation>Nedtill Höger</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="160"/>
+        <location filename="../picklocation.ui" line="160"/>
         <source>RightTop</source>
         <translation>Höger Överst</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="173"/>
+        <location filename="../picklocation.ui" line="173"/>
         <source>LeftTop</source>
         <translation>Vänster Överst</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="189"/>
+        <location filename="../picklocation.ui" line="189"/>
         <source>LeftBottom</source>
         <translation>Vänster Nedtill</translation>
     </message>
     <message>
-        <location filename="picklocation.ui" line="205"/>
+        <location filename="../picklocation.ui" line="205"/>
         <source>RightBottom</source>
         <translation>Höger Nedtill</translation>
     </message>
     <message>
-        <location filename="picklocation.cpp" line="9"/>
+        <location filename="../picklocation.cpp" line="9"/>
         <source>Select dock location</source>
         <translation>Välj plats för docka</translation>
     </message>
@@ -444,35 +465,68 @@ Skapar istället en ny docka.</translation>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="about.cpp" line="32"/>
         <source>License</source>
-        <translation>Licens</translation>
+        <translation type="vanished">Licens</translation>
     </message>
     <message>
-        <location filename="about.cpp" line="33"/>
-        <location filename="about.cpp" line="43"/>
         <source>Changelog</source>
-        <translation>Ändringslogg</translation>
+        <translation type="vanished">Ändringslogg</translation>
     </message>
     <message>
-        <location filename="about.cpp" line="34"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation type="vanished">Avbryt</translation>
     </message>
     <message>
-        <location filename="about.cpp" line="51"/>
         <source>&amp;Close</source>
-        <translation>&amp;Close</translation>
+        <translation type="vanished">&amp;Close</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="57"/>
         <source>Error</source>
-        <translation>Fel</translation>
+        <translation type="vanished">Fel</translation>
     </message>
     <message>
-        <location filename="main.cpp" line="58"/>
         <source>You must run this program as normal user.</source>
-        <translation>Du måste köra det här programmet som vanlig användare.</translation>
+        <translation type="vanished">Du måste köra det här programmet som vanlig användare.</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../about.cpp" line="39"/>
+        <source>License</source>
+        <translation type="unfinished">Licens</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="40"/>
+        <location filename="../about.cpp" line="49"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Ändringslogg</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="41"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Avbryt</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="62"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="51"/>
+        <location filename="../main.cpp" line="66"/>
+        <source>Error</source>
+        <translation type="unfinished">Fel</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="52"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="66"/>
+        <source>You must run this program as normal user.</source>
+        <translation type="unfinished">Du måste köra det här programmet som vanlig användare.</translation>
     </message>
 </context>
 </TS>

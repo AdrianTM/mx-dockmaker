@@ -1,3 +1,10 @@
+mx-dockmaker (22.12) mx; urgency=medium
+
+  * Add two more sizes for icons
+  * Update translations
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 27 Dec 2022 16:58:38 -0500
+
 mx-dockmaker (22.10) mx; urgency=medium
 
   * update translations 

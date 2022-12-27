@@ -270,6 +270,16 @@
            </item>
            <item>
             <property name="text">
+             <string>36x36</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>40x40</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
              <string notr="true">48x48</string>
             </property>
            </item>
