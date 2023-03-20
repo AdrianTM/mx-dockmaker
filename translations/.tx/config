@@ -1,8 +1,0 @@
-[main]
-host = https://www.transifex.com
-
-[antix-development.mx-dockmaker]
-file_filter = ./mx-dockmaker_<lang>.ts
-source_file = mx-dockmaker_en.ts
-source_lang = en
-type = ts
