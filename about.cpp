@@ -9,9 +9,10 @@
 #include <QVBoxLayout>
 
 #include "version.h"
+#include <unistd.h>
 
 // display doc as nomal user when run as root
-void displayDoc(const QString &url, const QString &title, bool runned_as_root)
+void displayDoc(const QString &url, const QString &title)
 {
     // prefer mx-viewer otherwise use xdg-open (use runuser to run that as logname user)
     if (QFile::exists(QStringLiteral("/usr/bin/mx-viewer"))) {
@@ -32,7 +33,7 @@ void displayDoc(const QString &url, const QString &title, bool runned_as_root)
 }
 
 void displayAboutMsgBox(const QString &title, const QString &message, const QString &licence_url,
-                        const QString &license_title, bool runned_as_root)
+                        const QString &license_title)
 {
     const auto width = 600;
     const auto height = 500;
@@ -44,7 +45,7 @@ void displayAboutMsgBox(const QString &title, const QString &message, const QStr
 
     msgBox.exec();
     if (msgBox.clickedButton() == btnLicense) {
-        displayDoc(licence_url, license_title, runned_as_root);
+        displayDoc(licence_url, license_title);
     } else if (msgBox.clickedButton() == btnChangelog) {
         auto *changelog = new QDialog;
         changelog->setWindowTitle(QObject::tr("Changelog"));

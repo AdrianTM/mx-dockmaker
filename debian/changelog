@@ -1,3 +1,10 @@
+mx-dockmaker (23.5) mx; urgency=medium
+
+  * Update logo
+  * Refresh translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 17 May 2023 21:54:59 -0400
+
 mx-dockmaker (22.12) mx; urgency=medium
 
   * Add two more sizes for icons

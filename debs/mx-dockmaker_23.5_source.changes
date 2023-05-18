@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 17 May 2023 21:54:59 -0400
+Source: mx-dockmaker
+Architecture: source
+Version: 23.5
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-dockmaker (23.5) mx; urgency=medium
+ .
+   * Update logo
+   * Refresh translations
+Checksums-Sha1:
+ e295568d8351a4765aceeb6a96d88c78a2a50580 1120 mx-dockmaker_23.5.dsc
+ d152327bff983be5fa556925f84f5bd2ba48a270 96860 mx-dockmaker_23.5.tar.xz
+ 68984a7575787c65f466df0951e003a460af1b7a 10740 mx-dockmaker_23.5_amd64.buildinfo
+Checksums-Sha256:
+ a2ce9c316a14a49c991b1e9824668be4bc5f51d778304bbec0b93c51c2c1dd30 1120 mx-dockmaker_23.5.dsc
+ 1397af603d6730af9e373b78b507cc77f5be487d5b1058fe8607ddfe57b8375e 96860 mx-dockmaker_23.5.tar.xz
+ e8910b7bfa7214fb5d85eb2dad383586a44a12e8a15aa2a3b48bf670290b1941 10740 mx-dockmaker_23.5_amd64.buildinfo
+Files:
+ 18ee1399761467d8ea4b9eef31f70ab9 1120 admin optional mx-dockmaker_23.5.dsc
+ cfd2601749c888891eea49c91ee5c6e8 96860 admin optional mx-dockmaker_23.5.tar.xz
+ ff0c58dce164fc8df81412369732325c 10740 admin optional mx-dockmaker_23.5_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRlipITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHfYB/9WelExMGFuVYa2ZGfeTupNKwFbOcwh
+EiGtEjPpc1o6F77MoZMIyrND8bHxZqh2sFg5JRQuVa0Jf8AS8fFKJt8NY6Vj2Nv4
++aV9pgosxkhgf7Q1SXee8wt/5aArtiopUWFvWx5o0Pe5KHvmTzR4rebmBHwcBE75
+jkJoCHlDNdyEGgg1rb+iWF3IMR2Ued3d2LnO2bjd12WUYtnseS5ZBnkmK7nM2Od9
+reqq3qG7LnXg7RxFxhmUb3U8Fuf2uiUSifuJqixlSjzTXHJaI2sFd88HGUFoYLuj
+a+wgZf/bRg7wGkrR8zU2B9muZhriedYUAQjCYNDpaU3FKfn36S+ox3aY
+=zsN5
+-----END PGP SIGNATURE-----

@@ -65,19 +65,19 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="216"/>
-        <location filename="../mainwindow.cpp" line="739"/>
-        <location filename="../mainwindow.cpp" line="853"/>
-        <location filename="../mainwindow.cpp" line="866"/>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="857"/>
+        <location filename="../mainwindow.cpp" line="870"/>
+        <location filename="../mainwindow.cpp" line="894"/>
         <source>Select icon...</source>
         <translation>Symbol auswählen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="229"/>
-        <location filename="../mainwindow.cpp" line="95"/>
-        <location filename="../mainwindow.cpp" line="686"/>
-        <location filename="../mainwindow.cpp" line="743"/>
-        <location filename="../mainwindow.cpp" line="856"/>
+        <location filename="../mainwindow.cpp" line="99"/>
+        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="747"/>
+        <location filename="../mainwindow.cpp" line="860"/>
         <source>Select...</source>
         <translation>Auswählen...</translation>
     </message>
@@ -157,7 +157,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="118"/>
+        <location filename="../mainwindow.cpp" line="122"/>
         <source>1. Add applications to the dock one at a time
 2. Select a .desktop file or enter a command for the application you want
 3. Select icon attributes for size, background (black is standard) and border
@@ -176,68 +176,68 @@
         <translation type="vanished">weiß</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="161"/>
+        <location filename="../mainwindow.cpp" line="165"/>
         <source>This tool allows you to create a new dock with one or more applications. You can also edit or delete a dock created earlier.</source>
         <translation>Mit diesem Tool können Sie ein neues Dock mit einer oder mehreren Anwendungen erstellen. Sie können auch ein zuvor erstelltes Dock bearbeiten oder löschen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="164"/>
+        <location filename="../mainwindow.cpp" line="168"/>
         <source>Operation mode</source>
         <translation>Betriebsmodus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="165"/>
+        <location filename="../mainwindow.cpp" line="169"/>
         <source>&amp;Close</source>
         <translation>&amp;Schließen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="166"/>
+        <location filename="../mainwindow.cpp" line="170"/>
         <source>&amp;Move</source>
         <translation>&amp;Verschieben</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="167"/>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;Delete</source>
         <translation>&amp;Löschen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="168"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>&amp;Edit</source>
         <translation>&amp;Editieren</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="173"/>
         <source>C&amp;reate</source>
         <translation>E&amp;rstellen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Dock name</source>
         <translation>Name des Docks</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Enter the name to show in the Menu:</source>
         <translation>Geben Sie den Namen ein, der im Menü angezeigt werden soll:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Select dock to delete</source>
         <translation>Wählen Sie das zu löschende Dock aus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Confirmation</source>
         <translation>Bestätigung</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Are you sure you want to delete %1?</source>
         <translation>Sind Sie sicher, dass Sie %1 löschen möchten?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Abbrechen</translation>
     </message>
@@ -247,47 +247,47 @@
         <translation>Weiter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="361"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>Select dock to move</source>
         <translation>Wählen Sie das zu verschiebende Dock aus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
-        <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="543"/>
-        <location filename="../mainwindow.cpp" line="801"/>
+        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="547"/>
+        <location filename="../mainwindow.cpp" line="805"/>
         <source>Dock Files (*.mxdk);;All Files (*.*)</source>
         <translation>Dock-Dateien (*.mxdk);;Alle Dateien (*.*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
-        <location filename="../mainwindow.cpp" line="396"/>
-        <location filename="../mainwindow.cpp" line="811"/>
+        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="400"/>
+        <location filename="../mainwindow.cpp" line="815"/>
         <source>Could not open file</source>
         <translation>Datei konnte nicht geöffnet werden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>Overwrite?</source>
         <translation>Überschreiben?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>Do you want to overwrite the dock file?</source>
         <translation>Möchten Sie die Dock-Datei überschreiben?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="542"/>
+        <location filename="../mainwindow.cpp" line="546"/>
         <source>Save file</source>
         <translation>Datei speichern</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="608"/>
+        <location filename="../mainwindow.cpp" line="612"/>
         <source>Dock saved</source>
         <translation>Dock gespeichert</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="609"/>
+        <location filename="../mainwindow.cpp" line="613"/>
         <source>The dock has been saved.
 
 To edit the newly created dock please select &apos;Edit an existing dock&apos;.</source>
@@ -296,76 +296,76 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
 Um das neu erstellte Dock zu bearbeiten, wählen Sie bitte &apos;Ein vorhandenes Dock bearbeiten&apos;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="631"/>
         <source>About %1</source>
         <translation>Über %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="631"/>
         <source>MX Dockmaker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="628"/>
+        <location filename="../mainwindow.cpp" line="632"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="629"/>
+        <location filename="../mainwindow.cpp" line="633"/>
         <source>Description goes here</source>
         <translation>geben Sie hier die Beschreibung ein</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="632"/>
+        <location filename="../mainwindow.cpp" line="636"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="633"/>
+        <location filename="../mainwindow.cpp" line="637"/>
         <source>%1 License</source>
         <translation>%1 Lizenz</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="642"/>
+        <location filename="../mainwindow.cpp" line="646"/>
         <source>%1 Help</source>
         <translation>%1 Hilfe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="779"/>
+        <location filename="../mainwindow.cpp" line="783"/>
         <source>Select .desktop file</source>
         <translation>Wählen Sie .desktop Datei aus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="784"/>
         <source>Desktop Files (*.desktop)</source>
         <translation>Desktop Dateien (*.desktop)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="800"/>
+        <location filename="../mainwindow.cpp" line="804"/>
         <source>Select a dock file</source>
         <translation>Wählen Sie eine Dock-Datei aus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="804"/>
+        <location filename="../mainwindow.cpp" line="808"/>
         <source>No file selected</source>
         <translation>Es wurde keine Datei ausgewählt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="805"/>
+        <location filename="../mainwindow.cpp" line="809"/>
         <source>You haven&apos;t selected any dock file to edit.
 Creating a new dock instead.</source>
         <translation>Sie haben keine Dock-Datei ausgewählt
 Erstellen Sie stattdessen eine neue Dock-Datei.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="812"/>
+        <location filename="../mainwindow.cpp" line="816"/>
         <source>Could not open selected file.
 Creating a new dock instead.</source>
         <translation>Ausgewählte Datei konnte nicht geöffnet werden.
 Stattdessen wurde ein neues Dock erstellt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="820"/>
+        <location filename="../mainwindow.cpp" line="824"/>
         <source>1. Edit applications one at a time using the Back and Next buttons
 2. Add or delete applications as you like
 3. When finished click Save</source>
@@ -374,12 +374,12 @@ Stattdessen wurde ein neues Dock erstellt.</translation>
 3. Wenn Sie fertig sind, klicken Sie auf Speichern.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="872"/>
+        <location filename="../mainwindow.cpp" line="876"/>
         <source>Select icon</source>
         <translation>Symbol auswählen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="873"/>
+        <location filename="../mainwindow.cpp" line="877"/>
         <source>Icons (*.png *.jpg *.bmp *.xpm *.svg)</source>
         <translation>Symbole (*.png *.jpg *.bmp *.xpm *.svg)</translation>
     </message>
@@ -492,23 +492,23 @@ Stattdessen wurde ein neues Dock erstellt.</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="39"/>
+        <location filename="../about.cpp" line="41"/>
         <source>License</source>
         <translation type="unfinished">Lizenz</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="40"/>
-        <location filename="../about.cpp" line="49"/>
+        <location filename="../about.cpp" line="42"/>
+        <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
         <translation type="unfinished">Changelog</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
         <translation type="unfinished">Abbrechen</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="62"/>
+        <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
         <translation type="unfinished">&amp;Schließen</translation>
     </message>

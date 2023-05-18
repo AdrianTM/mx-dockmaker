@@ -63,9 +63,9 @@ public:
     void updateAppList(int idx);
 
     QPixmap findIcon(QString icon_name, QSize size);
-    static QString getDockName(const QString &file_name);
-    QString inputDockName();
     QString pickSlitLocation();
+    static QString getDockName(const QString &file_name);
+    static QString inputDockName();
 
 public slots:
 
