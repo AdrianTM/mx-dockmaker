@@ -634,7 +634,7 @@ void MainWindow::buttonAbout_clicked()
             + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p>"
               "<p align=\"center\">"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        QStringLiteral("/usr/share/doc/mx-dockmaker/license.html"), tr("%1 License").arg(this->windowTitle()), false);
+        QStringLiteral("/usr/share/doc/mx-dockmaker/license.html"), tr("%1 License").arg(this->windowTitle()));
 
     this->show();
 }
@@ -643,7 +643,7 @@ void MainWindow::buttonAbout_clicked()
 void MainWindow::buttonHelp_clicked()
 {
     const QString url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-mx-dockmaker/");
-    displayDoc(url, tr("%1 Help").arg(this->windowTitle()), false);
+    displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
 }
 
 void MainWindow::comboSize_currentTextChanged() { itemChanged(); }

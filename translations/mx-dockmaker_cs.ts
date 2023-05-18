@@ -11,37 +11,37 @@
     <message>
         <location filename="../mainwindow.ui" line="29"/>
         <source>Usage</source>
-        <translation type="unfinished"></translation>
+        <translation>Využití</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="106"/>
         <source>Dock Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Náhled Docku</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="118"/>
         <source>Add New Application</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat novou Aplikaci</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="131"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Příkaz</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="311"/>
         <source>Add application</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat aplikaci</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="405"/>
         <source>Delete this application</source>
-        <translation type="unfinished"></translation>
+        <translation>Odebrat tuto aplikaci</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="124"/>
         <source>Border</source>
-        <translation type="unfinished"></translation>
+        <translation>Ohraničení</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="154"/>
@@ -51,7 +51,7 @@
     <message>
         <location filename="../mainwindow.ui" line="161"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozadí</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="391"/>
@@ -65,19 +65,19 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="216"/>
-        <location filename="../mainwindow.cpp" line="739"/>
-        <location filename="../mainwindow.cpp" line="853"/>
-        <location filename="../mainwindow.cpp" line="866"/>
-        <location filename="../mainwindow.cpp" line="890"/>
+        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="857"/>
+        <location filename="../mainwindow.cpp" line="870"/>
+        <location filename="../mainwindow.cpp" line="894"/>
         <source>Select icon...</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat ikonu...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="229"/>
-        <location filename="../mainwindow.cpp" line="95"/>
-        <location filename="../mainwindow.cpp" line="686"/>
-        <location filename="../mainwindow.cpp" line="743"/>
-        <location filename="../mainwindow.cpp" line="856"/>
+        <location filename="../mainwindow.cpp" line="99"/>
+        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="747"/>
+        <location filename="../mainwindow.cpp" line="860"/>
         <source>Select...</source>
         <translation>Vybrat...</translation>
     </message>
@@ -94,12 +94,12 @@
     <message>
         <location filename="../mainwindow.ui" line="325"/>
         <source>Move right</source>
-        <translation type="unfinished"></translation>
+        <translation>Posunout doprava</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="339"/>
         <source>Move left</source>
-        <translation type="unfinished"></translation>
+        <translation>Posunout doleva</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="451"/>
@@ -157,214 +157,231 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="118"/>
+        <location filename="../mainwindow.cpp" line="122"/>
         <source>1. Add applications to the dock one at a time
 2. Select a .desktop file or enter a command for the application you want
 3. Select icon attributes for size, background (black is standard) and border
 4. Press &quot;Add application&quot; to continue or &quot;Save&quot; to finish</source>
-        <translation type="unfinished"></translation>
+        <translation>1. Jednu po druhé přidejte aplikace do docku
+2. Vyberte soubor .desktop nebo zadejte příkaz pro spuštění aplikace kterou chcete přidat
+3. Zadejte atributy pro valikost ikony, pozadí (černé je předvoleno) a ohraničení
+4. Pro dokončení klikněte na &quot;Přidat aplikaci&quot; nebo &quot;Uložit&quot; </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="161"/>
-        <source>This tool allows you to create a new dock with one or more applications. You can also edit or delete a dock created earlier.</source>
-        <translation type="unfinished"></translation>
+        <source>black</source>
+        <translation type="vanished">černé</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="164"/>
-        <source>Operation mode</source>
-        <translation type="unfinished"></translation>
+        <source>white</source>
+        <translation type="vanished">bílé</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="165"/>
+        <source>This tool allows you to create a new dock with one or more applications. You can also edit or delete a dock created earlier.</source>
+        <translation>Program umožňující vytvoření docku s aplikacemi. Můžete ním taky upravovat nebo smazat již vytvořený dock. </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="168"/>
+        <source>Operation mode</source>
+        <translation>Režim</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="169"/>
         <source>&amp;Close</source>
         <translation>&amp;Zavřít</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="166"/>
+        <location filename="../mainwindow.cpp" line="170"/>
         <source>&amp;Move</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Přesunout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="167"/>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Smazat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="168"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Upravit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="173"/>
         <source>C&amp;reate</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vytvořít</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Dock name</source>
-        <translation type="unfinished"></translation>
+        <translation>Název docku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Enter the name to show in the Menu:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadejte název, který se bude zobrazovat v menu:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Select dock to delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat dock k odstranění</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Confirmation</source>
         <translation>Potvrzení</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Are you sure you want to delete %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Jste si jistí, že chcete odstranit %1?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zavřít</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
         <source>Next</source>
-        <translation>Následující</translation>
+        <translation>Další</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="361"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>Select dock to move</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat dock k přesunutí</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
-        <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="543"/>
-        <location filename="../mainwindow.cpp" line="801"/>
+        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="547"/>
+        <location filename="../mainwindow.cpp" line="805"/>
         <source>Dock Files (*.mxdk);;All Files (*.*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubory Docků  (*.mxdk);;Všechny soubory (*.*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
-        <location filename="../mainwindow.cpp" line="396"/>
-        <location filename="../mainwindow.cpp" line="811"/>
+        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="400"/>
+        <location filename="../mainwindow.cpp" line="815"/>
         <source>Could not open file</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubor se nepodařilo otevřít</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>Overwrite?</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepsát?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>Do you want to overwrite the dock file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Přejete si přepsát soubor docku?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="542"/>
+        <location filename="../mainwindow.cpp" line="546"/>
         <source>Save file</source>
-        <translation type="unfinished"></translation>
+        <translation>Uložit soubor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="608"/>
+        <location filename="../mainwindow.cpp" line="612"/>
         <source>Dock saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Dock byl uložen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="609"/>
+        <location filename="../mainwindow.cpp" line="613"/>
         <source>The dock has been saved.
 
 To edit the newly created dock please select &apos;Edit an existing dock&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dock byl uložen.
+
+Pro editaci existujícího docku zvolte &apos;Upravit stávající dock&apos;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="631"/>
         <source>About %1</source>
-        <translation>O %1</translation>
+        <translation>O programu %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="631"/>
         <source>MX Dockmaker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="628"/>
+        <location filename="../mainwindow.cpp" line="632"/>
         <source>Version: </source>
         <translation>Verze:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="629"/>
+        <location filename="../mainwindow.cpp" line="633"/>
         <source>Description goes here</source>
-        <translation type="unfinished"></translation>
+        <translation>Popis bude zde</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="632"/>
+        <location filename="../mainwindow.cpp" line="636"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Vlastnická práva (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="633"/>
+        <location filename="../mainwindow.cpp" line="637"/>
         <source>%1 License</source>
         <translation>Licence %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="642"/>
+        <location filename="../mainwindow.cpp" line="646"/>
         <source>%1 Help</source>
         <translation>Nápověda %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="779"/>
+        <location filename="../mainwindow.cpp" line="783"/>
         <source>Select .desktop file</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat  .desktop soubor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="784"/>
         <source>Desktop Files (*.desktop)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="800"/>
-        <source>Select a dock file</source>
-        <translation type="unfinished"></translation>
+        <translation>Soubory Desktop (*.desktop)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="804"/>
+        <source>Select a dock file</source>
+        <translation>Vybrat dock soubor</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="808"/>
         <source>No file selected</source>
         <translation>Nebyl vybrán žádný soubor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="805"/>
+        <location filename="../mainwindow.cpp" line="809"/>
         <source>You haven&apos;t selected any dock file to edit.
 Creating a new dock instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nevybrali jste žádný dock k editaci.
+Bude vytvořen nový dock.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="812"/>
+        <location filename="../mainwindow.cpp" line="816"/>
         <source>Could not open selected file.
 Creating a new dock instead.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybraný soubor se nepovedlo otevřít.
+Bude vytvořen nový dock.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="820"/>
+        <location filename="../mainwindow.cpp" line="824"/>
         <source>1. Edit applications one at a time using the Back and Next buttons
 2. Add or delete applications as you like
 3. When finished click Save</source>
-        <translation type="unfinished"></translation>
+        <translation>1. Upravte aplikace jednu po druhé použitím tlačítek Další nebo Zpět 
+2. Přidejte nebo vymažte aplikace dle libosti
+3. Po dokončení zvolte Uložit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="872"/>
+        <location filename="../mainwindow.cpp" line="876"/>
         <source>Select icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat ikonu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="873"/>
+        <location filename="../mainwindow.cpp" line="877"/>
         <source>Icons (*.png *.jpg *.bmp *.xpm *.svg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikony (*.png *.jpg *.bmp *.xpm *.svg)</translation>
     </message>
 </context>
 <context>
@@ -377,72 +394,72 @@ Creating a new dock instead.</source>
     <message>
         <location filename="../picklocation.ui" line="23"/>
         <source>Dock Location</source>
-        <translation type="unfinished"></translation>
+        <translation>Umístnění docku</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="29"/>
         <source>TopCenter</source>
-        <translation type="unfinished"></translation>
+        <translation>Nahoře uprostřed</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="45"/>
         <source>BottomLeft</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo dole</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="61"/>
         <source>BottomCenter</source>
-        <translation type="unfinished"></translation>
+        <translation>Dolů uprostřed</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="80"/>
         <source>TopLeft</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo nahoře</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="96"/>
         <source>TopRight</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo nahoře</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="112"/>
         <source>LeftCenter</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo uprostřed</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="128"/>
         <source>RightCenter</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo uprostřed</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="144"/>
         <source>BottomRight</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo dole</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="160"/>
         <source>RightTop</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo nahoře</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="173"/>
         <source>LeftTop</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo nahoře</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="189"/>
         <source>LeftBottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo dole</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="205"/>
         <source>RightBottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo dole</translation>
     </message>
     <message>
         <location filename="../picklocation.cpp" line="9"/>
         <source>Select dock location</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat umístnění docku</translation>
     </message>
 </context>
 <context>
@@ -475,23 +492,23 @@ Creating a new dock instead.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="39"/>
+        <location filename="../about.cpp" line="41"/>
         <source>License</source>
         <translation type="unfinished">Licence</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="40"/>
-        <location filename="../about.cpp" line="49"/>
+        <location filename="../about.cpp" line="42"/>
+        <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
         <translation type="unfinished">Protokol změn</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="41"/>
+        <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
         <translation type="unfinished">Zrušit</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="62"/>
+        <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
         <translation type="unfinished">&amp;Zavřít</translation>
     </message>
