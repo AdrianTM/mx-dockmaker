@@ -78,8 +78,8 @@ void MainWindow::displayIcon(const QString &app_name, int location)
     } else {
         icon = ui->buttonSelectIcon->text();
     }
-    const int width = ui->comboSize->currentText().section(QStringLiteral("x"), 0, 0).toInt();
-    QSize size(width, width);
+    const quint8 width = ui->comboSize->currentText().section(QStringLiteral("x"), 0, 0).toUShort();
+    const QSize size(width, width);
     const QPixmap pix = findIcon(icon, size).scaled(size);
     if (location == list_icons.size()) {
         list_icons << new QLabel(this);
@@ -285,6 +285,25 @@ QString MainWindow::inputDockName()
     return QString();
 }
 
+void MainWindow::allItemsChanged()
+{
+    changed = true;
+    for (int i = 0; i < apps.size(); ++i) {
+        if (index == i) // skip current element since we apply its style to all
+            return;
+        const QStringList app_info
+            = QStringList({apps.at(i).at(Info::App), apps.at(i).at(Info::Command), apps.at(i).at(Info::Icon),
+                           ui->comboSize->currentText(), ui->comboBgColor->currentText(),
+                           ui->comboBorderColor->currentText(), apps.at(i).at(Info::Extra)});
+        const quint8 width = ui->comboSize->currentText().section(QStringLiteral("x"), 0, 0).toUShort();
+        const QSize size(width, width);
+        list_icons.at(i)->setPixmap(list_icons.at(i)->pixmap(Qt::ReturnByValue).scaled(size));
+        (i < apps.size()) ? apps.replace(i, app_info) : apps.push_back(app_info);
+        list_icons.at(i)->setStyleSheet("background-color: " + ui->comboBgColor->currentText() + ";border: 4px solid "
+                                        + ui->comboBorderColor->currentText() + ";");
+    }
+}
+
 QString MainWindow::pickSlitLocation()
 {
     auto *const pick = new PickLocation(slit_location, this);
@@ -299,6 +318,8 @@ void MainWindow::itemChanged()
     checkDoneEditing();
     displayIcon(ui->buttonSelectApp->text(), index);
     list_icons.at(index)->setStyleSheet(list_icons.at(index)->styleSheet() + "border-width: 10px;");
+    if (ui->checkApplyStyleToAll->isChecked())
+        allItemsChanged();
 }
 
 void MainWindow::mousePressEvent(QMouseEvent *event)
@@ -693,9 +714,18 @@ void MainWindow::resetAdd()
     emit ui->radioDesktop->toggled(true);
     ui->buttonAdd->setDisabled(true);
 
-    const QString bg_color = settings.value(QStringLiteral("BackgroundColor"), "black").toString();
-    const QString border_color = settings.value(QStringLiteral("FrameColor"), "white").toString();
-    const QString size = settings.value(QStringLiteral("Size"), "48x48").toString();
+    QString bg_color;
+    QString border_color;
+    QString size;
+    if (ui->checkApplyStyleToAll->isChecked() && index != 0) { // set style according to the first item
+        bg_color = apps.at(0).at(Info::BgColor);
+        border_color = apps.at(0).at(Info::BorderColor);
+        size = apps.at(0).at(Info::Size);
+    } else {
+        bg_color = settings.value(QStringLiteral("BackgroundColor"), "black").toString();
+        border_color = settings.value(QStringLiteral("FrameColor"), "white").toString();
+        size = settings.value(QStringLiteral("Size"), "48x48").toString();
+    }
 
     blockComboSignals(true);
     ui->comboSize->setCurrentIndex(ui->comboSize->findText(size));
@@ -908,10 +938,13 @@ void MainWindow::buttonAdd_clicked()
     index++;
     resetAdd();
     list_icons.insert(index, new QLabel());
-    QStringList app_info
-        = QStringList({ui->buttonSelectApp->text(), ui->lineEditCommand->text(), ui->buttonSelectIcon->text(),
-                       ui->comboSize->currentText(), ui->comboBgColor->currentText(),
-                       ui->comboBorderColor->currentText(), ui->buttonSelectApp->property("extra_options").toString()});
+    const QStringList app_info {ui->buttonSelectApp->text(),
+                                ui->lineEditCommand->text(),
+                                ui->buttonSelectIcon->text(),
+                                ui->comboSize->currentText(),
+                                ui->comboBgColor->currentText(),
+                                ui->comboBorderColor->currentText(),
+                                ui->buttonSelectApp->property("extra_options").toString()};
     apps.insert(index, app_info);
     ui->icons->insertWidget(index, list_icons.at(index));
     showApp(index, index - 1);
@@ -930,4 +963,10 @@ void MainWindow::buttonMoveRight_clicked()
     if (index == apps.size() - 1)
         return;
     moveIcon(1);
+}
+
+void MainWindow::on_checkApplyStyleToAll_stateChanged(int arg1)
+{
+    if (arg1 == Qt::Checked)
+        allItemsChanged();
 }
