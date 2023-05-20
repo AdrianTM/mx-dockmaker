@@ -70,6 +70,7 @@ public:
 public slots:
 
 private slots:
+    void allItemsChanged();
     void buttonAbout_clicked();
     void buttonAdd_clicked();
     void buttonDelete_clicked();
@@ -88,6 +89,8 @@ private slots:
     void lineEditCommand_textEdited();
     void mousePressEvent(QMouseEvent *event);
     void radioDesktop_toggled(bool checked);
+
+    void on_checkApplyStyleToAll_stateChanged(int arg1);
 
 private:
     Ui::MainWindow *ui;
