@@ -290,7 +290,7 @@ void MainWindow::allItemsChanged()
     changed = true;
     for (int i = 0; i < apps.size(); ++i) {
         if (index == i) // skip current element since we apply its style to all
-            return;
+            continue;
         const QStringList app_info
             = QStringList({apps.at(i).at(Info::App), apps.at(i).at(Info::Command), apps.at(i).at(Info::Icon),
                            ui->comboSize->currentText(), ui->comboBgColor->currentText(),
