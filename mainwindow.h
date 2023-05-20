@@ -82,15 +82,16 @@ private slots:
     void buttonSave_clicked();
     void buttonSelectApp_clicked();
     void buttonSelectIcon_clicked();
+    void checkApplyStyleToAll_stateChanged(int arg1);
     void comboBgColor_currentTextChanged();
     void comboBorderColor_currentTextChanged();
     void comboSize_currentTextChanged();
     void itemChanged();
     void lineEditCommand_textEdited();
     void mousePressEvent(QMouseEvent *event);
+    void pickColor(QWidget *widget);
     void radioDesktop_toggled(bool checked);
-
-    void on_checkApplyStyleToAll_stateChanged(int arg1);
+    void setColor(QWidget *widget, const QColor &color);
 
 private:
     Ui::MainWindow *ui;
