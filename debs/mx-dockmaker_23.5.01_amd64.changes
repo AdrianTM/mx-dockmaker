@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 20 May 2023 19:50:24 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: source amd64
+Version: 23.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - mx-dockmaker
+Changes:
+ mx-dockmaker (23.5.01) mx; urgency=medium
+ .
+   * Add color picker using hex values
+   * Add "apply style to all" checkbox
+Checksums-Sha1:
+ d1c1379e1774cf5670c24d6231932dfa98c3b3ef 1132 mx-dockmaker_23.5.01.dsc
+ ab154e3a977f0b70a19e505e91cf6997fd42b84f 97736 mx-dockmaker_23.5.01.tar.xz
+ 0ff744d453a370cc17c63a59e3423d05233b55c7 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ d5fabf7bcd1a5ee952fb1e0cd97de622d4168bcc 119688 mx-dockmaker_23.5.01_amd64.deb
+Checksums-Sha256:
+ e35c8ad5ad0067aade6770207f2bf24201fb20d00ba6ac35fd81e1defad16f99 1132 mx-dockmaker_23.5.01.dsc
+ 02bf01be29e80b30080e7e9b23c972e9013d42e9c63852c95732452bece61647 97736 mx-dockmaker_23.5.01.tar.xz
+ ca55fe572d8791f73d81424c08caa93bed38b1ba643788f226509afd76a590a5 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ bf4a0272ff5087407fae08029f76805087e5f4fe97c8ab619dc07ce09d37c0e5 119688 mx-dockmaker_23.5.01_amd64.deb
+Files:
+ a505b4200d4eded9968343e98b3efda3 1132 admin optional mx-dockmaker_23.5.01.dsc
+ 9bce2526a98420aeec30f5628b65bf20 97736 admin optional mx-dockmaker_23.5.01.tar.xz
+ 4ab54bf495b1e40092770510a88af1bb 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
+ eda1d015f8810732adc9f5d286464d78 119688 admin optional mx-dockmaker_23.5.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpXy0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumB2kB/wIU360OHPCQvE+oV+v48iMpSp6trm2
+TegElMYlpQTIaTI188fLjBbol3H45ctSLkjxI15Xky5Mo6E9lyGKXPqwT7jQK9L8
+ebihgldeL82m7XXHWC2JhjyhDvH+RfqhUp9VcfxtQBfEQjX73C9vb8VEH+IU94Ym
+xvCpOq6yLy37UYRqmZFexQNG14Ui9E+sQ+QFrR8KZjl3oBR/kFt11aSTQw8tv/Gj
+ioobC8sAl/e65N3UQF+l7wNw5FM+0Tgy7UhufaTfvf7V3XbA63BRpJ0oNK6CRnUp
+xRd4Jh1y2M2xfGvTtFdWOc9guZtybK0Twx/kll+SmemFm/12mL1CepxC
+=Xhyc
+-----END PGP SIGNATURE-----

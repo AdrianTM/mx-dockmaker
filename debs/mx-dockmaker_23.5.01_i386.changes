@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sat, 20 May 2023 19:50:24 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: i386
+Version: 23.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - mx-dockmaker
+Changes:
+ mx-dockmaker (23.5.01) mx; urgency=medium
+ .
+   * Add color picker using hex values
+   * Add "apply style to all" checkbox
+Checksums-Sha1:
+ b6a43522464b8afc47eb5998333ac821c2f105fc 10086 mx-dockmaker_23.5.01_i386.buildinfo
+ 208b1b1fd303367475d63f14d81e090c464d6df2 123556 mx-dockmaker_23.5.01_i386.deb
+Checksums-Sha256:
+ 76b81a511e52cba5a31aa854e143205c41ca9a6f2ff11ebb060ed3cf46199f7b 10086 mx-dockmaker_23.5.01_i386.buildinfo
+ 7bee6cfacac8208cada3cd1563fcf77a352b5a5282dcebb41c3e3d3612526dd2 123556 mx-dockmaker_23.5.01_i386.deb
+Files:
+ af992383a23ab06c702275843dc2dba7 10086 admin optional mx-dockmaker_23.5.01_i386.buildinfo
+ cd975f59908b8ab7ef74a2b04e1e961a 123556 admin optional mx-dockmaker_23.5.01_i386.deb
