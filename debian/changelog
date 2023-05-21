@@ -2,6 +2,7 @@ mx-dockmaker (23.5.01) mx; urgency=medium
 
   * Add color picker using hex values
   * Add "apply style to all" checkbox
+  * Add hover colors
 
  -- Adrian <adrian@mxlinux.org>  Sat, 20 May 2023 19:50:24 -0400
 
