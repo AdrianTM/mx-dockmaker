@@ -17,11 +17,11 @@ Changes:
    * Add "apply style to all" checkbox
    * Add hover colors
 Checksums-Sha1:
- d27374dc3b147e512e31b6dba7fc095f5cbfce2d 10086 mx-dockmaker_23.5.01_i386.buildinfo
- 1ba815fbb851dd9e07f983bf29310a61c879a729 124464 mx-dockmaker_23.5.01_i386.deb
+ ad6ab6de0ec46094f1462a19e97f98c90b86dc7d 10086 mx-dockmaker_23.5.01_i386.buildinfo
+ 7b425c65c26c8cbe8bf8f8db794116ac699cc466 124944 mx-dockmaker_23.5.01_i386.deb
 Checksums-Sha256:
- 4284950c979ac450adfb84be27a5416acdfdd2d2ce2c041f2bc708d996c720d2 10086 mx-dockmaker_23.5.01_i386.buildinfo
- 3d3cf62bb78ffab3d16bccceb2023f9c1c0d60d8d517ac277176b7aa62543934 124464 mx-dockmaker_23.5.01_i386.deb
+ 3ddb6ca3fc789025f523857976b4883733add3f4acbdc86dc67e9924b1f7ff45 10086 mx-dockmaker_23.5.01_i386.buildinfo
+ 64e46bd2f687ba6153f7210a12a5cfced6152bc124d951d4102e8bddc03bd3d5 124944 mx-dockmaker_23.5.01_i386.deb
 Files:
- 2ece85909ff1a43bca648a5dea70acbe 10086 admin optional mx-dockmaker_23.5.01_i386.buildinfo
- 8ef5f69c19cfeb4b35015d598bc6bc96 124464 admin optional mx-dockmaker_23.5.01_i386.deb
+ 6cf269e1c6541ffc03186d81b0941894 10086 admin optional mx-dockmaker_23.5.01_i386.buildinfo
+ 000094588a5c9e6435b3403ba6739de8 124944 admin optional mx-dockmaker_23.5.01_i386.deb
