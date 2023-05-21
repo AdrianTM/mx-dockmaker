@@ -810,9 +810,9 @@ void MainWindow::showApp(int idx, int old_idx)
     blockComboSignals(true);
     ui->comboSize->setCurrentIndex(ui->comboSize->findText(apps.at(idx).at(Info::Size)));
     setColor(ui->widgetBackground, apps.at(idx).at(Info::BgColor));
-    setColor(ui->widgetBackground, apps.at(idx).at(Info::BgHoverColor));
     setColor(ui->widgetBorder, apps.at(idx).at(Info::BorderColor));
-    setColor(ui->widgetBorder, apps.at(idx).at(Info::BorderHoverColor));
+    setColor(ui->widgetHoverBackground, apps.at(idx).at(Info::BgHoverColor));
+    setColor(ui->widgetHoverBorder, apps.at(idx).at(Info::BorderHoverColor));
     ui->buttonSelectApp->setProperty("extra_options", apps.at(idx).at(Info::Extra));
     blockComboSignals(false);
 
