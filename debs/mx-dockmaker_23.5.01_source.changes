@@ -16,26 +16,26 @@ Changes:
    * Add color picker using hex values
    * Add "apply style to all" checkbox
 Checksums-Sha1:
- d1c1379e1774cf5670c24d6231932dfa98c3b3ef 1132 mx-dockmaker_23.5.01.dsc
- ab154e3a977f0b70a19e505e91cf6997fd42b84f 97736 mx-dockmaker_23.5.01.tar.xz
- 0ff744d453a370cc17c63a59e3423d05233b55c7 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ 69d47a0beeb4f9750660b4fc9f9f3c9915860bd3 1183 mx-dockmaker_23.5.01.dsc
+ 03d3ac232e6b72efa33ee257ad74bf182cd6bbd0 97780 mx-dockmaker_23.5.01.tar.xz
+ 357e6b9814de9eb5aa110d211a934454777124fb 10764 mx-dockmaker_23.5.01_amd64.buildinfo
 Checksums-Sha256:
- e35c8ad5ad0067aade6770207f2bf24201fb20d00ba6ac35fd81e1defad16f99 1132 mx-dockmaker_23.5.01.dsc
- 02bf01be29e80b30080e7e9b23c972e9013d42e9c63852c95732452bece61647 97736 mx-dockmaker_23.5.01.tar.xz
- ca55fe572d8791f73d81424c08caa93bed38b1ba643788f226509afd76a590a5 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ 944d8cd799faa23af326db9eac0cd4cd43a3595aebd0a414534b4c98af89a75a 1183 mx-dockmaker_23.5.01.dsc
+ 976a797d9f6aa6be153115ceab30fd8ec09ccced75f96e38a8e55b396dc23315 97780 mx-dockmaker_23.5.01.tar.xz
+ 32d9f8ac8bc31dca661e9c743ff25bcbe9cc9380697c7befe5af6a87a9f1fade 10764 mx-dockmaker_23.5.01_amd64.buildinfo
 Files:
- a505b4200d4eded9968343e98b3efda3 1132 admin optional mx-dockmaker_23.5.01.dsc
- 9bce2526a98420aeec30f5628b65bf20 97736 admin optional mx-dockmaker_23.5.01.tar.xz
- 4ab54bf495b1e40092770510a88af1bb 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
+ dd586257f2329261ecce3c0d4a99375c 1183 admin optional mx-dockmaker_23.5.01.dsc
+ 466f105835d0fbe25eb4effeefdf4596 97780 admin optional mx-dockmaker_23.5.01.tar.xz
+ 718ab1ee6a1a73a203a8e4b01c2926b5 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpXy0THGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNvQB/4vYqU6c93jwSG6KFeCy+mK/cHk5FpJ
-OA97k6TRpn8dgFnItJF1j6cmyW7pwxyQlCAUoJqkCFwpziHY6mOoYFNIlQ5gQN9l
-mpeYH7uyhrTTEU5zBAwhnRw4aZjXXUoIKaEFhpisCA7P/b4xr6uzauVo8gspcokG
-RJrMumOMpq8zOtyevcDVpkfy0iFZqsH0BMUTPAHQfxvTU2bcXOj4NLNA38M3E7t8
-b9LuLrNtXZ6g+eCQZJ2/jpPBDk/aT/l0i8kPcove0vNOZ1quxgKe5SHKdWU2cY8/
-C9Nceh3HVPtNhJNpqq+3sXG5vmH+N30l26JOBPNaFstDphGCWcU3DB0Y
-=CBHC
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpYKUTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumG/WB/996TOr+P+YQaGDm0Rkvo/sXFe53U4e
+LFMMDBxOkfqLt35iTgKnbX/pw1Fh6uziLwXpHlPb1sg3xYFbMpyZGdNen63XUGPk
+l6fY3s+gFzJY/1wZaLDDlbm/SQmIP2uRb4qdJu5gVP+ACZo4J5XbUbT1CD8UWvmf
+rGaw9jtZ49TUxjyPPc8OITaYKJYXR2EC9Lh5EhUbWm9UbiN8jUZObGUxnkVb68MV
+C0AM2rxFadzLE5kdydbh1IKVAqBaoSv/VAKwhqyZDkSqMdWtZsKRA7GHEwb6+75y
+FBjGs75GEtjDprUuBak0gF0O+8WKDWtDGcdYOy1v1qMdhULMh1Rn82BG
+=VdWF
 -----END PGP SIGNATURE-----

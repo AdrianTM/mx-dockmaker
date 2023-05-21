@@ -7,25 +7,26 @@ Binary: mx-dockmaker
 Architecture: any
 Version: 23.5.01
 Maintainer: Adrian <adrian@mxlinux.org>
+Homepage: https://github.com/MX-Linux/mx-dockmaker
 Standards-Version: 3.9.8
 Build-Depends: debhelper (>= 10), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-dockmaker deb admin optional arch=any
 Checksums-Sha1:
- ab154e3a977f0b70a19e505e91cf6997fd42b84f 97736 mx-dockmaker_23.5.01.tar.xz
+ 03d3ac232e6b72efa33ee257ad74bf182cd6bbd0 97780 mx-dockmaker_23.5.01.tar.xz
 Checksums-Sha256:
- 02bf01be29e80b30080e7e9b23c972e9013d42e9c63852c95732452bece61647 97736 mx-dockmaker_23.5.01.tar.xz
+ 976a797d9f6aa6be153115ceab30fd8ec09ccced75f96e38a8e55b396dc23315 97780 mx-dockmaker_23.5.01.tar.xz
 Files:
- 9bce2526a98420aeec30f5628b65bf20 97736 mx-dockmaker_23.5.01.tar.xz
+ 466f105835d0fbe25eb4effeefdf4596 97780 mx-dockmaker_23.5.01.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpXywTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumE/bB/0RaC1qt4js/4DEwEoQEw9TIQjc4Yt1
-d3bSAzMSs9xHbYMfqGVecLrfNC9KujPXbvSYCw9r7mWe+7B1q+zBwvDpYZPWZKaZ
-sVynIOtpokpZabfsGs7D2ybtLzFkpuRrh8gZcnw5e9gWE/80EmR5IfXtTIqqM3ne
-7lVMLOhy+U7yt8Pfg77pA72wg3/nKk9p6VbqGTj++UxVUwmy+zTxaCIfkPHKMKzE
-AacLIJKS4tzLRTTGb9aTSTCWFl0ofGC+OdAhPf2ntmB4Q7QyjU1zx4EKwuURFkvz
-ybhfSDowqOHxH3CDtcNNhVs+1zlPjWSoyu1WoctSTaCohC2Bcog4bzcy
-=Oi4C
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpYKUTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumKcsB/0W2ECGg+gb/ED4FYCn4pGcWXqdjBfb
+8nWcL0qThqkw+GYaXi3I+1KsE+2OiiKV3DpO7IcQ9tuLNomB8vtG98jwtOHfvczw
+RVkhDbeFiXJ6yIAe3LUs520ZJkiJoR2ZazFgrYM2wy0NasGufeO07ybgi83vEZWD
+uocUan5pwOnuTiyqX/xRJ/o9feqXNhBNmq2VRPLF/7FKmeoGDHtijAaj8c2ts8hO
+DkBfdtKL5bUxhVaEhaudY6BNYeOoBc2Lo8Lg24VswXFmAp9vDjImM4oPzbVCBzFS
+Gtd9u0mZAvkxoUpWzC/EYMTd7hVlql8+xc/K/axM1s/7XSpIFb5TKBML
+=iGZE
 -----END PGP SIGNATURE-----
