@@ -144,6 +144,11 @@ void MainWindow::setup(const QString &file)
     settings.setValue(QStringLiteral("FrameHoverColor"),
                       settings.value(QStringLiteral("FrameHoverColor"), "white").toString());
     settings.setValue(QStringLiteral("Size"), settings.value(QStringLiteral("Size"), "48x48").toString());
+    // Set default values
+    setColor(ui->widgetBackground, settings.value("BackgroundColor").toString());
+    setColor(ui->widgetHoverBackground, settings.value("BackgroundHoverColor").toString());
+    setColor(ui->widgetBorder, settings.value("FrameColor").toString());
+    setColor(ui->widgetHoverBorder, settings.value("FrameHoverColor").toString());
 
     blockComboSignals(false);
 
@@ -922,9 +927,9 @@ void MainWindow::pickColor(QWidget *widget)
         setColor(widget, color);
         itemChanged();
         if (widget == ui->widgetBackground)
-            setColor(ui->widgetHoverBackground, color);
+            setColor(ui->widgetHoverBackground, "black");
         else if (widget == ui->widgetBorder)
-            setColor(ui->widgetHoverBorder, color);
+            setColor(ui->widgetHoverBorder, "white");
     }
 }
 
