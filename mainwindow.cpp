@@ -314,6 +314,7 @@ void MainWindow::allItemsChanged()
             "background-color: " + ui->widgetBackground->palette().color(QWidget::backgroundRole()).name()
             + ";border: 4px solid " + ui->widgetBorder->palette().color(QWidget::backgroundRole()).name() + ";");
     }
+    checkDoneEditing();
 }
 
 QString MainWindow::pickSlitLocation()
@@ -535,11 +536,17 @@ void MainWindow::parseFile(QFile &file)
                         ui->buttonSelectIcon->setToolTip(tokens.mid(1).join(QStringLiteral(" ")));
                     }
                 } else if (tokens.at(0) == QLatin1String("k") || tokens.at(0) == QLatin1String("background-color")) {
-                    if (tokens.size() > 1)
-                        setColor(ui->widgetBackground, tokens.at(1));
+                    if (tokens.size() > 1) {
+                        QString color = tokens.at(1);
+                        color.remove("\"");
+                        setColor(ui->widgetBackground, color);
+                    }
                 } else if (tokens.at(0) == QLatin1String("b") || tokens.at(0) == QLatin1String("border-color")) {
-                    if (tokens.size() > 1)
-                        setColor(ui->widgetBorder, tokens.at(1));
+                    if (tokens.size() > 1) {
+                        QString color = tokens.at(1);
+                        color.remove("\"");
+                        setColor(ui->widgetBorder, color);
+                    }
                 } else if (tokens.at(0) == QLatin1String("w") || tokens.at(0) == QLatin1String("window-size")) {
                     if (tokens.size() > 1)
                         ui->comboSize->setCurrentIndex(ui->comboSize->findText(tokens.at(1) + "x" + tokens.at(1)));
@@ -626,8 +633,8 @@ void MainWindow::buttonSave_clicked()
         QString command = (app.at(Info::App).endsWith(QLatin1String(".desktop")))
                               ? "--desktop-file " + app.at(Info::App)
                               : "--command " + app.at(Info::Command) + " --icon " + app.at(Info::Command);
-        out << "wmalauncher " + command + " --background-color " + app.at(Info::BgColor) + " --border-color "
-                   + app.at(Info::BorderColor) + " --window-size "
+        out << "wmalauncher " + command + " --background-color \"" + app.at(Info::BgColor) + "\" --border-color \""
+                   + app.at(Info::BorderColor) + "\" --window-size "
                    + app.at(Info::Size).section(QStringLiteral("x"), 0, 0) + app.at(Info::Extra) + "& sleep 0.1\n";
     }
     file.close();
