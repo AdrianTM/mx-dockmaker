@@ -91,8 +91,6 @@ void MainWindow::displayIcon(const QString &app_name, int location)
     list_icons.at(location)->setStyleSheet(
         "background-color: " + ui->widgetBackground->palette().color(QWidget::backgroundRole()).name()
         + ";border: 4px solid " + ui->widgetBorder->palette().color(QWidget::backgroundRole()).name() + ";");
-    setColor(ui->widgetBackground, ui->widgetBackground->palette().color(QWidget::backgroundRole()).name());
-    setColor(ui->widgetBorder, ui->widgetBorder->palette().color(QWidget::backgroundRole()).name());
 }
 
 bool MainWindow::checkDoneEditing()
@@ -135,31 +133,17 @@ void MainWindow::setup(const QString &file)
         delete ui->icons->layout()->itemAt(0)->widget();
 
     ui->comboSize->setCurrentIndex(ui->comboSize->findText(QStringLiteral("48x48")));
-
-    ui->widgetBackground->setStyleSheet("QWidget {"
-                                        "border-style: solid;"
-                                        "border-width: 1px;"
-                                        "border-color: #888888;"
-                                        "border-radius: 4px;"
-                                        "padding: 0px;"
-                                        "}");
-    ui->widgetBorder->setStyleSheet("QWidget {"
-                                    "border-style: solid;"
-                                    "border-width: 1px;"
-                                    "border-color: #888888;"
-                                    "border-radius: 4px;"
-                                    "padding: 0px;"
-                                    "}");
     file_content.clear();
 
     // Write configs if not there
     settings.setValue(QStringLiteral("BackgroundColor"),
                       settings.value(QStringLiteral("BackgroundColor"), "black").toString());
+    settings.setValue(QStringLiteral("BackgroundHoverColor"),
+                      settings.value(QStringLiteral("BackgroundHoverColor"), "black").toString());
     settings.setValue(QStringLiteral("FrameColor"), settings.value(QStringLiteral("FrameColor"), "white").toString());
+    settings.setValue(QStringLiteral("FrameHoverColor"),
+                      settings.value(QStringLiteral("FrameHoverColor"), "white").toString());
     settings.setValue(QStringLiteral("Size"), settings.value(QStringLiteral("Size"), "48x48").toString());
-
-    const QString bg_color = settings.value(QStringLiteral("BackgroundColor"), "black").toString();
-    const QString border_color = settings.value(QStringLiteral("FrameColor"), "white").toString();
 
     blockComboSignals(false);
 
@@ -301,7 +285,9 @@ void MainWindow::allItemsChanged()
         const QStringList app_info = QStringList(
             {apps.at(i).at(Info::App), apps.at(i).at(Info::Command), apps.at(i).at(Info::Icon),
              ui->comboSize->currentText(), ui->widgetBackground->palette().color(QWidget::backgroundRole()).name(),
-             ui->widgetBorder->palette().color(QWidget::backgroundRole()).name(), apps.at(i).at(Info::Extra)});
+             ui->widgetHoverBackground->palette().color(QWidget::backgroundRole()).name(),
+             ui->widgetBorder->palette().color(QWidget::backgroundRole()).name(),
+             ui->widgetHoverBorder->palette().color(QWidget::backgroundRole()).name(), apps.at(i).at(Info::Extra)});
         const quint8 width = ui->comboSize->currentText().section(QStringLiteral("x"), 0, 0).toUShort();
         const QSize size(width, width);
 #if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
@@ -353,11 +339,13 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 
 void MainWindow::updateAppList(int idx)
 {
-    const QStringList app_info = QStringList({ui->buttonSelectApp->text(), ui->lineEditCommand->text(),
-                                              ui->buttonSelectIcon->text(), ui->comboSize->currentText(),
-                                              ui->widgetBackground->palette().color(QWidget::backgroundRole()).name(),
-                                              ui->widgetBorder->palette().color(QWidget::backgroundRole()).name(),
-                                              ui->buttonSelectApp->property("extra_options").toString()});
+    const QStringList app_info = QStringList(
+        {ui->buttonSelectApp->text(), ui->lineEditCommand->text(), ui->buttonSelectIcon->text(),
+         ui->comboSize->currentText(), ui->widgetBackground->palette().color(QWidget::backgroundRole()).name(),
+         ui->widgetHoverBackground->palette().color(QWidget::backgroundRole()).name(),
+         ui->widgetBorder->palette().color(QWidget::backgroundRole()).name(),
+         ui->widgetHoverBorder->palette().color(QWidget::backgroundRole()).name(),
+         ui->buttonSelectApp->property("extra_options").toString()});
     (idx < apps.size()) ? apps.replace(idx, app_info) : apps.push_back(app_info);
 }
 
@@ -541,11 +529,24 @@ void MainWindow::parseFile(QFile &file)
                         color.remove("\"");
                         setColor(ui->widgetBackground, color);
                     }
+                } else if (tokens.at(0) == QLatin1String("K")
+                           || tokens.at(0) == QLatin1String("hover-background-color")) {
+                    if (tokens.size() > 1) {
+                        QString color = tokens.at(1);
+                        color.remove("\"");
+                        setColor(ui->widgetHoverBackground, color);
+                    }
                 } else if (tokens.at(0) == QLatin1String("b") || tokens.at(0) == QLatin1String("border-color")) {
                     if (tokens.size() > 1) {
                         QString color = tokens.at(1);
                         color.remove("\"");
                         setColor(ui->widgetBorder, color);
+                    }
+                } else if (tokens.at(0) == QLatin1String("B") || tokens.at(0) == QLatin1String("hover-border-color")) {
+                    if (tokens.size() > 1) {
+                        QString color = tokens.at(1);
+                        color.remove("\"");
+                        setColor(ui->widgetHoverBorder, color);
                     }
                 } else if (tokens.at(0) == QLatin1String("w") || tokens.at(0) == QLatin1String("window-size")) {
                     if (tokens.size() > 1)
@@ -633,9 +634,11 @@ void MainWindow::buttonSave_clicked()
         QString command = (app.at(Info::App).endsWith(QLatin1String(".desktop")))
                               ? "--desktop-file " + app.at(Info::App)
                               : "--command " + app.at(Info::Command) + " --icon " + app.at(Info::Command);
-        out << "wmalauncher " + command + " --background-color \"" + app.at(Info::BgColor) + "\" --border-color \""
-                   + app.at(Info::BorderColor) + "\" --window-size "
-                   + app.at(Info::Size).section(QStringLiteral("x"), 0, 0) + app.at(Info::Extra) + "& sleep 0.1\n";
+        out << "wmalauncher " + command + " --background-color \"" + app.at(Info::BgColor)
+                   + "\" --hover-background-color \"" + app.at(Info::BgHoverColor) + "\" --border-color \""
+                   + app.at(Info::BorderColor) + "\" --hover-border-color \"" + app.at(Info::BorderHoverColor)
+                   + "\" --window-size " + app.at(Info::Size).section(QStringLiteral("x"), 0, 0) + app.at(Info::Extra)
+                   + "& sleep 0.1\n";
     }
     file.close();
     QFile::setPermissions(file_name, QFlag(0x744));
@@ -733,16 +736,10 @@ void MainWindow::resetAdd()
     emit ui->radioDesktop->toggled(true);
     ui->buttonAdd->setDisabled(true);
 
-    QString bg_color;
-    QString border_color;
     QString size;
     if (ui->checkApplyStyleToAll->isChecked() && index != 0) { // set style according to the first item
-        bg_color = apps.at(0).at(Info::BgColor);
-        border_color = apps.at(0).at(Info::BorderColor);
         size = apps.at(0).at(Info::Size);
     } else {
-        bg_color = settings.value(QStringLiteral("BackgroundColor"), "black").toString();
-        border_color = settings.value(QStringLiteral("FrameColor"), "white").toString();
         size = settings.value(QStringLiteral("Size"), "48x48").toString();
     }
 
@@ -773,6 +770,8 @@ void MainWindow::setConnections()
     connect(ui->radioDesktop, &QRadioButton::toggled, this, &MainWindow::radioDesktop_toggled);
     connect(ui->toolBackground, &QToolButton::clicked, this, [this] { pickColor(ui->widgetBackground); });
     connect(ui->toolBorder, &QToolButton::clicked, this, [this] { pickColor(ui->widgetBorder); });
+    connect(ui->toolHoverBackground, &QToolButton::clicked, this, [this] { pickColor(ui->widgetHoverBackground); });
+    connect(ui->toolHoverBorder, &QToolButton::clicked, this, [this] { pickColor(ui->widgetHoverBorder); });
 }
 
 void MainWindow::showApp(int idx, int old_idx)
@@ -807,7 +806,9 @@ void MainWindow::showApp(int idx, int old_idx)
     blockComboSignals(true);
     ui->comboSize->setCurrentIndex(ui->comboSize->findText(apps.at(idx).at(Info::Size)));
     setColor(ui->widgetBackground, apps.at(idx).at(Info::BgColor));
+    setColor(ui->widgetBackground, apps.at(idx).at(Info::BgHoverColor));
     setColor(ui->widgetBorder, apps.at(idx).at(Info::BorderColor));
+    setColor(ui->widgetBorder, apps.at(idx).at(Info::BorderHoverColor));
     ui->buttonSelectApp->setProperty("extra_options", apps.at(idx).at(Info::Extra));
     blockComboSignals(false);
 
@@ -916,14 +917,15 @@ void MainWindow::pickColor(QWidget *widget)
     if (color.isValid()) {
         setColor(widget, color);
         itemChanged();
-        // if (widget == ui->widgetBackground)
+        if (widget == ui->widgetBackground)
+            setColor(ui->widgetHoverBackground, color);
+        else if (widget == ui->widgetBorder)
+            setColor(ui->widgetHoverBorder, color);
     }
 }
 
 void MainWindow::setColor(QWidget *widget, const QColor &color)
 {
-    // widget->parentWidget()->show();
-    qDebug() << "COLOR" << color;
     if (color.isValid()) {
         QPalette pal = palette();
         pal.setColor(QPalette::Window, color);
@@ -982,7 +984,9 @@ void MainWindow::buttonAdd_clicked()
                                 ui->buttonSelectIcon->text(),
                                 ui->comboSize->currentText(),
                                 ui->widgetBackground->palette().color(QWidget::backgroundRole()).name(),
+                                ui->widgetHoverBackground->palette().color(QWidget::backgroundRole()).name(),
                                 ui->widgetBorder->palette().color(QWidget::backgroundRole()).name(),
+                                ui->widgetHoverBorder->palette().color(QWidget::backgroundRole()).name(),
                                 ui->buttonSelectApp->property("extra_options").toString()};
     apps.insert(index, app_info);
     ui->icons->insertWidget(index, list_icons.at(index));

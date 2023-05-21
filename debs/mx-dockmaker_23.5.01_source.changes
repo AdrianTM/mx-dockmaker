@@ -15,27 +15,28 @@ Changes:
  .
    * Add color picker using hex values
    * Add "apply style to all" checkbox
+   * Add hover colors
 Checksums-Sha1:
- 69d47a0beeb4f9750660b4fc9f9f3c9915860bd3 1183 mx-dockmaker_23.5.01.dsc
- 03d3ac232e6b72efa33ee257ad74bf182cd6bbd0 97780 mx-dockmaker_23.5.01.tar.xz
- 357e6b9814de9eb5aa110d211a934454777124fb 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ 93b63fdce397b9c3fb7fcfda3fe3e78b61ff0f6b 1183 mx-dockmaker_23.5.01.dsc
+ 1c8d516c5d5b37ab82415837b8b35a5a986d165f 97928 mx-dockmaker_23.5.01.tar.xz
+ 048e58b3c9e13022bfda726b290badc9200a4caa 10764 mx-dockmaker_23.5.01_amd64.buildinfo
 Checksums-Sha256:
- 944d8cd799faa23af326db9eac0cd4cd43a3595aebd0a414534b4c98af89a75a 1183 mx-dockmaker_23.5.01.dsc
- 976a797d9f6aa6be153115ceab30fd8ec09ccced75f96e38a8e55b396dc23315 97780 mx-dockmaker_23.5.01.tar.xz
- 32d9f8ac8bc31dca661e9c743ff25bcbe9cc9380697c7befe5af6a87a9f1fade 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ d1593a85930a31ad724524e571c6feb88bdf8cb4270ef1f86e158afaab0eda60 1183 mx-dockmaker_23.5.01.dsc
+ cc584dac78ed083e674492c6b2f476f5c8edde6a62956f994163f904378d163f 97928 mx-dockmaker_23.5.01.tar.xz
+ 0c9931f29cf708b475ef5723ebb63de9abc7390014e668847cf3196c2bfd87d0 10764 mx-dockmaker_23.5.01_amd64.buildinfo
 Files:
- dd586257f2329261ecce3c0d4a99375c 1183 admin optional mx-dockmaker_23.5.01.dsc
- 466f105835d0fbe25eb4effeefdf4596 97780 admin optional mx-dockmaker_23.5.01.tar.xz
- 718ab1ee6a1a73a203a8e4b01c2926b5 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
+ 1ff511ae26702eb97e8a80580552bab6 1183 admin optional mx-dockmaker_23.5.01.dsc
+ 700433c1f0d3b27415653c7c3a125936 97928 admin optional mx-dockmaker_23.5.01.tar.xz
+ d8186873a2da30bcced9173d49a6de65 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpYKUTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumG/WB/996TOr+P+YQaGDm0Rkvo/sXFe53U4e
-LFMMDBxOkfqLt35iTgKnbX/pw1Fh6uziLwXpHlPb1sg3xYFbMpyZGdNen63XUGPk
-l6fY3s+gFzJY/1wZaLDDlbm/SQmIP2uRb4qdJu5gVP+ACZo4J5XbUbT1CD8UWvmf
-rGaw9jtZ49TUxjyPPc8OITaYKJYXR2EC9Lh5EhUbWm9UbiN8jUZObGUxnkVb68MV
-C0AM2rxFadzLE5kdydbh1IKVAqBaoSv/VAKwhqyZDkSqMdWtZsKRA7GHEwb6+75y
-FBjGs75GEtjDprUuBak0gF0O+8WKDWtDGcdYOy1v1qMdhULMh1Rn82BG
-=VdWF
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRqFWcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLDQCACKFKgEvdZC0L8gtKh0jirPPlCjlrpA
+lPea9m9KrnXII5DK4M+yCtonu5fU6M9nvHfMdc+bgHsTtsIWrk5CkM2EiYJhOYt9
+3XNe6KT5k3CpPbNZV9gckWFpr4+w/tb2I1AX3RgRRhVGeNyC6m78W+WuSd6o2R4E
+73bzz3xu5otA1R0kF2DLaylYzkDLU/g+rhfokT3+0GbwvVKTbADBm2k2CPHcCY6K
+YKab+9wtbjn/OzDiMMaQDubR4Ktc2on5GPRZmqiJbR80risrHE0HhKaG022LAcZX
+Ds7zSGCpDDSp30N763qtY4bx6F3l68gc5QHslOX+9hDMyvH4aLsvLt2f
+=SaGU
 -----END PGP SIGNATURE-----

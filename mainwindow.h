@@ -43,7 +43,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr, const QString &file = QString());
     ~MainWindow();
 
-    enum Info { App, Command, Icon, Size, BgColor, BorderColor, Extra };
+    enum Info { App, Command, Icon, Size, BgColor, BgHoverColor, BorderColor, BorderHoverColor, Extra };
     bool checkDoneEditing();
     bool isDockInMenu(const QString &file_name);
 

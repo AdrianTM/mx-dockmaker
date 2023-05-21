@@ -18,30 +18,31 @@ Changes:
  .
    * Add color picker using hex values
    * Add "apply style to all" checkbox
+   * Add hover colors
 Checksums-Sha1:
- 69d47a0beeb4f9750660b4fc9f9f3c9915860bd3 1183 mx-dockmaker_23.5.01.dsc
- 03d3ac232e6b72efa33ee257ad74bf182cd6bbd0 97780 mx-dockmaker_23.5.01.tar.xz
- 357e6b9814de9eb5aa110d211a934454777124fb 10764 mx-dockmaker_23.5.01_amd64.buildinfo
- ec6f233d168cc2023a3779138e9d49c588596f1c 119760 mx-dockmaker_23.5.01_amd64.deb
+ 93b63fdce397b9c3fb7fcfda3fe3e78b61ff0f6b 1183 mx-dockmaker_23.5.01.dsc
+ 1c8d516c5d5b37ab82415837b8b35a5a986d165f 97928 mx-dockmaker_23.5.01.tar.xz
+ 048e58b3c9e13022bfda726b290badc9200a4caa 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ 4d7c3f42e8ea5e3c4f4f2bc4281290efe9dd5fbd 120796 mx-dockmaker_23.5.01_amd64.deb
 Checksums-Sha256:
- 944d8cd799faa23af326db9eac0cd4cd43a3595aebd0a414534b4c98af89a75a 1183 mx-dockmaker_23.5.01.dsc
- 976a797d9f6aa6be153115ceab30fd8ec09ccced75f96e38a8e55b396dc23315 97780 mx-dockmaker_23.5.01.tar.xz
- 32d9f8ac8bc31dca661e9c743ff25bcbe9cc9380697c7befe5af6a87a9f1fade 10764 mx-dockmaker_23.5.01_amd64.buildinfo
- 25d0e30469a274ca959c730a91a154da722cda67d1fc33954994efc20eca99d2 119760 mx-dockmaker_23.5.01_amd64.deb
+ d1593a85930a31ad724524e571c6feb88bdf8cb4270ef1f86e158afaab0eda60 1183 mx-dockmaker_23.5.01.dsc
+ cc584dac78ed083e674492c6b2f476f5c8edde6a62956f994163f904378d163f 97928 mx-dockmaker_23.5.01.tar.xz
+ 0c9931f29cf708b475ef5723ebb63de9abc7390014e668847cf3196c2bfd87d0 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+ 2096df9432311824194376e01dd727e3de1b96e39db0e05550bda7f024528aaa 120796 mx-dockmaker_23.5.01_amd64.deb
 Files:
- dd586257f2329261ecce3c0d4a99375c 1183 admin optional mx-dockmaker_23.5.01.dsc
- 466f105835d0fbe25eb4effeefdf4596 97780 admin optional mx-dockmaker_23.5.01.tar.xz
- 718ab1ee6a1a73a203a8e4b01c2926b5 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
- 74df64185a46f297412a4458e086b26c 119760 admin optional mx-dockmaker_23.5.01_amd64.deb
+ 1ff511ae26702eb97e8a80580552bab6 1183 admin optional mx-dockmaker_23.5.01.dsc
+ 700433c1f0d3b27415653c7c3a125936 97928 admin optional mx-dockmaker_23.5.01.tar.xz
+ d8186873a2da30bcced9173d49a6de65 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
+ 0d3c8a2c60a2eec3ae00de6ffa1e36a0 120796 admin optional mx-dockmaker_23.5.01_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpYKUTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCEzB/4j5c/P6uiUjxtEiBRqOgE4NhSHmUH3
-uwIwnkFTPWAkLOlG/++pNRNK88f0DcNoCEI9ipI3VsYzEq6voUSFKruB6sb/Djcw
-cgk0E3ajLJbMFHxi06rcNNOxXvu/v7tfLPFjrnderzERxkkWrJ9AsjLWeflgpezn
-i7AaF7tfZ+HwS1mH0llRsIw2JDePIJm3soOPOE6MMkhv99HLYKq1hd5343pS20Yp
-frTKrsczMc8Ny8W4Z8TqahabvnZyUDmg1cxyzys7YAZMTReuBHzpNynHl+vzP6Vs
-IsMPIrfSskeLOaWvtYj61/WOYnT21NafLHho/8tFrdTZCU/r1cleI1Nc
-=C2k/
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRqFWcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOPKB/9Ca1QcPSNCivUuvasGV/uzi/NvHNL5
+RfuZez+jduSNdiXu9U66w5QbtLDtiMcMof9J0NnC0ocEXSbX3vRglstS7I+V3Seg
+CLJ73/jxyiS9a2FDetmYeStLgO/rkIs1sOfkdCnUvb3VgZCWGIBZWG6/1s1oaBiu
+Lz+JZCnKOPz5bLMie4b3I3XnAW2CWc8iYdNsEgi1QhNPYEvWaqxDGllXDGTiYgsA
+MiRm08/0OkxXu5whInySeM4Fqu6VeuVPXE9+4fjy5KKoa4s6kQ4S26c9F++5kpyT
+/vUBBBM3GTruLCyU6TnYMT/ot+y1CznuwCCmwg96mS1CwhSt5ZhceH4H
+=iDua
 -----END PGP SIGNATURE-----
