@@ -304,7 +304,11 @@ void MainWindow::allItemsChanged()
              ui->widgetBorder->palette().color(QWidget::backgroundRole()).name(), apps.at(i).at(Info::Extra)});
         const quint8 width = ui->comboSize->currentText().section(QStringLiteral("x"), 0, 0).toUShort();
         const QSize size(width, width);
+#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
+        list_icons.at(i)->setPixmap(list_icons.at(i)->pixmap()->scaled(size));
+#else
         list_icons.at(i)->setPixmap(list_icons.at(i)->pixmap(Qt::ReturnByValue).scaled(size));
+#endif
         (i < apps.size()) ? apps.replace(i, app_info) : apps.push_back(app_info);
         list_icons.at(i)->setStyleSheet(
             "background-color: " + ui->widgetBackground->palette().color(QWidget::backgroundRole()).name()
@@ -460,7 +464,7 @@ void MainWindow::moveIcon(int pos)
 {
     changed = true;
 #if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
-    // swap instaed of swapItemAt and don't use Qt::ReturnByValue for pixmap to make it work in Buster
+    // swap instead of swapItemAt and don't use Qt::ReturnByValue for pixmap to make it work in Buster
     apps.swap(index, index + pos);
     QPixmap map = *list_icons.at(index)->pixmap();
     list_icons.at(index)->setPixmap(*list_icons.at(index + pos)->pixmap());

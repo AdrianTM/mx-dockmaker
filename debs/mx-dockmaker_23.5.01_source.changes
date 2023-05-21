@@ -1,0 +1,41 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 20 May 2023 19:50:24 -0400
+Source: mx-dockmaker
+Architecture: source
+Version: 23.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-dockmaker (23.5.01) mx; urgency=medium
+ .
+   * Add color picker using hex values
+   * Add "apply style to all" checkbox
+Checksums-Sha1:
+ d1c1379e1774cf5670c24d6231932dfa98c3b3ef 1132 mx-dockmaker_23.5.01.dsc
+ ab154e3a977f0b70a19e505e91cf6997fd42b84f 97736 mx-dockmaker_23.5.01.tar.xz
+ 0ff744d453a370cc17c63a59e3423d05233b55c7 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+Checksums-Sha256:
+ e35c8ad5ad0067aade6770207f2bf24201fb20d00ba6ac35fd81e1defad16f99 1132 mx-dockmaker_23.5.01.dsc
+ 02bf01be29e80b30080e7e9b23c972e9013d42e9c63852c95732452bece61647 97736 mx-dockmaker_23.5.01.tar.xz
+ ca55fe572d8791f73d81424c08caa93bed38b1ba643788f226509afd76a590a5 10764 mx-dockmaker_23.5.01_amd64.buildinfo
+Files:
+ a505b4200d4eded9968343e98b3efda3 1132 admin optional mx-dockmaker_23.5.01.dsc
+ 9bce2526a98420aeec30f5628b65bf20 97736 admin optional mx-dockmaker_23.5.01.tar.xz
+ 4ab54bf495b1e40092770510a88af1bb 10764 admin optional mx-dockmaker_23.5.01_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRpXy0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNvQB/4vYqU6c93jwSG6KFeCy+mK/cHk5FpJ
+OA97k6TRpn8dgFnItJF1j6cmyW7pwxyQlCAUoJqkCFwpziHY6mOoYFNIlQ5gQN9l
+mpeYH7uyhrTTEU5zBAwhnRw4aZjXXUoIKaEFhpisCA7P/b4xr6uzauVo8gspcokG
+RJrMumOMpq8zOtyevcDVpkfy0iFZqsH0BMUTPAHQfxvTU2bcXOj4NLNA38M3E7t8
+b9LuLrNtXZ6g+eCQZJ2/jpPBDk/aT/l0i8kPcove0vNOZ1quxgKe5SHKdWU2cY8/
+C9Nceh3HVPtNhJNpqq+3sXG5vmH+N30l26JOBPNaFstDphGCWcU3DB0Y
+=CBHC
+-----END PGP SIGNATURE-----
