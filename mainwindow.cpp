@@ -325,8 +325,12 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     if (this->childAt(event->pos()) == ui->widgetBackground)
         pickColor(ui->widgetBackground);
+    else if (this->childAt(event->pos()) == ui->widgetHoverBackground)
+        pickColor(ui->widgetHoverBackground);
     else if (this->childAt(event->pos()) == ui->widgetBorder)
         pickColor(ui->widgetBorder);
+    else if (this->childAt(event->pos()) == ui->widgetHoverBorder)
+        pickColor(ui->widgetHoverBorder);
     if (!checkDoneEditing())
         return;
     if (event->button() == Qt::LeftButton) {
