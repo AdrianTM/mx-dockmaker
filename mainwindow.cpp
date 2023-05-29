@@ -38,7 +38,6 @@ MainWindow::MainWindow(QWidget *parent, const QString &file)
     : QDialog(parent)
     , ui(new Ui::MainWindow)
 {
-    qDebug() << "Program Version:" << VERSION;
     ui->setupUi(this);
     setConnections();
     setWindowFlags(Qt::Window); // for the close, min and max buttons
