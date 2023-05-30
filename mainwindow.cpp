@@ -641,7 +641,7 @@ void MainWindow::buttonSave_clicked()
     for (const auto &app : qAsConst(apps)) {
         QString command = (app.at(Info::App).endsWith(QLatin1String(".desktop")))
                               ? "--desktop-file " + app.at(Info::App)
-                              : "--command " + app.at(Info::Command) + " --icon " + app.at(Info::Command);
+                              : "--command " + app.at(Info::Command) + " --icon " + app.at(Info::Icon);
         out << "wmalauncher " + command + " --background-color \"" + app.at(Info::BgColor)
                    + "\" --hover-background-color \"" + app.at(Info::BgHoverColor) + "\" --border-color \""
                    + app.at(Info::BorderColor) + "\" --hover-border-color \"" + app.at(Info::BorderHoverColor)
