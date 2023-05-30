@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 30 May 2023 18:59:15 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: source amd64
+Version: 23.5.03
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - Dockmaker for MX Linux
+Changes:
+ mx-dockmaker (23.5.03) mx; urgency=medium
+ .
+   * Fix: setting icon for manual commands
+Checksums-Sha1:
+ f948acce664380687f9bf57627c326c287ffcba3 1183 mx-dockmaker_23.5.03.dsc
+ fa96598c9ae1323a82190243faa7487abba9aa3c 98016 mx-dockmaker_23.5.03.tar.xz
+ 12c212f2fc58e314f5bb169249ac9e248f7cfc0a 10764 mx-dockmaker_23.5.03_amd64.buildinfo
+ 5a0d49576ba0d6b6a19ef178c9e257a1da80c9b2 121128 mx-dockmaker_23.5.03_amd64.deb
+Checksums-Sha256:
+ 2ccf7c9f6a4ae522ca26b8182114f099d47f39235d87e36f53c3e13de8e71f84 1183 mx-dockmaker_23.5.03.dsc
+ ebf01cb8fdbc64719bd8efb2c484bd9a11ac41bae9768402dfb1f35eea385697 98016 mx-dockmaker_23.5.03.tar.xz
+ 4b584909d302e972b662276c1b7ad5326b537fe71f97ecdbb81918d7299fd539 10764 mx-dockmaker_23.5.03_amd64.buildinfo
+ b7e50f367b2add82fe2feda9209878d2b7fffbf08d3b319fb6871b50f0726cb4 121128 mx-dockmaker_23.5.03_amd64.deb
+Files:
+ 06d854c9755b3640b6ef142a6ffed64c 1183 admin optional mx-dockmaker_23.5.03.dsc
+ 90a9892dbfd3143c1f4cf649eb4e1242 98016 admin optional mx-dockmaker_23.5.03.tar.xz
+ a88c0dc9055046b70fd9063d6b94c94c 10764 admin optional mx-dockmaker_23.5.03_amd64.buildinfo
+ e88ef51cfce09ca725f3cf6c92a05af2 121128 admin optional mx-dockmaker_23.5.03_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmR2gD0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAGvCACfaB5PlhjWsUM+/p00GLDJpoRB863e
+bm22dguVtAnjXDYaRIKr4x084XfjIfQJhKEVo6lDzBKpCx0eISpGV6b03r+0x/2A
+ZO7Bo72rGWduCoPLhz5lanAkdfmrRLNGF3nXmKD+/0rgotmaaZUrrBY3Q7VIKZ1T
+ZkW60Rwz/4Z+HIn6Gb8vQ+MRKbb+O+fKGmjyfwOm4ThvQ4S7rmsvwQx/VvM7f8SG
+rk9a+esD1W5U1U/ZEqAzZF79JE1Q7qR0bNAsecaKFq4/yspuJZ5R+0PvGwvh55PB
+oIjI2rVSzLXHW5hDhklOlfs4jXMwBXHXScSFJFqDG5dfOHf+3pqpI/M7
+=TAFF
+-----END PGP SIGNATURE-----

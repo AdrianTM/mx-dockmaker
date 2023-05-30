@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 30 May 2023 18:59:15 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: i386
+Version: 23.5.03
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - Dockmaker for MX Linux
+Changes:
+ mx-dockmaker (23.5.03) mx; urgency=medium
+ .
+   * Fix: setting icon for manual commands
+Checksums-Sha1:
+ b8c4cd0d476d284ac01af877572ca01613390b8b 10086 mx-dockmaker_23.5.03_i386.buildinfo
+ 63bd25ea1b5ed01bd9f4cc16ee06af3aa53a85fa 124980 mx-dockmaker_23.5.03_i386.deb
+Checksums-Sha256:
+ 2fd88d3ed8cf2df7ccda28b590784bb4f163ee690399e4e83c0047c81c36fbbf 10086 mx-dockmaker_23.5.03_i386.buildinfo
+ 1921755eecd1b730f6ec31311c65ccf33b5b17e9948070fd044e667b114d7917 124980 mx-dockmaker_23.5.03_i386.deb
+Files:
+ ac35369c276b1821ae2b9603a3efbade 10086 admin optional mx-dockmaker_23.5.03_i386.buildinfo
+ 8f69fce71cb06f74687883f8b20d115d 124980 admin optional mx-dockmaker_23.5.03_i386.deb
