@@ -1,3 +1,9 @@
+mx-dockmaker (23.5.03) mx; urgency=medium
+
+  * Fix: setting icon for manual commands 
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 30 May 2023 18:59:15 -0400
+
 mx-dockmaker (23.5.02) mx; urgency=medium
 
   * Change layout to make the window shorter
