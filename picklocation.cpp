@@ -41,11 +41,12 @@ PickLocation::PickLocation(const QString &location, QWidget *parent)
 #else
     connect(buttonGroup, &QButtonGroup::idClicked, this, &PickLocation::onGroupButton);
 #endif
-    for (const auto &button : buttonGroup->buttons()) {
-        if (location == button->property("location").toString()) {
-            button->click();
-            return;
-        }
+    auto it = std::find_if(buttonGroup->buttons().cbegin(), buttonGroup->buttons().cend(),
+                           [&](const auto *button) { return location == button->property("location").toString(); });
+
+    if (it != buttonGroup->buttons().cend()) {
+        (*it)->click();
+        return;
     }
     ui->buttonBC->click();
 }
