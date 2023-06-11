@@ -32,18 +32,18 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    a.setWindowIcon(QIcon("/usr/share/icons/hicolor/192x192/apps/mx-dockmaker.png"));
-    a.setApplicationName(QStringLiteral("mx-dockmaker"));
-    a.setOrganizationName(QStringLiteral("MX-Linux"));
+    QApplication::setWindowIcon(QIcon("/usr/share/icons/hicolor/192x192/apps/mx-dockmaker.png"));
+    QApplication::setApplicationName(QStringLiteral("mx-dockmaker"));
+    QApplication::setOrganizationName(QStringLiteral("MX-Linux"));
 
     QTranslator qtTran;
     qtTran.load(QStringLiteral("qt_") + QLocale::system().name());
-    a.installTranslator(&qtTran);
+    QApplication::installTranslator(&qtTran);
 
     QTranslator appTran;
     appTran.load(QStringLiteral("mx-dockmaker_") + QLocale::system().name(),
                  QStringLiteral("/usr/share/mx-dockmaker/locale"));
-    a.installTranslator(&appTran);
+    QApplication::installTranslator(&appTran);
 
     // root guard
     if (QProcess::execute("/bin/bash", {"-c", "logname |grep -q ^root$"}) == 0) {
@@ -56,11 +56,11 @@ int main(int argc, char *argv[])
 
     if (getuid() != 0) {
         QString file;
-        if (qApp->arguments().length() >= 2 && QFile::exists(qApp->arguments().at(1)))
-            file = qApp->arguments().at(1);
+        if (QApplication::arguments().length() >= 2 && QFile::exists(QApplication::arguments().at(1)))
+            file = QApplication::arguments().at(1);
         MainWindow w(nullptr, file);
         w.show();
-        return a.exec();
+        return QApplication::exec();
     } else {
         QApplication::beep();
         QMessageBox::critical(nullptr, QObject::tr("Error"), QObject::tr("You must run this program as normal user."));

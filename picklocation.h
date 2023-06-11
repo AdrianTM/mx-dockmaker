@@ -15,7 +15,7 @@ class PickLocation : public QDialog
 
 public:
     explicit PickLocation(const QString &location, QWidget *parent = nullptr);
-    ~PickLocation();
+    ~PickLocation() override;
     QString button;
 
 private slots:

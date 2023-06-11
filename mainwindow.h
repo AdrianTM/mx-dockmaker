@@ -41,7 +41,7 @@ class MainWindow : public QDialog
 
 public:
     explicit MainWindow(QWidget *parent = nullptr, const QString &file = QString());
-    ~MainWindow();
+    ~MainWindow() override;
 
     enum Info { App, Command, Icon, Size, BgColor, BgHoverColor, BorderColor, BorderHoverColor, Extra };
     bool checkDoneEditing();
@@ -88,7 +88,7 @@ private slots:
     void comboSize_currentTextChanged();
     void itemChanged();
     void lineEditCommand_textEdited();
-    void mousePressEvent(QMouseEvent *event);
+    void mousePressEvent(QMouseEvent *event) override;
     void pickColor(QWidget *widget);
     void radioDesktop_toggled(bool checked);
     void setColor(QWidget *widget, const QColor &color);

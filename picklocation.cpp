@@ -35,16 +35,16 @@ PickLocation::PickLocation(const QString &location, QWidget *parent)
     ui->buttonRT->setProperty("location", "RightTop");
     ui->buttonRB->setProperty("location", "RightBottom");
 
-#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
     // Have to use deprecated buttonClicked instead of idClicked for Buster
+#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
     connect(buttonGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &PickLocation::onGroupButton);
 #else
     connect(buttonGroup, &QButtonGroup::idClicked, this, &PickLocation::onGroupButton);
 #endif
-    auto it = std::find_if(buttonGroup->buttons().cbegin(), buttonGroup->buttons().cend(),
+    auto buttons = buttonGroup->buttons();
+    auto it = std::find_if(buttons.cbegin(), buttons.cend(),
                            [&](const auto *button) { return location == button->property("location").toString(); });
-
-    if (it != buttonGroup->buttons().cend()) {
+    if (it != buttons.cend()) {
         (*it)->click();
         return;
     }
