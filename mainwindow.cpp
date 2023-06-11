@@ -171,7 +171,7 @@ void MainWindow::setup(const QString &file)
 
     switch (enum {Close, Move, Delete, Edit, New}; mbox->exec()) {
     case Close:
-        QTimer::singleShot(0, qApp, &QGuiApplication::quit);
+        QTimer::singleShot(0, QApplication::instance(), &QGuiApplication::quit);
         break;
     case Move:
         moveDock();
