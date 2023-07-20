@@ -49,7 +49,7 @@
         <translation>Размер</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="677"/>
+        <location filename="../mainwindow.ui" line="664"/>
         <source>Background</source>
         <translation>Фон</translation>
     </message>
@@ -73,7 +73,7 @@
         <translation>Выберите значок...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="654"/>
+        <location filename="../mainwindow.ui" line="677"/>
         <location filename="../mainwindow.cpp" line="100"/>
         <location filename="../mainwindow.cpp" line="741"/>
         <location filename="../mainwindow.cpp" line="801"/>
@@ -497,7 +497,7 @@ Creating a new dock instead.</source>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Отменить</translation>
+        <translation type="vanished">Отмена</translation>
     </message>
     <message>
         <source>&amp;Close</source>
@@ -528,7 +528,7 @@ Creating a new dock instead.</source>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Отменить</translation>
+        <translation type="unfinished">Отмена</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>

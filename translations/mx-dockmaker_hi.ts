@@ -49,7 +49,7 @@
         <translation>आकार</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="677"/>
+        <location filename="../mainwindow.ui" line="664"/>
         <source>Background</source>
         <translation>बैकग्राउंड</translation>
     </message>
@@ -73,7 +73,7 @@
         <translation>आइकन चयन...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="654"/>
+        <location filename="../mainwindow.ui" line="677"/>
         <location filename="../mainwindow.cpp" line="100"/>
         <location filename="../mainwindow.cpp" line="741"/>
         <location filename="../mainwindow.cpp" line="801"/>

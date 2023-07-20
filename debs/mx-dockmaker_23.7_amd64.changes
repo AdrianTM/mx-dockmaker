@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 20 Jul 2023 16:35:23 -0400
+Source: mx-dockmaker
+Binary: mx-dockmaker
+Architecture: source amd64
+Version: 23.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-dockmaker - Dockmaker for MX Linux
+Changes:
+ mx-dockmaker (23.7) mx; urgency=medium
+ .
+   * Update translations
+Checksums-Sha1:
+ 287d97d1617269fd2356454475a4e32e8d09eacb 1171 mx-dockmaker_23.7.dsc
+ 8a37a2a77f7f36bc6890b96e86e3787c289c06fa 99004 mx-dockmaker_23.7.tar.xz
+ 7d7fafecf14ba1062b4e6bc91d3d6ffe2e1fa19f 10740 mx-dockmaker_23.7_amd64.buildinfo
+ d2caea670d462c56d16ad4969dd221742fe32ae5 122652 mx-dockmaker_23.7_amd64.deb
+Checksums-Sha256:
+ a0f6f644662d284857fecb74d1809a02edc0177631e72288d69099fc1ab07d34 1171 mx-dockmaker_23.7.dsc
+ 7b5811d97c42fba739ecebafa1f7eb4ce3c18f4fd38c40f4a1881cda3db67d84 99004 mx-dockmaker_23.7.tar.xz
+ ad5f63ef79b7fcf7fd5a5d9d872fa6c319d9c07c2dff712faaaf74d286a66e84 10740 mx-dockmaker_23.7_amd64.buildinfo
+ 743cd5ea6a8d11d657ac0d2283ba3ae3c53f4ff9a3cdee1529d2c96db22186ff 122652 mx-dockmaker_23.7_amd64.deb
+Files:
+ 659a947e4c7042c64af847405021ef3a 1171 admin optional mx-dockmaker_23.7.dsc
+ 6c580941061a19190decf74bbec4bd96 99004 admin optional mx-dockmaker_23.7.tar.xz
+ 9d16345d8e45aff48c82a6f37eed9874 10740 admin optional mx-dockmaker_23.7_amd64.buildinfo
+ 275997aa0682584b2008d06ae57860ec 122652 admin optional mx-dockmaker_23.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS5mvgTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJskB/94XlvVYfdvRAbD4LSYgv9q8ATr0HQU
+iu5aCqc+SvWBTkUc+UJhH3H8/p+2yqlAxxcwyfhCb7e3ejikiZDz7LeiI6pXldni
+mNBPdHifoX1T40YBcQOHOWnKbst/dNOAUI8g5T3oNfvQ/1hGc3ph9kIRBijR+aGr
+RdisYBF6PYX1rZeb+nxc6flrAuPktL/06n/ksvNCvvJumYF8OkyoPlqBXgWgy4fl
+BMIOb5J8s/OBXs+sO29JU0hMP0uZLa9Tf+KqYDBvMS5tyXK1UBIlNeIO2xgkIpsO
+GnI+4j72T5p5iaRfeLINtDcrtHzY+KdFAojjCgQWG3wVTJdHRuOuu7rj
+=TXVV
+-----END PGP SIGNATURE-----

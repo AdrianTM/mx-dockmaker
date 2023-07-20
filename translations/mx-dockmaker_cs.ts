@@ -49,7 +49,7 @@
         <translation>Velikost</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="677"/>
+        <location filename="../mainwindow.ui" line="664"/>
         <source>Background</source>
         <translation>Pozadí</translation>
     </message>
@@ -73,7 +73,7 @@
         <translation>Vybrat ikonu...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="654"/>
+        <location filename="../mainwindow.ui" line="677"/>
         <location filename="../mainwindow.cpp" line="100"/>
         <location filename="../mainwindow.cpp" line="741"/>
         <location filename="../mainwindow.cpp" line="801"/>

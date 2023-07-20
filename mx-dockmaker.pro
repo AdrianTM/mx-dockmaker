@@ -50,6 +50,7 @@ FORMS    += \
 TRANSLATIONS += translations/mx-dockmaker_af.ts \
                 translations/mx-dockmaker_am.ts \
                 translations/mx-dockmaker_ar.ts \
+                translations/mx-dockmaker_ast.ts \
                 translations/mx-dockmaker_be.ts \
                 translations/mx-dockmaker_bg.ts \
                 translations/mx-dockmaker_bn.ts \
@@ -77,7 +78,6 @@ TRANSLATIONS += translations/mx-dockmaker_af.ts \
                 translations/mx-dockmaker_fil.ts \
                 translations/mx-dockmaker_fi.ts \
                 translations/mx-dockmaker_fr_BE.ts \
-                translations/mx-dockmaker_fr_FR.ts \
                 translations/mx-dockmaker_fr.ts \
                 translations/mx-dockmaker_fy.ts \
                 translations/mx-dockmaker_ga.ts \
@@ -93,12 +93,16 @@ TRANSLATIONS += translations/mx-dockmaker_af.ts \
                 translations/mx-dockmaker_hr.ts \
                 translations/mx-dockmaker_ht.ts \
                 translations/mx-dockmaker_hu.ts \
+                translations/mx-dockmaker_hy_AM.ts \
+                translations/mx-dockmaker_hye.ts \
                 translations/mx-dockmaker_hy.ts \
                 translations/mx-dockmaker_id.ts \
+                translations/mx-dockmaker_ie.ts \
                 translations/mx-dockmaker_is.ts \
                 translations/mx-dockmaker_it.ts \
                 translations/mx-dockmaker_ja.ts \
                 translations/mx-dockmaker_jv.ts \
+                translations/mx-dockmaker_kab.ts \
                 translations/mx-dockmaker_ka.ts \
                 translations/mx-dockmaker_kk.ts \
                 translations/mx-dockmaker_km.ts \
@@ -124,7 +128,9 @@ TRANSLATIONS += translations/mx-dockmaker_af.ts \
                 translations/mx-dockmaker_ne.ts \
                 translations/mx-dockmaker_nl_BE.ts \
                 translations/mx-dockmaker_nl.ts \
+                translations/mx-dockmaker_nn.ts \
                 translations/mx-dockmaker_ny.ts \
+                translations/mx-dockmaker_oc.ts \
                 translations/mx-dockmaker_or.ts \
                 translations/mx-dockmaker_pa.ts \
                 translations/mx-dockmaker_pl.ts \
