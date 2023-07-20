@@ -116,17 +116,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="654"/>
+        <location filename="../mainwindow.ui" line="664"/>
+        <source>Background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="677"/>
         <location filename="../mainwindow.cpp" line="100"/>
         <location filename="../mainwindow.cpp" line="741"/>
         <location filename="../mainwindow.cpp" line="801"/>
         <location filename="../mainwindow.cpp" line="916"/>
         <source>Select...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="677"/>
-        <source>Background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -49,7 +49,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="677"/>
+        <location filename="../mainwindow.ui" line="664"/>
         <source>Background</source>
         <translation type="unfinished"></translation>
     </message>
@@ -73,7 +73,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="654"/>
+        <location filename="../mainwindow.ui" line="677"/>
         <location filename="../mainwindow.cpp" line="100"/>
         <location filename="../mainwindow.cpp" line="741"/>
         <location filename="../mainwindow.cpp" line="801"/>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../mainwindow.ui" line="719"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Помощь</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="726"/>
@@ -162,7 +162,7 @@
     <message>
         <location filename="../mainwindow.ui" line="800"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="807"/>
@@ -469,6 +469,13 @@ Creating a new dock instead.</source>
     </message>
 </context>
 <context>
+    <name>QApplication</name>
+    <message>
+        <source>Error</source>
+        <translation type="vanished">Ошибка</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <location filename="../about.cpp" line="41"/>
@@ -495,7 +502,7 @@ Creating a new dock instead.</source>
         <location filename="../main.cpp" line="51"/>
         <location filename="../main.cpp" line="66"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ошибка</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="52"/>

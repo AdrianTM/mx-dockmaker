@@ -49,7 +49,7 @@
         <translation>Boyut</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="677"/>
+        <location filename="../mainwindow.ui" line="664"/>
         <source>Background</source>
         <translation>Arkaplan</translation>
     </message>
@@ -73,7 +73,7 @@
         <translation>Simge seçin...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="654"/>
+        <location filename="../mainwindow.ui" line="677"/>
         <location filename="../mainwindow.cpp" line="100"/>
         <location filename="../mainwindow.cpp" line="741"/>
         <location filename="../mainwindow.cpp" line="801"/>
@@ -257,7 +257,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
         <source>Are you sure you want to delete %1?</source>
-        <translation>%1&apos;i silmek istediğinizden emin misiniz?</translation>
+        <translation>%1’i silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
@@ -316,7 +316,7 @@
 To edit the newly created dock please select &apos;Edit an existing dock&apos;.</source>
         <translation>Panel kaydedildi.
 
-Yeni oluşturulan paneli düzenlemek için lütfen &apos;Mevcut bir paneli düzenle&apos;yi seçin.</translation>
+Yeni oluşturulan paneli düzenlemek için lütfen ‘Mevcut bir paneli düzenle’yi seçin.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="682"/>
