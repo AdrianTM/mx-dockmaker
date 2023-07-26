@@ -196,7 +196,7 @@ void MainWindow::setup(const QString &file)
 QPixmap MainWindow::findIcon(QString icon_name, QSize size)
 {
     if (icon_name.isEmpty())
-        return QPixmap();
+        return {};
     if (QFileInfo::exists("/" + icon_name))
         return QIcon(icon_name).pixmap(size);
 
@@ -219,7 +219,7 @@ QPixmap MainWindow::findIcon(QString icon_name, QSize size)
             search_paths.removeOne(path);
             continue;
         }
-        for (const QString &ext : {".png", ".svg", ".xpm"}) {
+        for (const QString ext : {".png", ".svg", ".xpm"}) {
             QString file = path + icon_name + ext;
             if (QFileInfo::exists(file))
                 return QIcon(file).pixmap(QSize());
@@ -259,7 +259,7 @@ QString MainWindow::getDockName(const QString &file_name)
     file.setFileName(QDir::homePath() + "/.fluxbox/submenus/appearance");
 
     if (!file.open(QFile::Text | QFile::ReadOnly))
-        return QString();
+        return {};
     QString text = file.readAll();
     file.close();
 
@@ -277,7 +277,7 @@ QString MainWindow::inputDockName()
                                          QLineEdit::Normal, QString(), &ok);
     if (ok && !text.isEmpty())
         return text;
-    return QString();
+    return {};
 }
 
 void MainWindow::allItemsChanged()
