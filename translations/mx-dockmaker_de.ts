@@ -186,9 +186,9 @@
 3. Select icon attributes for size, background (black is standard) and border
 4. Press &quot;Add application&quot; to continue or &quot;Save&quot; to finish</source>
         <translation>1. Anwendungen nacheinander zum Dock hinzufügen
-2. Wählen sie eine .desktop-Datei aus oder geben sie einen Befehl für die gewünschte Anwendung ein
-3. Wählen sie Symbol-Attribute für Größe, Hintergrund (schwarz ist Standard) und Rahmen
-4. Drücken sie &quot;Anwendung hinzufügen&quot;, um fortzufahren, oder &quot;Speichern&quot;, um zu beenden.</translation>
+2. Wählen Sie eine .desktop-Datei aus oder geben Sie einen Befehl für die gewünschte Anwendung ein
+3. Wählen Sie Symbol-Attribute für Größe, Hintergrund (schwarz ist Standard) und Rahmen
+4. Drücken Sie &quot;Anwendung hinzufügen&quot;, um fortzufahren, oder &quot;Speichern&quot;, um zu beenden.</translation>
     </message>
     <message>
         <source>black</source>
@@ -201,7 +201,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="160"/>
         <source>This tool allows you to create a new dock with one or more applications. You can also edit or delete a dock created earlier.</source>
-        <translation>Mit diesem Tool können sie ein neues Dock mit einer oder mehreren Anwendungen erstellen. Sie können auch ein zuvor erstelltes Dock bearbeiten oder löschen.</translation>
+        <translation>Mit diesem Tool können Sie ein neues Dock mit einer oder mehreren Anwendungen erstellen. Sie können auch ein zuvor erstelltes Dock bearbeiten oder löschen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="163"/>
@@ -242,12 +242,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>Enter the name to show in the Menu:</source>
-        <translation>Geben sie den Namen ein, der im Menü angezeigt werden soll:</translation>
+        <translation>Geben Sie den Namen ein, der im Menü angezeigt werden soll:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="371"/>
         <source>Select dock to delete</source>
-        <translation>Wählen sie das zu löschende Dock aus</translation>
+        <translation>Wählen Sie das zu löschende Dock aus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
@@ -257,7 +257,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
         <source>Are you sure you want to delete %1?</source>
-        <translation>Sind sie sicher, dass sie %1 löschen möchten?</translation>
+        <translation>Sind Sie sicher, dass Sie %1 löschen möchten?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
@@ -272,7 +272,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>Select dock to move</source>
-        <translation>Wählen sie das zu verschiebende Dock aus</translation>
+        <translation>Wählen Sie das zu verschiebende Dock aus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
@@ -297,7 +297,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="594"/>
         <source>Do you want to overwrite the dock file?</source>
-        <translation>Möchten sie die Dock-Datei überschreiben?</translation>
+        <translation>Möchten Sie die Dock-Datei überschreiben?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="595"/>
@@ -316,7 +316,7 @@
 To edit the newly created dock please select &apos;Edit an existing dock&apos;.</source>
         <translation>Das Dock wurde gespeichert
 
-Um das neu erstellte Dock zu bearbeiten, wählen sie bitte &apos;Ein vorhandenes Dock bearbeiten&apos;.</translation>
+Um das neu erstellte Dock zu bearbeiten, wählen Sie bitte &apos;Ein vorhandenes Dock bearbeiten&apos;.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="682"/>
@@ -336,7 +336,7 @@ Um das neu erstellte Dock zu bearbeiten, wählen sie bitte &apos;Ein vorhandenes
     <message>
         <location filename="../mainwindow.cpp" line="684"/>
         <source>Description goes here</source>
-        <translation>Geben sie hier die Beschreibung ein</translation>
+        <translation>Geben Sie hier die Beschreibung ein</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="687"/>
@@ -378,7 +378,7 @@ Um das neu erstellte Dock zu bearbeiten, wählen sie bitte &apos;Ein vorhandenes
         <source>You haven&apos;t selected any dock file to edit.
 Creating a new dock instead.</source>
         <translation>Sie haben keine Dock-Datei ausgewählt
-Erstellen sie stattdessen eine neue Dock-Datei.</translation>
+Erstellen Sie stattdessen eine neue Dock-Datei.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="872"/>
@@ -392,9 +392,9 @@ Stattdessen wurde ein neues Dock erstellt.</translation>
         <source>1. Edit applications one at a time using the Back and Next buttons
 2. Add or delete applications as you like
 3. When finished click Save</source>
-        <translation>1. Bearbeiten sie die Anwendungen nacheinander mit den Schaltflächen Zurück und Weiter.
+        <translation>1. Bearbeiten Sie die Anwendungen nacheinander mit den Schaltflächen Zurück und Weiter.
 2. Anwendungen nach Belieben hinzufügen oder löschen
-3. Wenn sie fertig sind, klicken sie auf Speichern.</translation>
+3. Wenn Sie fertig sind, klicken Sie auf Speichern.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="955"/>

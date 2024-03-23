@@ -489,7 +489,7 @@ Bunun yerine yeni bir panel oluşturun.</translation>
     <name>QApplication</name>
     <message>
         <source>License</source>
-        <translation type="vanished">Ruhsat</translation>
+        <translation type="vanished">Lisans</translation>
     </message>
     <message>
         <source>Changelog</source>
@@ -517,7 +517,7 @@ Bunun yerine yeni bir panel oluşturun.</translation>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Ruhsat</translation>
+        <translation type="unfinished">Lisans</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>

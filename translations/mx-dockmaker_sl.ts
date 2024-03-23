@@ -341,7 +341,7 @@ Za urejanje na novo ustvarjenega sidrišča izberite &apos;Uredi obstoječe sidr
     <message>
         <location filename="../mainwindow.cpp" line="687"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>Avtorska zaščita (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>

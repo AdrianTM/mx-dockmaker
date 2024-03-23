@@ -6,7 +6,7 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Program_Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Program_Name</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="29"/>
@@ -336,7 +336,7 @@ Az újonnan létrehozott dokk szerkesztéséhez válassza a &apos;Meglévő dokk
     <message>
         <location filename="../mainwindow.cpp" line="684"/>
         <source>Description goes here</source>
-        <translation type="unfinished"></translation>
+        <translation>Leírás helye</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="687"/>

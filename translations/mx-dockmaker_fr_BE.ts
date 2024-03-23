@@ -257,7 +257,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
         <source>Are you sure you want to delete %1?</source>
-        <translation>Êtes-vous sûr de vouloir supprimer %1 ?</translation>
+        <translation>Êtes-vous sûr•e de vouloir supprimer %1 ?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>

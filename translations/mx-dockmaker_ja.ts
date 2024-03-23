@@ -507,7 +507,7 @@ Creating a new dock instead.</source>
     </message>
     <message>
         <source>You must run this program as normal user.</source>
-        <translation type="vanished">このプログラムは標準ユーザーで実行しなくてはなりません。</translation>
+        <translation type="vanished">このプログラムは通常のユーザで実行しなくてはなりません。</translation>
     </message>
 </context>
 <context>
@@ -547,7 +547,7 @@ Creating a new dock instead.</source>
     <message>
         <location filename="../main.cpp" line="66"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">このプログラムは標準ユーザーで実行しなくてはなりません。</translation>
+        <translation type="unfinished">このプログラムは通常のユーザで実行しなくてはなりません。</translation>
     </message>
 </context>
 </TS>
