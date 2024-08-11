@@ -2,56 +2,44 @@
 #include "ui_picklocation.h"
 
 PickLocation::PickLocation(const QString &location, QWidget *parent)
-    : QDialog(parent)
-    , ui(new Ui::PickLocation)
+    : QDialog(parent),
+      ui(new Ui::PickLocation)
 {
     ui->setupUi(this);
-    this->setWindowTitle(tr("Select dock location"));
+    setWindowTitle(tr("Select dock location"));
 
     buttonGroup = new QButtonGroup(this);
-    buttonGroup->addButton(ui->buttonTL, 1);
-    buttonGroup->addButton(ui->buttonTC, 2);
-    buttonGroup->addButton(ui->buttonTR, 3);
-    buttonGroup->addButton(ui->buttonLC, 4);
-    buttonGroup->addButton(ui->buttonRC, 5);
-    buttonGroup->addButton(ui->buttonBL, 6);
-    buttonGroup->addButton(ui->buttonBC, 7);
-    buttonGroup->addButton(ui->buttonBR, 8);
-    buttonGroup->addButton(ui->buttonLT, 9);
-    buttonGroup->addButton(ui->buttonLB, 10);
-    buttonGroup->addButton(ui->buttonRT, 11);
-    buttonGroup->addButton(ui->buttonRB, 12);
+    const QList<QPushButton *> buttons
+        = {ui->buttonTL, ui->buttonTC, ui->buttonTR, ui->buttonLC, ui->buttonRC, ui->buttonBL,
+           ui->buttonBC, ui->buttonBR, ui->buttonLT, ui->buttonLB, ui->buttonRT, ui->buttonRB};
 
-    ui->buttonTL->setProperty("location", "TopLeft");
-    ui->buttonTC->setProperty("location", "TopCenter");
-    ui->buttonTR->setProperty("location", "TopRight");
-    ui->buttonLC->setProperty("location", "LeftCenter");
-    ui->buttonRC->setProperty("location", "RightCenter");
-    ui->buttonBL->setProperty("location", "BottomLeft");
-    ui->buttonBC->setProperty("location", "BottomCenter");
-    ui->buttonBR->setProperty("location", "BottomRight");
-    ui->buttonLT->setProperty("location", "LeftTop");
-    ui->buttonLB->setProperty("location", "LeftBottom");
-    ui->buttonRT->setProperty("location", "RightTop");
-    ui->buttonRB->setProperty("location", "RightBottom");
+    const QStringList locations
+        = {"TopLeft",      "TopCenter",   "TopRight", "LeftCenter", "RightCenter", "BottomLeft",
+           "BottomCenter", "BottomRight", "LeftTop",  "LeftBottom", "RightTop",    "RightBottom"};
 
-    // Have to use deprecated buttonClicked instead of idClicked for Buster
-#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
-    connect(buttonGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &PickLocation::onGroupButton);
-#else
-    connect(buttonGroup, &QButtonGroup::idClicked, this, &PickLocation::onGroupButton);
-#endif
-    auto buttons = buttonGroup->buttons();
-    auto it = std::find_if(buttons.cbegin(), buttons.cend(),
-                           [&](const auto *button) { return location == button->property("location").toString(); });
-    if (it != buttons.cend()) {
-        (*it)->click();
-        return;
+    for (int i = 0; i < buttons.size(); ++i) {
+        buttonGroup->addButton(buttons.at(i), i + 1);
+        buttons[i]->setProperty("location", locations[i]);
     }
-    ui->buttonBC->click();
+
+    connect(buttonGroup, &QButtonGroup::idClicked, this, &PickLocation::onGroupButton);
+
+    const auto listBtns = buttonGroup->buttons();
+    const auto it = std::find_if(listBtns.cbegin(), listBtns.cend(),
+                                  [&](const auto *button) {
+                                      return location == button->property("location").toString();
+                                  });
+    if (it != listBtns.cend()) {
+        (*it)->click();
+    } else {
+        ui->buttonBC->click();
+    }
 }
 
-PickLocation::~PickLocation() { delete ui; }
+PickLocation::~PickLocation()
+{
+    delete ui;
+}
 
 void PickLocation::onGroupButton(int button_id)
 {
