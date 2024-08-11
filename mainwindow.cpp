@@ -384,19 +384,29 @@ void MainWindow::addDockToMenu(const QString &file_name)
 
 void MainWindow::deleteDock()
 {
-    this->hide();
-    const QString selected
+    hide();
+
+    const QString selectedDock
         = QFileDialog::getOpenFileName(nullptr, tr("Select dock to delete"), QDir::homePath() + "/.fluxbox/scripts",
                                        tr("Dock Files (*.mxdk);;All Files (*.*)"));
-    if (!selected.isEmpty()
-        && QMessageBox::question(nullptr, tr("Confirmation"), tr("Are you sure you want to delete %1?").arg(selected),
-                                 tr("&Delete"), tr("&Cancel"))
-               == 0) {
-        QFile::remove(selected);
-        cmd.run("sed -ni '\\|" + selected + "|!p' " + QDir::homePath() + "/.fluxbox/submenus/appearance", true);
-        cmd.run(QStringLiteral("pkill wmalauncher"), true);
+
+    if (!selectedDock.isEmpty()) {
+        const QMessageBox::StandardButton confirmation = QMessageBox::question(
+            nullptr, tr("Confirmation"), tr("Are you sure you want to delete %1?").arg(selectedDock),
+            QMessageBox::Yes | QMessageBox::Cancel);
+
+        if (confirmation == QMessageBox::Yes) {
+            if (QFile::remove(selectedDock)) {
+                cmd.run("sed -ni '\\|" + selectedDock + "|!p' " + QDir::homePath() + "/.fluxbox/submenus/appearance",
+                        true);
+                cmd.run(QStringLiteral("pkill wmalauncher"), true);
+            } else {
+                QMessageBox::warning(nullptr, tr("Error"), tr("Failed to delete the selected dock."));
+            }
+        }
     }
-    this->show();
+
+    show();
 }
 
 // block/unblock all relevant signals when loading stuff into GUI
