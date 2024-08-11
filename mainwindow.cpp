@@ -488,25 +488,35 @@ void MainWindow::moveDock()
     this->show();
 }
 
-// move icon: pos -1 one to left, +1 one to right
+// Move icon: pos -1 to shift left, +1 to shift right
 void MainWindow::moveIcon(int pos)
 {
-    changed = true;
-#if (QT_VERSION < QT_VERSION_CHECK(5, 14, 0))
-    // swap instead of swapItemAt and don't use Qt::ReturnByValue for pixmap to make it work in Buster
-    apps.swap(index, index + pos);
-    QPixmap map = *list_icons.at(index)->pixmap();
-    list_icons.at(index)->setPixmap(*list_icons.at(index + pos)->pixmap());
-#else
-    apps.swapItemsAt(index, index + pos);
-    QPixmap map = list_icons.at(index)->pixmap(Qt::ReturnByValue);
-    list_icons.at(index)->setPixmap(list_icons.at(index + pos)->pixmap(Qt::ReturnByValue));
-#endif
-    list_icons.at(index + pos)->setPixmap(map);
-    list_icons.at(index)->setStyleSheet(list_icons.at(index + pos)->styleSheet());
+    int newIndex = index + pos;
+    if (newIndex < 0 || newIndex >= apps.size()) {
+        return;
+    }
 
-    index += pos;
-    showApp(index, index - 1);
+    changed = true;
+    // Swap the applications in the list
+    apps.swapItemsAt(index, newIndex);
+
+    // Swap the icons visually
+    QLabel *currentIconLabel = list_icons.at(index);
+    QLabel *newIconLabel = list_icons.at(newIndex);
+    QPixmap currentIcon = currentIconLabel->pixmap(Qt::ReturnByValue);
+    currentIconLabel->setPixmap(newIconLabel->pixmap(Qt::ReturnByValue));
+    newIconLabel->setPixmap(currentIcon);
+
+    // Update styles for the swapped icons
+    QString currentStyle = currentIconLabel->styleSheet();
+    currentIconLabel->setStyleSheet(newIconLabel->styleSheet());
+    newIconLabel->setStyleSheet(currentStyle);
+
+    // Update the current index
+    index = newIndex;
+
+    // Refresh the displayed application and highlight the current icon
+    showApp(index, index - pos);
     displayIcon(ui->buttonSelectApp->text(), index);
     list_icons.at(index)->setStyleSheet(list_icons.at(index)->styleSheet() + "border-width: 10px;");
 
