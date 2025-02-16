@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sun, 16 Feb 2025 14:59:17 -0500
+Source: mx-dockmaker
+Architecture: source
+Version: 25.2
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Changes:
+ mx-dockmaker (25.2) mx; urgency=medium
+ .
+   * use lower case in desktop file
+Checksums-Sha1:
+ 8d78df679b34fb1b7a959ba761e47a78edad2b6a 609 mx-dockmaker_25.2.dsc
+ 1611dea7cefc2cbbb8284874e796a60932e48c9c 94368 mx-dockmaker_25.2.tar.xz
+ 9508881d9ac8249ae4c2a22fc6cc0225d74d7902 10608 mx-dockmaker_25.2_source.buildinfo
+Checksums-Sha256:
+ b82e11f363bfe52fdaeb9b1d66b0b18a574a7d78c41455dc5315fd228f7ec743 609 mx-dockmaker_25.2.dsc
+ 357e8e1975af02bd2f21540abaa0f2d88a78b7f3b1a9156d036063ceadd702e7 94368 mx-dockmaker_25.2.tar.xz
+ bc89cf0d759da0f65d20250a42f290897b4c75e1d591c202be6786acaf4923f6 10608 mx-dockmaker_25.2_source.buildinfo
+Files:
+ 1d51393cfba3d35b5763544b5dc9d4b9 609 admin optional mx-dockmaker_25.2.dsc
+ 6211fe08d1f5210d6c5594f60b6cafbc 94368 admin optional mx-dockmaker_25.2.tar.xz
+ aa5f027c2979b11c5d3b83a1f75aeed9 10608 admin optional mx-dockmaker_25.2_source.buildinfo
