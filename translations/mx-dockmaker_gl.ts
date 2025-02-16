@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="nl_BE">
+<TS version="2.1" language="gl">
 <context>
     <name>MainWindow</name>
     <message>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../mainwindow.ui" line="641"/>
         <source>Command</source>
-        <translation>Commando</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="118"/>
@@ -46,17 +46,17 @@
     <message>
         <location filename="../mainwindow.ui" line="247"/>
         <source>Size</source>
-        <translation>Grootte</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="664"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Imaxe de fondo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="198"/>
         <source>Back</source>
-        <translation>Terug</translation>
+        <translation>Volver atrás</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="465"/>
@@ -127,12 +127,12 @@
     <message>
         <location filename="../mainwindow.ui" line="716"/>
         <source>Display help </source>
-        <translation>Toon help</translation>
+        <translation>Amosar axuda</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="719"/>
         <source>Help</source>
-        <translation>Help</translation>
+        <translation>Axuda</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="726"/>
@@ -142,12 +142,12 @@
     <message>
         <location filename="../mainwindow.ui" line="755"/>
         <source>About this application</source>
-        <translation>Over deze applicatie</translation>
+        <translation>Sobre esta aplicación</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="758"/>
         <source>About...</source>
-        <translation>Over...</translation>
+        <translation>Sobre...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="765"/>
@@ -157,12 +157,12 @@
     <message>
         <location filename="../mainwindow.ui" line="797"/>
         <source>Quit application</source>
-        <translation>Verlaat de applicatie</translation>
+        <translation>Saír do aplicativo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="800"/>
         <source>Close</source>
-        <translation>Sluiten</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="807"/>
@@ -172,7 +172,7 @@
     <message>
         <location filename="../mainwindow.ui" line="848"/>
         <source>Save</source>
-        <translation>Opslaan</translation>
+        <translation>Gardar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="855"/>
@@ -200,7 +200,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
         <source>&amp;Close</source>
-        <translation>&amp;Sluiten</translation>
+        <translation>&amp;Cerrar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
@@ -215,7 +215,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Aanpassen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
@@ -250,7 +250,7 @@
     <message>
         <location filename="../mainwindow.ui" line="172"/>
         <source>Next</source>
-        <translation>Volgende</translation>
+        <translation>Seguinte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="426"/>
@@ -268,7 +268,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="404"/>
         <source>Error</source>
-        <translation type="unfinished">Foutmelding</translation>
+        <translation type="unfinished">Erro</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="404"/>
@@ -312,7 +312,7 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
     <message>
         <location filename="../mainwindow.cpp" line="733"/>
         <source>About %1</source>
-        <translation>Over %1</translation>
+        <translation>Sobre %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="733"/>
@@ -322,7 +322,7 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>Version: </source>
-        <translation>Versie:</translation>
+        <translation>Versión: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="735"/>
@@ -337,12 +337,12 @@ To edit the newly created dock please select &apos;Edit an existing dock&apos;.<
     <message>
         <location filename="../mainwindow.cpp" line="739"/>
         <source>%1 License</source>
-        <translation>%1 Licentie</translation>
+        <translation>Licenza de %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="748"/>
         <source>%1 Help</source>
-        <translation>%1 Help</translation>
+        <translation>Axuda para %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="900"/>
@@ -399,7 +399,7 @@ Creating a new dock instead.</source>
     <message>
         <location filename="../picklocation.ui" line="14"/>
         <source>Dialog</source>
-        <translation>Dialoog</translation>
+        <translation>Caixa de diálogo</translation>
     </message>
     <message>
         <location filename="../picklocation.ui" line="23"/>
@@ -476,27 +476,23 @@ Creating a new dock instead.</source>
     <name>QApplication</name>
     <message>
         <source>License</source>
-        <translation type="vanished">Licentie</translation>
+        <translation type="vanished">Licenza</translation>
     </message>
     <message>
         <source>Changelog</source>
-        <translation type="vanished">Changelog</translation>
+        <translation type="vanished">Rexistro dos cambios</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancel</translation>
+        <translation type="vanished">Cancelar</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation type="vanished">&amp;Sluiten</translation>
+        <translation type="vanished">&amp;Cerrar</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Foutmelding</translation>
-    </message>
-    <message>
-        <source>You must run this program as normal user.</source>
-        <translation type="vanished">U moet dit programma als normale gebruiker uitvoeren.</translation>
+        <translation type="vanished">Erro</translation>
     </message>
 </context>
 <context>
@@ -504,29 +500,29 @@ Creating a new dock instead.</source>
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Licentie</translation>
+        <translation type="unfinished">Licenza</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Changelog</translation>
+        <translation type="unfinished">Rexistro dos cambios</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancel</translation>
+        <translation type="unfinished">Cancelar</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="64"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Sluiten</translation>
+        <translation type="unfinished">&amp;Cerrar</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="51"/>
         <location filename="../main.cpp" line="66"/>
         <source>Error</source>
-        <translation type="unfinished">Foutmelding</translation>
+        <translation type="unfinished">Erro</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="52"/>
@@ -536,7 +532,7 @@ Creating a new dock instead.</source>
     <message>
         <location filename="../main.cpp" line="66"/>
         <source>You must run this program as normal user.</source>
-        <translation type="unfinished">U moet dit programma als normale gebruiker uitvoeren.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
