@@ -19,7 +19,10 @@
 # **********************************************************************/
 
 QT       += widgets
-CONFIG   += c++1z warn_on
+CONFIG   += warn_on strict_c++ c++17
+
+QMAKE_CXXFLAGS += -Wpedantic -pedantic -Werror=return-type -Werror=switch
+QMAKE_CXXFLAGS += -Werror=uninitialized -Werror=return-local-addr -Werror
 
 TARGET = mx-dockmaker
 TEMPLATE = app
