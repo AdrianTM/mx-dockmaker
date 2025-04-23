@@ -555,7 +555,7 @@ void MainWindow::parseFile(QFile &file)
             options = line.split(QRegularExpression(QStringLiteral(" --| -")));
             options.removeAll(QString());
 
-            for (const QString &option : qAsConst(options)) {
+            for (const QString &option : std::as_const(options)) {
                 QStringList tokens = option.split(QStringLiteral(" "));
                 if (tokens.at(0) == QLatin1String("d") || tokens.at(0) == QLatin1String("desktop-file")) {
                     ui->radioDesktop->setChecked(true);
@@ -686,7 +686,7 @@ void MainWindow::buttonSave_clicked()
             out << file_content.replace(re, new_line);
         }
     }
-    for (const auto &app : qAsConst(apps)) {
+    for (const auto &app : std::as_const(apps)) {
         QString command = (app.at(Info::App).endsWith(QLatin1String(".desktop")))
                               ? "--desktop-file " + app.at(Info::App)
                               : "--command " + app.at(Info::Command) + " --icon " + app.at(Info::Icon);
